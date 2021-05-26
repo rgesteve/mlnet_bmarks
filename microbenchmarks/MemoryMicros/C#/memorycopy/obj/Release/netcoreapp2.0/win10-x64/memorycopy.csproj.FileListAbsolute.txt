@@ -1,0 +1,13 @@
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\memorycopy\bin\Release\netcoreapp2.0\win10-x64\hostpolicy.dll
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\memorycopy\bin\Release\netcoreapp2.0\win10-x64\hostfxr.dll
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\memorycopy\bin\Release\netcoreapp2.0\win10-x64\memorycopy.exe
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\memorycopy\bin\Release\netcoreapp2.0\win10-x64\memorycopy.deps.json
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\memorycopy\bin\Release\netcoreapp2.0\win10-x64\memorycopy.runtimeconfig.json
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\memorycopy\bin\Release\netcoreapp2.0\win10-x64\memorycopy.runtimeconfig.dev.json
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\memorycopy\bin\Release\netcoreapp2.0\win10-x64\memorycopy.dll
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\memorycopy\bin\Release\netcoreapp2.0\win10-x64\memorycopy.pdb
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\memorycopy\obj\Release\netcoreapp2.0\win10-x64\memorycopy.csproj.CoreCompileInputs.cache
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\memorycopy\obj\Release\netcoreapp2.0\win10-x64\memorycopy.AssemblyInfo.cs
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\memorycopy\obj\Release\netcoreapp2.0\win10-x64\RemoveDepsFileConflicts.semaphore
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\memorycopy\obj\Release\netcoreapp2.0\win10-x64\memorycopy.dll
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\memorycopy\obj\Release\netcoreapp2.0\win10-x64\memorycopy.pdb

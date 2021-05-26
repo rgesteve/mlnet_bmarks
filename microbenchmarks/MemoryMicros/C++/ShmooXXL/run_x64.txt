@@ -1,0 +1,17 @@
+bin\shmoo_MEMCPY_x64.exe -PseudorandomCopy=1 -Warmup=1 -DoMemOp=cpy -iterations=1000000 -src_offset=0 -dst_offset=0 -Verbose=1 -countinterval=0 -interfere=0
+
+PseudorandomCopy: sets whether to use pseudorandom numbers or not for sizes of copies. Recommended to always use pseudorandom or to modify the global_helpers.h file to use some custom distribution as it currently just sets all the sizes to the same number which creates a pattern that doesn't give a realistic runtime.
+
+Warmup: if set, will do one memcpy of a 4K page before running the loop.
+
+DoMemOp: we only looked at memcpy so this was always set to cpy, can also do moves.
+
+iterations: number of time to go through the inner loop. The inner loop is always the array of 2050 copy lengths, so total copies will be iterations * 2050.
+
+src_offset/dst_offset: this is added to the base src/dst for memcpy (base is always aligned to a 4K page). For unaligned accesses we used 1 for both of these.
+
+Verbose: if set, will print out the sizes used in the inner loop array, as well as telling you that it is doing a warmup run.
+
+countinterval: determines the buckets that pseudorandom numbers get generated in. 0 gives 0-16, 1 gives 17-32, 2 gives 33-64, 3 gives 65-128, and 4 gives 129-500.
+
+interfere: if set, will set destination to be source + 1.

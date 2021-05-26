@@ -1,0 +1,13 @@
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\blockcopy\bin\Release\netcoreapp2.0\win10-x64\hostpolicy.dll
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\blockcopy\bin\Release\netcoreapp2.0\win10-x64\hostfxr.dll
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\blockcopy\bin\Release\netcoreapp2.0\win10-x64\blockcopy.exe
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\blockcopy\bin\Release\netcoreapp2.0\win10-x64\blockcopy.deps.json
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\blockcopy\bin\Release\netcoreapp2.0\win10-x64\blockcopy.runtimeconfig.json
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\blockcopy\bin\Release\netcoreapp2.0\win10-x64\blockcopy.runtimeconfig.dev.json
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\blockcopy\bin\Release\netcoreapp2.0\win10-x64\blockcopy.dll
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\blockcopy\bin\Release\netcoreapp2.0\win10-x64\blockcopy.pdb
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\blockcopy\obj\Release\netcoreapp2.0\win10-x64\blockcopy.csproj.CoreCompileInputs.cache
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\blockcopy\obj\Release\netcoreapp2.0\win10-x64\blockcopy.AssemblyInfo.cs
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\blockcopy\obj\Release\netcoreapp2.0\win10-x64\RemoveDepsFileConflicts.semaphore
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\blockcopy\obj\Release\netcoreapp2.0\win10-x64\blockcopy.dll
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\blockcopy\obj\Release\netcoreapp2.0\win10-x64\blockcopy.pdb

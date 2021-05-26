@@ -1,0 +1,804 @@
+===============================================================================
+TOTALS FOR: COMPANY with 16 warehouses                                  
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:    184473     42.76   0.000   0.219   0.000   total        0.0MB
+      Payment:    127227     18.62   0.000   0.109   0.000    used        0.0MB
+  OrderStatus:     12722      2.88   0.000   0.032   0.000
+     Delivery:     12722     52.80   0.000   0.203   0.004
+  Stock Level:     12725     17.24   0.000   0.172   0.001
+  Cust Report:     69977     24.97   0.000   0.203   0.000
+
+           throughput =      41655.52 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 16 warehouses                                  
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:    323140     73.10   0.000   0.235   0.000   total        0.0MB
+      Payment:    222991     29.93   0.000   0.079   0.000    used        0.0MB
+  OrderStatus:     22297      4.58   0.000   0.047   0.000
+     Delivery:     22293     87.75   0.000   0.219   0.004
+  Stock Level:     22297     29.77   0.000   0.188   0.001
+  Cust Report:    122826     40.30   0.000   0.219   0.000
+
+           throughput =      73466.85 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 16 warehouses                                  
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:    185355     47.34   0.000   0.110   0.000   total        0.0MB
+      Payment:    127934     19.30   0.000   0.047   0.000    used        0.0MB
+  OrderStatus:     12796      2.88   0.000   0.047   0.000
+     Delivery:     12790     48.54   0.000   0.047   0.004
+  Stock Level:     12792     17.17   0.000   0.062   0.001
+  Cust Report:     70524     24.31   0.000   0.047   0.000
+
+           throughput =      41954.78 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 16 warehouses                                  
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:    894431     71.94   0.000   0.469   0.000   total        0.0MB
+      Payment:    616508     31.57   0.000   0.329   0.000    used        0.0MB
+  OrderStatus:     61649      4.91   0.000   0.375   0.000
+     Delivery:     61649     93.63   0.000   0.438   0.002
+  Stock Level:     61648     20.38   0.000   0.375   0.000
+  Cust Report:    338567     36.56   0.000   0.407   0.000
+
+           throughput =     124598.97 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 16 warehouses                                  
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:    914445     73.62   0.000   0.282   0.000   total        0.0MB
+      Payment:    630723     30.91   0.000   0.282   0.000    used        0.0MB
+  OrderStatus:     63071      4.81   0.000   0.282   0.000
+     Delivery:     63072     91.60   0.000   0.282   0.001
+  Stock Level:     63070     20.45   0.000   0.282   0.000
+  Cust Report:    347002     35.68   0.000   0.328   0.000
+
+           throughput =     128583.62 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 16 warehouses                                  
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:    914250     71.21   0.000   0.329   0.000   total        0.0MB
+      Payment:    630489     32.28   0.000   0.329   0.000    used        0.0MB
+  OrderStatus:     63050      4.30   0.000   0.032   0.000
+     Delivery:     63048     94.52   0.000   0.329   0.001
+  Stock Level:     63046     20.73   0.000   0.329   0.000
+  Cust Report:    346730     35.40   0.000   0.329   0.000
+
+           throughput =     127668.47 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 16 warehouses                                  
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   2689200    320.76   0.000   4.469   0.000   total        0.0MB
+      Payment:   1854209    137.30   0.000   4.235   0.000    used        0.0MB
+  OrderStatus:    185420     17.61   0.000   1.515   0.000
+     Delivery:    185419    285.68   0.000   2.469   0.002
+  Stock Level:    185419     69.28   0.000   1.860   0.000
+  Cust Report:   1019218    135.53   0.000   3.640   0.000
+
+           throughput =      99773.11 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 16 warehouses                                  
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:  15050886   1654.36   0.000   0.438   0.000   total        0.0MB
+      Payment:  10380341    723.51   0.000   0.453   0.000    used        0.0MB
+  OrderStatus:   1038035     96.11   0.000   0.281   0.000
+     Delivery:   1038034   1796.21   0.000   0.329   0.002
+  Stock Level:   1038034    407.82   0.000   0.375   0.000
+  Cust Report:   5709787    724.86   0.000   0.438   0.000
+
+           throughput =     141888.96 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 16 warehouses                                  
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:  10675510   1170.66   0.000   0.469   0.000   total        0.0MB
+      Payment:   7361754    501.73   0.000   0.500   0.000    used        0.0MB
+  OrderStatus:    736178     65.01   0.000   0.203   0.000
+     Delivery:    736172   1261.81   0.000   0.610   0.002
+  Stock Level:    736173    288.62   0.000   0.344   0.000
+  Cust Report:   4048007    539.90   0.000   0.328   0.000
+
+           throughput =     100667.12 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 16 warehouses                                  
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:  10624464   1158.73   0.000   0.500   0.000   total        0.0MB
+      Payment:   7327037    506.03   0.000   0.297   0.000    used        0.0MB
+  OrderStatus:    732699     66.61   0.000   0.250   0.000
+     Delivery:    732704   1283.86   0.000   0.437   0.002
+  Stock Level:    732705    285.85   0.000   0.359   0.000
+  Cust Report:   4029627    524.91   0.000   0.344   0.000
+
+           throughput =     100153.41 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 16 warehouses                                  
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:  10716211   1166.47   0.000   0.406   0.000   total        0.0MB
+      Payment:   7390810    505.97   0.000   0.312   0.000    used        0.0MB
+  OrderStatus:    739081     64.51   0.000   0.234   0.000
+     Delivery:    739083   1281.84   0.000   0.438   0.002
+  Stock Level:    739082    289.30   0.000   0.359   0.000
+  Cust Report:   4065419    521.44   0.000   0.359   0.000
+
+           throughput =     100979.53 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 16 warehouses                                  
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:  10685372   1166.58   0.000   0.500   0.000   total        0.0MB
+      Payment:   7369796    487.00   0.000   0.359   0.000    used        0.0MB
+  OrderStatus:    736978     65.13   0.000   0.266   0.000
+     Delivery:    736977   1289.49   0.000   0.485   0.002
+  Stock Level:    736980    285.58   0.000   0.297   0.000
+  Cust Report:   4054212    535.76   0.000   0.328   0.000
+
+           throughput =     100737.77 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 16 warehouses                                  
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:  10722574   1342.27   0.000   6.204   0.000   total        0.0MB
+      Payment:   7395085    555.03   0.000   4.422   0.000    used        0.0MB
+  OrderStatus:    739509     66.72   0.000   2.640   0.000
+     Delivery:    739507   1106.84   0.000   6.125   0.001
+  Stock Level:    739510    241.16   0.000   3.484   0.000
+  Cust Report:   4067593    506.08   0.000   8.016   0.000
+
+           throughput =     101207.00 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 8 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   8115282    577.75   0.000   0.859   0.000   total        0.0MB
+      Payment:   5595529    252.85   0.000   0.844   0.000    used        0.0MB
+  OrderStatus:    559554     33.21   0.000   0.468   0.000
+     Delivery:    559551    647.98   0.000   0.859   0.001
+  Stock Level:    559552    151.89   0.000   0.609   0.000
+  Cust Report:   3075779    252.42   0.000   0.860   0.000
+
+           throughput =      76539.88 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 8 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   8385173    574.11   0.000   0.813   0.000   total        0.0MB
+      Payment:   5782713    248.03   0.000   0.828   0.000    used        0.0MB
+  OrderStatus:    578271     33.89   0.000   0.718   0.000
+     Delivery:    578271    655.38   0.000   0.828   0.001
+  Stock Level:    578272    152.19   0.000   0.813   0.000
+  Cust Report:   3180264    252.71   0.000   0.641   0.000
+
+           throughput =      79095.12 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 8 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   8441364    590.16   0.000   0.593   0.000   total        0.0MB
+      Payment:   5821370    265.10   0.000   0.922   0.000    used        0.0MB
+  OrderStatus:    582137     33.27   0.000   0.422   0.000
+     Delivery:    582136    614.55   0.000   0.703   0.001
+  Stock Level:    582137    152.22   0.000   0.579   0.000
+  Cust Report:   3201383    260.38   0.000   0.640   0.000
+
+           throughput =      79623.85 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 8 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   8067855    585.80   0.000   1.625   0.000   total        0.0MB
+      Payment:   5563671    259.99   0.000   1.625   0.000    used        0.0MB
+  OrderStatus:    556367     38.58   0.000   1.625   0.000
+     Delivery:    556364    614.46   0.000   0.750   0.001
+  Stock Level:    556367    153.17   0.000   1.625   0.000
+  Cust Report:   3059479    262.84   0.000   1.625   0.000
+
+           throughput =      76054.56 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 8 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   8119133    575.12   0.000   0.968   0.000   total        0.0MB
+      Payment:   5599431    245.64   0.000   0.625   0.000    used        0.0MB
+  OrderStatus:    559945     34.82   0.000   0.594   0.000
+     Delivery:    559942    642.79   0.000   0.828   0.001
+  Stock Level:    559943    153.53   0.000   0.828   0.000
+  Cust Report:   3079729    263.09   0.000   0.828   0.000
+
+           throughput =      76647.90 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 2 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   3632979    154.47   0.000   0.484   0.000   total        0.0MB
+      Payment:   2505445     66.07   0.000   0.344   0.000    used        0.0MB
+  OrderStatus:    250544      9.40   0.000   0.344   0.000
+     Delivery:    250545    139.07   0.000   0.547   0.001
+  Stock Level:    250545     45.50   0.000   0.328   0.000
+  Cust Report:   1377911     61.68   0.000   0.453   0.000
+
+           throughput =      34447.72 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 8 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   8608223    570.94   0.000   0.765   0.000   total        0.0MB
+      Payment:   5936318    245.01   0.000   0.625   0.000    used        0.0MB
+  OrderStatus:    593632     34.27   0.000   0.688   0.000
+     Delivery:    593630    659.79   0.000   0.781   0.001
+  Stock Level:    593632    147.72   0.000   0.765   0.000
+  Cust Report:   3264416    258.64   0.000   0.765   0.000
+
+           throughput =      81170.16 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 16 warehouses                                  
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   7795249   1170.85   0.000   0.906   0.000   total        0.0MB
+      Payment:   5376073    538.01   0.000   0.922   0.000    used        0.0MB
+  OrderStatus:    537605     73.33   0.000   0.781   0.000
+     Delivery:    537601   1244.00   0.000   1.110   0.002
+  Stock Level:    537607    286.42   0.000   0.875   0.001
+  Cust Report:   2956886    529.65   0.000   0.906   0.000
+
+           throughput =      73380.96 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 4 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   5334184    292.06   0.000   0.641   0.000   total        0.0MB
+      Payment:   3678706    127.86   0.000   0.547   0.000    used        0.0MB
+  OrderStatus:    367871     15.98   0.000   0.313   0.000
+     Delivery:    367870    314.43   0.000   0.890   0.001
+  Stock Level:    367870     85.69   0.000   0.500   0.000
+  Cust Report:   2023234    117.03   0.000   0.547   0.000
+
+           throughput =      50542.85 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 8 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   8302278    563.30   0.000   0.875   0.000   total        0.0MB
+      Payment:   5725775    246.21   0.000   0.844   0.000    used        0.0MB
+  OrderStatus:    572578     32.44   0.000   0.829   0.000
+     Delivery:    572577    655.16   0.000   0.875   0.001
+  Stock Level:    572576    150.48   0.000   0.844   0.000
+  Cust Report:   3149270    268.02   0.000   0.844   0.000
+
+           throughput =      78366.94 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 16 warehouses                                  
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   8621761   1151.07   0.000   1.125   0.000   total        0.0MB
+      Payment:   5946323    512.32   0.000   1.188   0.000    used        0.0MB
+  OrderStatus:    594629     72.45   0.000   0.984   0.000
+     Delivery:    594628   1294.63   0.000   1.188   0.002
+  Stock Level:    594633    293.34   0.000   1.063   0.000
+  Cust Report:   3270866    514.96   0.000   1.110   0.000
+
+           throughput =      81243.57 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 16 warehouses                                  
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   8405737   1126.62   0.000   1.125   0.000   total        0.0MB
+      Payment:   5797409    517.52   0.000   1.000   0.000    used        0.0MB
+  OrderStatus:    579739     69.58   0.000   0.750   0.000
+     Delivery:    579737   1302.21   0.000   1.079   0.002
+  Stock Level:    579741    303.58   0.000   0.954   0.001
+  Cust Report:   3189079    516.08   0.000   1.109   0.000
+
+           throughput =      79198.56 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 16 warehouses                                  
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   8463585   1135.38   0.000   0.750   0.000   total        0.0MB
+      Payment:   5836925    499.38   0.000   0.766   0.000    used        0.0MB
+  OrderStatus:    583692     67.80   0.000   0.547   0.000
+     Delivery:    583690   1312.43   0.000   1.094   0.002
+  Stock Level:    583690    307.48   0.000   0.766   0.001
+  Cust Report:   3210261    520.65   0.000   0.750   0.000
+
+           throughput =      79640.79 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 4 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   5921887    290.18   0.000   0.453   0.000   total        0.0MB
+      Payment:   4084209    126.03   0.000   0.453   0.000    used        0.0MB
+  OrderStatus:    408420     17.45   0.000   0.328   0.000
+     Delivery:    408421    321.73   0.000   0.437   0.001
+  Stock Level:    408421     81.42   0.000   0.531   0.000
+  Cust Report:   2246521    116.45   0.000   0.454   0.000
+
+           throughput =      56117.61 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 4 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   5931366    285.27   0.000   0.454   0.000   total        0.0MB
+      Payment:   4090510    125.10   0.000   0.437   0.000    used        0.0MB
+  OrderStatus:    409050     15.72   0.000   0.328   0.000
+     Delivery:    409050    325.95   0.000   0.468   0.001
+  Stock Level:    409052     79.51   0.000   0.594   0.000
+  Cust Report:   2249674    122.15   0.000   0.437   0.000
+
+           throughput =      56175.31 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 4 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   5933262    293.15   0.000   0.672   0.000   total        0.0MB
+      Payment:   4091928    124.67   0.000   0.391   0.000    used        0.0MB
+  OrderStatus:    409193     17.98   0.000   0.407   0.000
+     Delivery:    409191    320.72   0.000   0.750   0.001
+  Stock Level:    409192     78.71   0.000   0.437   0.000
+  Cust Report:   2250587    118.29   0.000   0.531   0.000
+
+           throughput =      56260.22 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 8 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   8881006    566.69   0.000   0.922   0.000   total        0.0MB
+      Payment:   6124877    248.08   0.000   0.828   0.000    used        0.0MB
+  OrderStatus:    612488     33.33   0.000   0.516   0.000
+     Delivery:    612486    656.86   0.000   1.031   0.001
+  Stock Level:    612488    151.24   0.000   0.828   0.000
+  Cust Report:   3368734    262.02   0.000   0.828   0.000
+
+           throughput =      83753.56 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 8 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   8548334    564.63   0.000   0.562   0.000   total        0.0MB
+      Payment:   5895371    245.25   0.000   0.688   0.000    used        0.0MB
+  OrderStatus:    589538     36.32   0.000   0.375   0.000
+     Delivery:    589537    663.61   0.000   0.609   0.001
+  Stock Level:    589537    150.79   0.000   0.516   0.000
+  Cust Report:   3242400    256.62   0.000   0.547   0.000
+
+           throughput =      80630.95 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 8 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   8781493    564.83   0.000   0.625   0.000   total        0.0MB
+      Payment:   6055099    253.60   0.000   0.578   0.000    used        0.0MB
+  OrderStatus:    605509     35.50   0.000   0.421   0.000
+     Delivery:    605510    655.39   0.000   0.641   0.001
+  Stock Level:    605510    148.18   0.000   0.500   0.000
+  Cust Report:   3328699    260.58   0.000   0.625   0.000
+
+           throughput =      82751.08 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 16 warehouses                                  
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   8599399   1147.57   0.000   0.797   0.000   total        0.0MB
+      Payment:   5930799    510.87   0.000   0.782   0.000    used        0.0MB
+  OrderStatus:    593083     70.61   0.000   0.734   0.000
+     Delivery:    593078   1303.38   0.000   1.437   0.002
+  Stock Level:    593077    299.91   0.000   0.907   0.001
+  Cust Report:   3262199    502.88   0.000   0.907   0.000
+
+           throughput =      81021.17 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 16 warehouses                                  
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   8823560   1156.14   0.000   0.781   0.000   total        0.0MB
+      Payment:   6084836    499.53   0.000   0.672   0.000    used        0.0MB
+  OrderStatus:    608485     70.10   0.000   0.671   0.000
+     Delivery:    608482   1293.95   0.000   0.688   0.002
+  Stock Level:    608487    310.34   0.000   0.657   0.001
+  Cust Report:   3346104    507.63   0.000   0.672   0.000
+
+           throughput =      83039.18 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 16 warehouses                                  
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   8822222   1144.03   0.000   0.734   0.000   total        0.0MB
+      Payment:   6084076    504.30   0.000   0.703   0.000    used        0.0MB
+  OrderStatus:    608408     69.69   0.000   0.610   0.000
+     Delivery:    608405   1317.35   0.000   1.016   0.002
+  Stock Level:    608410    289.45   0.000   0.687   0.000
+  Cust Report:   3345935    505.97   0.000   0.797   0.000
+
+           throughput =      83211.58 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 8 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   8042345    562.45   0.000   2.000   0.000   total        0.0MB
+      Payment:   5546289    244.23   0.000   1.844   0.000    used        0.0MB
+  OrderStatus:    554627     34.14   0.000   0.500   0.000
+     Delivery:    554628    656.41   0.000   1.844   0.001
+  Stock Level:    554630    155.22   0.000   1.094   0.000
+  Cust Report:   3050232    262.62   0.000   1.844   0.000
+
+           throughput =      75856.58 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 8 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   8375867    575.03   0.000   0.719   0.000   total        0.0MB
+      Payment:   5775912    248.87   0.000   0.672   0.000    used        0.0MB
+  OrderStatus:    577591     36.14   0.000   0.625   0.000
+     Delivery:    577591    648.24   0.000   0.704   0.001
+  Stock Level:    577592    155.78   0.000   0.719   0.000
+  Cust Report:   3175964    251.53   0.000   0.687   0.000
+
+           throughput =      79017.48 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 1 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   2224675     82.94   0.000   0.281   0.000   total        0.0MB
+      Payment:   1534048     33.49   0.000   0.281   0.000    used        0.0MB
+  OrderStatus:    153404      4.55   0.000   0.172   0.000
+     Delivery:    153405     65.63   0.000   0.234   0.000
+  Stock Level:    153405     22.65   0.000   0.219   0.000
+  Cust Report:    843416     28.43   0.000   0.266   0.000
+
+           throughput =      21091.73 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 1 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   2263184     80.93   0.000   0.218   0.000   total        0.0MB
+      Payment:   1560803     32.69   0.000   0.219   0.000    used        0.0MB
+  OrderStatus:    156080      4.19   0.000   0.172   0.000
+     Delivery:    156080     68.67   0.000   0.266   0.000
+  Stock Level:    156081     21.89   0.000   0.218   0.000
+  Cust Report:    858426     29.44   0.000   0.203   0.000
+
+           throughput =      21458.29 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 8 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   5226882    587.65   0.000   4.453   0.000   total        0.0MB
+      Payment:   3604700    241.69   0.000   4.422   0.000    used        0.0MB
+  OrderStatus:    360471     36.92   0.000   1.532   0.000
+     Delivery:    360468    634.80   0.000   4.422   0.002
+  Stock Level:    360471    167.85   0.000   4.422   0.000
+  Cust Report:   1982524    264.19   0.000   2.219   0.000
+
+           throughput =      48955.96 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 8 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   5273958    558.27   0.000   2.656   0.000   total        0.0MB
+      Payment:   3637293    246.41   0.000   2.641   0.000    used        0.0MB
+  OrderStatus:    363729     32.72   0.000   1.656   0.000
+     Delivery:    363727    665.75   0.000   2.656   0.002
+  Stock Level:    363729    155.52   0.000   2.187   0.000
+  Cust Report:   2000633    259.21   0.000   2.641   0.000
+
+           throughput =      49676.44 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 1 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   1429952     75.73   0.000   0.828   0.000   total        0.0MB
+      Payment:    986511     28.87   0.000   0.610   0.000    used        0.0MB
+  OrderStatus:     98651      5.37   0.000   0.578   0.000
+     Delivery:     98651     69.50   0.000   0.765   0.001
+  Stock Level:     98651     29.55   0.000   0.969   0.000
+  Cust Report:    543075     29.80   0.000   0.703   0.000
+
+           throughput =      13563.70 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 1 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   1600088     77.03   0.000   0.531   0.000   total        0.0MB
+      Payment:   1103670     35.03   0.000   0.422   0.000    used        0.0MB
+  OrderStatus:    110367      4.54   0.000   0.391   0.000
+     Delivery:    110367     63.30   0.000   0.484   0.001
+  Stock Level:    110367     26.56   0.000   0.453   0.000
+  Cust Report:    607251     32.33   0.000   0.531   0.000
+
+           throughput =      15161.62 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 1 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   2951671     83.32   0.000   0.031   0.000   total        0.0MB
+      Payment:   2035870     34.84   0.000   0.016   0.000    used        0.0MB
+  OrderStatus:    203587      5.06   0.000   0.016   0.000
+     Delivery:    203587     66.44   0.000   0.016   0.000
+  Stock Level:    203587     17.31   0.000   0.110   0.000
+  Cust Report:   1120067     30.25   0.000   0.016   0.000
+
+           throughput =      27991.45 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 1 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   2928772     83.43   0.000   0.016   0.000   total        0.0MB
+      Payment:   2019950     33.64   0.000   0.016   0.000    used        0.0MB
+  OrderStatus:    201995      4.44   0.000   0.016   0.000
+     Delivery:    201995     64.31   0.000   0.031   0.000
+  Stock Level:    201995     18.14   0.000   0.093   0.000
+  Cust Report:   1111127     32.93   0.000   0.016   0.000
+
+           throughput =      27772.57 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 1 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:    357265     11.11   0.000   0.031   0.000   total        0.0MB
+      Payment:    246370      4.07   0.000   0.016   0.000    used        0.0MB
+  OrderStatus:     24637      0.51   0.000   0.016   0.000
+     Delivery:     24638      7.91   0.000   0.016   0.000
+  Stock Level:     24637      2.21   0.000   0.016   0.000
+  Cust Report:    135483      4.01   0.000   0.094   0.000
+
+           throughput =      27086.55 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 1 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:    360912      9.98   0.000   0.016   0.000   total        0.0MB
+      Payment:    248837      4.51   0.000   0.016   0.000    used        0.0MB
+  OrderStatus:     24884      0.50   0.000   0.016   0.000
+     Delivery:     24884      7.79   0.000   0.031   0.000
+  Stock Level:     24883      2.68   0.000   0.109   0.000
+  Cust Report:    136759      4.13   0.000   0.016   0.000
+
+           throughput =      27358.29 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 1 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:    359382     10.76   0.000   0.046   0.000   total        0.0MB
+      Payment:    247850      4.25   0.000   0.016   0.000    used        0.0MB
+  OrderStatus:     24785      0.61   0.000   0.016   0.000
+     Delivery:     24786      8.13   0.000   0.109   0.000
+  Stock Level:     24785      2.31   0.000   0.016   0.000
+  Cust Report:    136319      3.68   0.000   0.016   0.000
+
+           throughput =      27249.94 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 1 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:    362269     10.93   0.000   0.016   0.000   total        0.0MB
+      Payment:    249963      4.13   0.000   0.016   0.000    used        0.0MB
+  OrderStatus:     24996      0.61   0.000   0.016   0.000
+     Delivery:     24997      8.17   0.000   0.078   0.000
+  Stock Level:     24996      2.12   0.000   0.016   0.000
+  Cust Report:    137657      3.58   0.000   0.016   0.000
+
+           throughput =      27467.55 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 1 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:    384257     10.72   0.000   0.016   0.000   total        0.0MB
+      Payment:    265040      4.08   0.000   0.046   0.000    used        0.0MB
+  OrderStatus:     26504      0.67   0.000   0.016   0.000
+     Delivery:     26504      9.03   0.000   0.109   0.000
+  Stock Level:     26504      2.42   0.000   0.016   0.000
+  Cust Report:    145825      4.16   0.000   0.047   0.000
+
+           throughput =      27820.92 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 8 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   1408844     73.20   0.000   0.172   0.000   total        0.0MB
+      Payment:    971585     33.76   0.000   0.172   0.000    used        0.0MB
+  OrderStatus:     97158      4.48   0.000   0.016   0.000
+     Delivery:     97157     83.07   0.000   0.172   0.001
+  Stock Level:     97160     20.45   0.000   0.172   0.000
+  Cust Report:    534330     33.60   0.000   0.125   0.000
+
+           throughput =     102445.41 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 8 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:  10949214    562.10   0.000   0.219   0.000   total        0.0MB
+      Payment:   7551848    250.47   0.000   0.187   0.000    used        0.0MB
+  OrderStatus:    755185     33.37   0.000   0.187   0.000
+     Delivery:    755183    660.87   0.000   0.125   0.001
+  Stock Level:    755186    144.63   0.000   0.187   0.000
+  Cust Report:   4154468    262.33   0.000   0.187   0.000
+
+           throughput =     103306.68 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 8 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:  10852821    566.51   0.000   0.188   0.000   total        0.0MB
+      Payment:   7483682    248.12   0.000   0.141   0.000    used        0.0MB
+  OrderStatus:    748367     32.72   0.000   0.141   0.000
+     Delivery:    748369    650.81   0.000   0.188   0.001
+  Stock Level:    748368    151.87   0.000   0.188   0.000
+  Cust Report:   4114523    265.72   0.000   0.188   0.000
+
+           throughput =     102327.51 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 1 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   2945519     83.65   0.000   0.016   0.000   total        0.0MB
+      Payment:   2031368     34.18   0.000   0.109   0.000    used        0.0MB
+  OrderStatus:    203137      4.85   0.000   0.016   0.000
+     Delivery:    203137     65.32   0.000   0.016   0.000
+  Stock Level:    203137     18.64   0.000   0.031   0.000
+  Cust Report:   1117219     30.82   0.000   0.016   0.000
+
+           throughput =      27929.46 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 1 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   2948194     85.37   0.000   0.016   0.000   total        0.0MB
+      Payment:   2033071     32.89   0.000   0.125   0.000    used        0.0MB
+  OrderStatus:    203307      4.76   0.000   0.016   0.000
+     Delivery:    203307     66.72   0.000   0.016   0.000
+  Stock Level:    203307     17.40   0.000   0.031   0.000
+  Cust Report:   1117946     29.87   0.000   0.016   0.000
+
+           throughput =      27952.97 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 1 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   2928759     85.89   0.000   0.016   0.000   total        0.0MB
+      Payment:   2019718     33.93   0.000   0.094   0.000    used        0.0MB
+  OrderStatus:    201972      4.77   0.000   0.016   0.000
+     Delivery:    201971     66.33   0.000   0.016   0.000
+  Stock Level:    201972     17.53   0.000   0.016   0.000
+  Cust Report:   1110678     28.56   0.000   0.047   0.000
+
+           throughput =      27769.27 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 8 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:  10916511    563.44   0.000   0.187   0.000   total        0.0MB
+      Payment:   7527730    246.25   0.000   0.063   0.000    used        0.0MB
+  OrderStatus:    752773     32.76   0.000   0.063   0.000
+     Delivery:    752769    658.01   0.000   0.187   0.001
+  Stock Level:    752773    150.94   0.000   0.187   0.000
+  Cust Report:   4138943    262.52   0.000   0.063   0.000
+
+           throughput =     102983.18 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 8 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:  10341510    566.02   0.000   0.188   0.000   total        0.0MB
+      Payment:   7130431    264.61   0.000   0.124   0.000    used        0.0MB
+  OrderStatus:    713043     35.96   0.000   0.048   0.000
+     Delivery:    713043    641.94   0.000   0.180   0.001
+  Stock Level:    713041    150.92   0.000   0.052   0.000
+  Cust Report:   3919349    250.25   0.000   0.180   0.000
+
+           throughput =      97622.00 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 8 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:  10308870    569.07   0.000   0.208   0.000   total        0.0MB
+      Payment:   7109559    264.66   0.000   0.132   0.000    used        0.0MB
+  OrderStatus:    710957     35.88   0.000   0.052   0.000
+     Delivery:    710956    641.70   0.000   0.212   0.001
+  Stock Level:    710956    150.91   0.000   0.212   0.000
+  Cust Report:   3910258    247.75   0.000   0.220   0.000
+
+           throughput =      97333.08 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 8 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:  10368932    566.57   0.000   0.208   0.000   total        0.0MB
+      Payment:   7151249    262.46   0.000   0.128   0.000    used        0.0MB
+  OrderStatus:    715125     34.64   0.000   0.040   0.000
+     Delivery:    715125    644.01   0.000   0.236   0.001
+  Stock Level:    715125    154.59   0.000   0.128   0.000
+  Cust Report:   3933552    247.30   0.000   0.208   0.000
+
+           throughput =      97911.86 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 8 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:  10357498    570.34   0.000   0.176   0.000   total        0.0MB
+      Payment:   7142977    262.82   0.000   0.048   0.000    used        0.0MB
+  OrderStatus:    714297     35.82   0.000   0.036   0.000
+     Delivery:    714295    642.36   0.000   0.180   0.001
+  Stock Level:    714297    150.04   0.000   0.176   0.000
+  Cust Report:   3928437    247.87   0.000   0.180   0.000
+
+           throughput =      97798.56 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 8 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:  10187105    570.89   0.000   0.148   0.000   total        0.0MB
+      Payment:   7026151    262.88   0.000   0.140   0.000    used        0.0MB
+  OrderStatus:    702615     36.11   0.000   0.144   0.000
+     Delivery:    702612    638.95   0.000   0.148   0.001
+  Stock Level:    702615    153.21   0.000   0.140   0.000
+  Cust Report:   3865186    247.06   0.000   0.100   0.000
+
+           throughput =      96199.07 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 1 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   2738954     81.06   0.000   0.096   0.000   total        0.0MB
+      Payment:   1888663     35.56   0.000   0.020   0.000    used        0.0MB
+  OrderStatus:    188866      5.11   0.000   0.016   0.000
+     Delivery:    188867     66.61   0.000   0.020   0.000
+  Stock Level:    188867     19.42   0.000   0.016   0.000
+  Cust Report:   1038373     29.47   0.000   0.016   0.000
+
+           throughput =      25968.69 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 1 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   2771303     82.10   0.000   0.020   0.000   total        0.0MB
+      Payment:   1912218     35.76   0.000   0.020   0.000    used        0.0MB
+  OrderStatus:    191222      4.98   0.000   0.020   0.000
+     Delivery:    191222     65.42   0.000   0.040   0.000
+  Stock Level:    191221     18.73   0.000   0.084   0.000
+  Cust Report:   1053135     30.06   0.000   0.020   0.000
+
+           throughput =      26293.00 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 1 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   2690192     81.45   0.000   0.032   0.000   total        0.0MB
+      Payment:   1855766     35.68   0.000   0.020   0.000    used        0.0MB
+  OrderStatus:    185576      4.98   0.000   0.016   0.000
+     Delivery:    185577     65.73   0.000   0.100   0.000
+  Stock Level:    185576     19.29   0.000   0.024   0.000
+  Cust Report:   1021340     29.80   0.000   0.044   0.000
+
+           throughput =      25516.78 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 1 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   2685785     80.80   0.000   0.100   0.000   total        0.0MB
+      Payment:   1852821     36.14   0.000   0.032   0.000    used        0.0MB
+  OrderStatus:    185283      5.11   0.000   0.028   0.000
+     Delivery:    185282     66.49   0.000   0.020   0.000
+  Stock Level:    185283     19.10   0.000   0.032   0.000
+  Cust Report:   1019857     29.35   0.000   0.040   0.000
+
+           throughput =      25476.30 bops       
+===============================================================================
+TOTALS FOR: COMPANY with 1 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:   2639296     80.19   0.000   0.036   0.000   total        0.0MB
+      Payment:   1820517     35.80   0.000   0.096   0.000    used        0.0MB
+  OrderStatus:    182051      5.06   0.000   0.020   0.000
+     Delivery:    182052     67.21   0.000   0.040   0.000
+  Stock Level:    182052     18.80   0.000   0.032   0.000
+  Cust Report:   1001742     30.06   0.000   0.020   0.000
+
+           throughput =      25032.13 bops       

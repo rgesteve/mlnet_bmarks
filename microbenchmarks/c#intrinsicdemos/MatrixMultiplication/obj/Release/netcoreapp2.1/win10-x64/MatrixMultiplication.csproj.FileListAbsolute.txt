@@ -1,0 +1,13 @@
+C:\Users\guo\Desktop\c#intrinsicdemos\MatrixMultiplication\bin\Release\netcoreapp2.1\win10-x64\hostpolicy.dll
+C:\Users\guo\Desktop\c#intrinsicdemos\MatrixMultiplication\bin\Release\netcoreapp2.1\win10-x64\hostfxr.dll
+C:\Users\guo\Desktop\c#intrinsicdemos\MatrixMultiplication\bin\Release\netcoreapp2.1\win10-x64\MatrixMultiplication.exe
+C:\Users\guo\Desktop\c#intrinsicdemos\MatrixMultiplication\bin\Release\netcoreapp2.1\win10-x64\MatrixMultiplication.deps.json
+C:\Users\guo\Desktop\c#intrinsicdemos\MatrixMultiplication\bin\Release\netcoreapp2.1\win10-x64\MatrixMultiplication.runtimeconfig.json
+C:\Users\guo\Desktop\c#intrinsicdemos\MatrixMultiplication\bin\Release\netcoreapp2.1\win10-x64\MatrixMultiplication.runtimeconfig.dev.json
+C:\Users\guo\Desktop\c#intrinsicdemos\MatrixMultiplication\bin\Release\netcoreapp2.1\win10-x64\MatrixMultiplication.dll
+C:\Users\guo\Desktop\c#intrinsicdemos\MatrixMultiplication\bin\Release\netcoreapp2.1\win10-x64\MatrixMultiplication.pdb
+C:\Users\guo\Desktop\c#intrinsicdemos\MatrixMultiplication\obj\Release\netcoreapp2.1\win10-x64\MatrixMultiplication.csproj.CoreCompileInputs.cache
+C:\Users\guo\Desktop\c#intrinsicdemos\MatrixMultiplication\obj\Release\netcoreapp2.1\win10-x64\MatrixMultiplication.AssemblyInfoInputs.cache
+C:\Users\guo\Desktop\c#intrinsicdemos\MatrixMultiplication\obj\Release\netcoreapp2.1\win10-x64\MatrixMultiplication.AssemblyInfo.cs
+C:\Users\guo\Desktop\c#intrinsicdemos\MatrixMultiplication\obj\Release\netcoreapp2.1\win10-x64\MatrixMultiplication.dll
+C:\Users\guo\Desktop\c#intrinsicdemos\MatrixMultiplication\obj\Release\netcoreapp2.1\win10-x64\MatrixMultiplication.pdb

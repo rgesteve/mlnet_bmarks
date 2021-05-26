@@ -1,0 +1,186 @@
+log  : Restoring packages for /home/sy/runtime-specjbb2005/project.json...
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/microsoft.netcore.app/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app/index.json
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/netstandard.library/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/netstandard.library/index.json
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.xml.xmldocument/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.xml.xmldocument/index.json
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.xml.readerwriter/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.xml.readerwriter/index.json
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.diagnostics.tracesource/index.json
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.xml.xmlserializer/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.diagnostics.tracesource/index.json
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.diagnostics.tracing/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.diagnostics.tracing/index.json
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.collections/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.collections/index.json
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.collections.nongeneric/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.collections.nongeneric/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.xml.xmlserializer/index.json
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/microsoft.netcore.app/index.json 311ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.diagnostics.tracing/index.json 133ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.xml.xmlserializer/index.json 141ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.collections/index.json 148ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/netstandard.library/index.json 166ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.collections.nongeneric/index.json 165ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.diagnostics.tracesource/index.json 176ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.xml.readerwriter/index.json 187ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.xml.xmldocument/index.json 198ms
+info :   NotFound https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app/index.json 420ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.xml.readerwriter/index.json 441ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.diagnostics.tracesource/index.json 438ms
+info :   NotFound https://api.nuget.org/v3-flatcontainer/netstandard.library/index.json 450ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.diagnostics.tracing/index.json 447ms
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.xml.readerwriter/4.0.11-rc2-24103/system.xml.readerwriter.4.0.11-rc2-24103.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.collections/index.json 483ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.collections.nongeneric/index.json 485ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.xml.xmlserializer/index.json 485ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.xml.xmldocument/index.json 490ms
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.runtime/index.json
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.text.encoding/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.text.encoding/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.runtime/index.json
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.threading.tasks/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.threading.tasks/index.json
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.xml.xmlserializer/4.0.11-rc2-24103/system.xml.xmlserializer.4.0.11-rc2-24103.nupkg
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.threading/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.threading/index.json
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.xml.xmldocument/4.0.1-rc2-24103/system.xml.xmldocument.4.0.1-rc2-24103.nupkg
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.xml.readerwriter/4.0.11-rc2-24103/system.xml.readerwriter.4.0.11-rc2-24103.nupkg 122ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.text.encoding/index.json 48ms
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.text.encoding/4.0.11-rc2-24103/system.text.encoding.4.0.11-rc2-24103.nupkg
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.threading/index.json 66ms
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.threading/4.0.11-rc2-24103/system.threading.4.0.11-rc2-24103.nupkg
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.runtime/index.json 84ms
+info :   CACHE https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.runtime/index.json
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.runtime/4.1.0-rc2-24103/system.runtime.4.1.0-rc2-24103.nupkg
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.threading.tasks/index.json 106ms
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.threading.tasks/4.0.11-rc2-24103/system.threading.tasks.4.0.11-rc2-24103.nupkg
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.xml.xmldocument/4.0.1-rc2-24103/system.xml.xmldocument.4.0.1-rc2-24103.nupkg 143ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.threading/index.json 154ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.text.encoding/4.0.11-rc2-24103/system.text.encoding.4.0.11-rc2-24103.nupkg 190ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.runtime/index.json 450ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.threading.tasks/index.json 451ms
+info :   CACHE https://api.nuget.org/v3-flatcontainer/system.runtime/index.json
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.threading/4.0.11-rc2-24103/system.threading.4.0.11-rc2-24103.nupkg 397ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.runtime/4.1.0-rc2-24103/system.runtime.4.1.0-rc2-24103.nupkg 403ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.threading.tasks/4.0.11-rc2-24103/system.threading.tasks.4.0.11-rc2-24103.nupkg 407ms
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.io.filesystem/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.io.filesystem/index.json
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.io.filesystem.primitives/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.io.filesystem.primitives/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/system.text.encoding/index.json 531ms
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.runtime.interopservices/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.runtime.interopservices/index.json
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.text.encoding.extensions/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.text.encoding.extensions/index.json
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.text.regularexpressions/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.text.regularexpressions/index.json
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.threading.tasks.extensions/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.threading.tasks.extensions/index.json
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.xml.xmlserializer/4.0.11-rc2-24103/system.xml.xmlserializer.4.0.11-rc2-24103.nupkg 622ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.io.filesystem/index.json 125ms
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.io.filesystem/4.0.1-rc2-24103/system.io.filesystem.4.0.1-rc2-24103.nupkg
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.io.filesystem.primitives/index.json 157ms
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.io.filesystem.primitives/4.0.1-rc2-24103/system.io.filesystem.primitives.4.0.1-rc2-24103.nupkg
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.runtime.interopservices/index.json 168ms
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.runtime.interopservices/4.1.0-rc2-24103/system.runtime.interopservices.4.1.0-rc2-24103.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.io.filesystem/index.json 213ms
+info :   NotFound https://api.nuget.org/v3-flatcontainer/system.threading.tasks.extensions/index.json 204ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.io.filesystem.primitives/4.0.1-rc2-24103/system.io.filesystem.primitives.4.0.1-rc2-24103.nupkg 230ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.text.regularexpressions/index.json 459ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.runtime.interopservices/index.json 460ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.io.filesystem.primitives/index.json 470ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.text.encoding.extensions/index.json 482ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.io.filesystem/4.0.1-rc2-24103/system.io.filesystem.4.0.1-rc2-24103.nupkg 410ms
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.runtime.handles/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.runtime.handles/index.json
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.text.regularexpressions/index.json 890ms
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.text.regularexpressions/4.0.12-rc2-24103/system.text.regularexpressions.4.0.12-rc2-24103.nupkg
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.text.encoding.extensions/index.json 893ms
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.text.encoding.extensions/4.0.11-rc2-24103/system.text.encoding.extensions.4.0.11-rc2-24103.nupkg
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.threading.tasks.extensions/index.json 924ms
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.threading.tasks.extensions/4.0.0-rc2-24103/system.threading.tasks.extensions.4.0.0-rc2-24103.nupkg
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.runtime.handles/index.json 319ms
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.runtime.handles/4.0.1-rc2-24103/system.runtime.handles.4.0.1-rc2-24103.nupkg
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.runtime.handles/4.0.1-rc2-24103/system.runtime.handles.4.0.1-rc2-24103.nupkg 92ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.text.regularexpressions/4.0.12-rc2-24103/system.text.regularexpressions.4.0.12-rc2-24103.nupkg 196ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.threading.tasks.extensions/4.0.0-rc2-24103/system.threading.tasks.extensions.4.0.0-rc2-24103.nupkg 198ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.text.encoding.extensions/4.0.11-rc2-24103/system.text.encoding.extensions.4.0.11-rc2-24103.nupkg 305ms
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.linq/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.linq/index.json
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.reflection.emit/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.reflection.emit/index.json
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.reflection.emit.ilgeneration/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.reflection.emit.ilgeneration/index.json
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.reflection.extensions/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.reflection.extensions/index.json
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.reflection.typeextensions/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.reflection.typeextensions/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/system.runtime.handles/index.json 654ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.reflection.emit/index.json 81ms
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.reflection.emit/4.0.1-rc2-24103/system.reflection.emit.4.0.1-rc2-24103.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.reflection.emit/index.json 127ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.reflection.extensions/index.json 140ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.reflection.emit.ilgeneration/index.json 141ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.linq/index.json 144ms
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.reflection.extensions/4.0.1-rc2-24103/system.reflection.extensions.4.0.1-rc2-24103.nupkg
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.reflection.emit.ilgeneration/4.0.1-rc2-24103/system.reflection.emit.ilgeneration.4.0.1-rc2-24103.nupkg
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.linq/4.1.0-rc2-24103/system.linq.4.1.0-rc2-24103.nupkg
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.reflection.typeextensions/index.json 151ms
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.reflection.typeextensions/4.1.0-rc2-24103/system.reflection.typeextensions.4.1.0-rc2-24103.nupkg
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.reflection.emit.ilgeneration/4.0.1-rc2-24103/system.reflection.emit.ilgeneration.4.0.1-rc2-24103.nupkg 66ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.reflection.emit/4.0.1-rc2-24103/system.reflection.emit.4.0.1-rc2-24103.nupkg 162ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.linq/4.1.0-rc2-24103/system.linq.4.1.0-rc2-24103.nupkg 160ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.reflection.extensions/index.json 365ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.reflection.extensions/4.0.1-rc2-24103/system.reflection.extensions.4.0.1-rc2-24103.nupkg 226ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.linq/index.json 383ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.reflection.emit.ilgeneration/index.json 382ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.reflection.typeextensions/index.json 382ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.reflection.typeextensions/4.1.0-rc2-24103/system.reflection.typeextensions.4.1.0-rc2-24103.nupkg 233ms
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.runtime.interopservices/4.1.0-rc2-24103/system.runtime.interopservices.4.1.0-rc2-24103.nupkg 1600ms
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.runtime.interopservices.pinvoke/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.runtime.interopservices.pinvoke/index.json
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.runtime.interopservices.pinvoke/index.json 143ms
+info :   GET https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.runtime.interopservices.pinvoke/4.0.0-rc2-24103/system.runtime.interopservices.pinvoke.4.0.0-rc2-24103.nupkg
+info :   OK https://dotnetmyget.blob.core.windows.net/artifacts/dotnet-core/nuget/v3/flatcontainer/system.runtime.interopservices.pinvoke/4.0.0-rc2-24103/system.runtime.interopservices.pinvoke.4.0.0-rc2-24103.nupkg 399ms
+warn : Dependency specified was Microsoft.NETCore.App (>= 1.0.0-rc2-23931) but ended up with Microsoft.NETCore.App 1.0.0-rc2-24018.
+log  : Installing System.Runtime.InteropServices.PInvoke 4.0.0-rc2-24103.
+info :   NotFound https://api.nuget.org/v3-flatcontainer/system.runtime.interopservices.pinvoke/index.json 673ms
+log  : Installing System.Runtime.Handles 4.0.1-rc2-24103.
+log  : Installing System.Runtime.InteropServices 4.1.0-rc2-24103.
+log  : Installing System.Threading.Tasks 4.0.11-rc2-24103.
+log  : Installing System.Text.Encoding.Extensions 4.0.11-rc2-24103.
+log  : Installing System.Threading.Tasks.Extensions 4.0.0-rc2-24103.
+log  : Installing System.IO.FileSystem 4.0.1-rc2-24103.
+log  : Installing System.IO.FileSystem.Primitives 4.0.1-rc2-24103.
+log  : Installing System.Reflection.Extensions 4.0.1-rc2-24103.
+log  : Installing System.Linq 4.1.0-rc2-24103.
+log  : Installing System.Reflection.TypeExtensions 4.1.0-rc2-24103.
+log  : Installing System.Reflection.Emit 4.0.1-rc2-24103.
+log  : Installing System.Reflection.Emit.ILGeneration 4.0.1-rc2-24103.
+log  : Installing System.Text.RegularExpressions 4.0.12-rc2-24103.
+log  : Installing System.Text.Encoding 4.0.11-rc2-24103.
+log  : Installing System.Threading 4.0.11-rc2-24103.
+log  : Installing System.Xml.XmlDocument 4.0.1-rc2-24103.
+log  : Installing System.Xml.XmlSerializer 4.0.11-rc2-24103.
+log  : Installing System.Runtime 4.1.0-rc2-24103.
+log  : Installing System.Xml.ReaderWriter 4.0.11-rc2-24103.
+warn : Detected package downgrade: NETStandard.Library from 1.5.0-rc2-24018 to 1.0.0-rc2- 
+warn :  runtime-specjbb2005 (>= 1.0.0) -> Microsoft.NETCore.App (>= 1.0.0-rc2-23931) -> NETStandard.Library (>= 1.5.0-rc2-24018) 
+warn :  runtime-specjbb2005 (>= 1.0.0) -> NETStandard.Library (>= 1.0.0-rc2)
+info : Committing restore...
+log  : Writing lock file to disk. Path: /home/sy/runtime-specjbb2005/project.lock.json
+log  : /home/sy/runtime-specjbb2005/project.json
+log  : Restore completed in 7636ms.
+
+NuGet Config files used:
+    /home/sy/runtime-specjbb2005/NuGet.Config
+    /home/sy/.nuget/NuGet/NuGet.Config
+
+Feeds used:
+    https://dotnet.myget.org/F/dotnet-core/api/v3/index.json
+    https://api.nuget.org/v3/index.json
+
+Installed:
+    20 package(s) to /home/sy/runtime-specjbb2005/project.json

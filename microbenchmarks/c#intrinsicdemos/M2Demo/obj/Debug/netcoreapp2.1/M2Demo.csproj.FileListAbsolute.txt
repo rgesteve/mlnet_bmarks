@@ -1,0 +1,10 @@
+D:\git\microbenchmarks\c#intrinsicdemos\M2Demo\bin\Debug\netcoreapp2.1\M2Demo.deps.json
+D:\git\microbenchmarks\c#intrinsicdemos\M2Demo\bin\Debug\netcoreapp2.1\M2Demo.runtimeconfig.json
+D:\git\microbenchmarks\c#intrinsicdemos\M2Demo\bin\Debug\netcoreapp2.1\M2Demo.runtimeconfig.dev.json
+D:\git\microbenchmarks\c#intrinsicdemos\M2Demo\bin\Debug\netcoreapp2.1\M2Demo.dll
+D:\git\microbenchmarks\c#intrinsicdemos\M2Demo\bin\Debug\netcoreapp2.1\M2Demo.pdb
+D:\git\microbenchmarks\c#intrinsicdemos\M2Demo\obj\Debug\netcoreapp2.1\M2Demo.csproj.CoreCompileInputs.cache
+D:\git\microbenchmarks\c#intrinsicdemos\M2Demo\obj\Debug\netcoreapp2.1\M2Demo.AssemblyInfoInputs.cache
+D:\git\microbenchmarks\c#intrinsicdemos\M2Demo\obj\Debug\netcoreapp2.1\M2Demo.AssemblyInfo.cs
+D:\git\microbenchmarks\c#intrinsicdemos\M2Demo\obj\Debug\netcoreapp2.1\M2Demo.dll
+D:\git\microbenchmarks\c#intrinsicdemos\M2Demo\obj\Debug\netcoreapp2.1\M2Demo.pdb

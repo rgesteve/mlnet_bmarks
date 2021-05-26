@@ -1,0 +1,13 @@
+C:\Users\guo\Desktop\demos\bin\Release\netcoreapp2.1\win10-x64\hostpolicy.dll
+C:\Users\guo\Desktop\demos\bin\Release\netcoreapp2.1\win10-x64\hostfxr.dll
+C:\Users\guo\Desktop\demos\bin\Release\netcoreapp2.1\win10-x64\demos.exe
+C:\Users\guo\Desktop\demos\bin\Release\netcoreapp2.1\win10-x64\demos.deps.json
+C:\Users\guo\Desktop\demos\bin\Release\netcoreapp2.1\win10-x64\demos.runtimeconfig.json
+C:\Users\guo\Desktop\demos\bin\Release\netcoreapp2.1\win10-x64\demos.runtimeconfig.dev.json
+C:\Users\guo\Desktop\demos\bin\Release\netcoreapp2.1\win10-x64\demos.dll
+C:\Users\guo\Desktop\demos\bin\Release\netcoreapp2.1\win10-x64\demos.pdb
+C:\Users\guo\Desktop\demos\obj\Release\netcoreapp2.1\win10-x64\demos.csproj.CoreCompileInputs.cache
+C:\Users\guo\Desktop\demos\obj\Release\netcoreapp2.1\win10-x64\demos.AssemblyInfoInputs.cache
+C:\Users\guo\Desktop\demos\obj\Release\netcoreapp2.1\win10-x64\demos.AssemblyInfo.cs
+C:\Users\guo\Desktop\demos\obj\Release\netcoreapp2.1\win10-x64\demos.dll
+C:\Users\guo\Desktop\demos\obj\Release\netcoreapp2.1\win10-x64\demos.pdb

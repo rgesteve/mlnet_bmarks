@@ -1,0 +1,8 @@
+C:\Users\perftest\Desktop\runtime-specjbb2005\bin\Release\netcoreapp1.1\specjbb.deps.json
+C:\Users\perftest\Desktop\runtime-specjbb2005\bin\Release\netcoreapp1.1\specjbb.runtimeconfig.json
+C:\Users\perftest\Desktop\runtime-specjbb2005\bin\Release\netcoreapp1.1\specjbb.runtimeconfig.dev.json
+C:\Users\perftest\Desktop\runtime-specjbb2005\bin\Release\netcoreapp1.1\specjbb.dll
+C:\Users\perftest\Desktop\runtime-specjbb2005\bin\Release\netcoreapp1.1\specjbb.pdb
+C:\Users\perftest\Desktop\runtime-specjbb2005\obj\Release\netcoreapp1.1\specjbb.AssemblyInfo.cs
+C:\Users\perftest\Desktop\runtime-specjbb2005\obj\Release\netcoreapp1.1\specjbb.dll
+C:\Users\perftest\Desktop\runtime-specjbb2005\obj\Release\netcoreapp1.1\specjbb.pdb

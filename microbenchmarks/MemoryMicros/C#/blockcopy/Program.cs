@@ -1,0 +1,81 @@
+﻿/*****************************************************
+reference: https://gist.github.com/thomaslevesque/6f653d8b3a82b1d038e1
+           http://stackoverflow.com/questions/1897555/what-is-the-equivalent-of-memset-in-c
+           http://www.abstractpath.com/2009/memcpy-in-c/
+           https://msdn.microsoft.com/en-us/library/28k1s2k6.aspx
+this micro benchmark test JIT_MemSet/JIT_MemCpy
+*****************************************************/
+using System;
+using System.Reflection;
+using System.Reflection.Emit;
+using System.Runtime.InteropServices;
+
+namespace ConsoleApplication
+{
+    public class Program
+    {
+        private static uint COPYLEN = 2050;
+		private static uint ITERATION = 1000000;
+        
+        public static unsafe void TestBlockCopy(int lowerlimit, int upperlimit)
+        {
+            Random rnd = new Random(1);
+            ushort[] copyLen = new ushort[COPYLEN];
+            
+            for (int i = 0; i < COPYLEN; i++)
+            {
+                copyLen[i] = (ushort) rnd.Next(lowerlimit, upperlimit+1);
+            }
+            
+            // Create two arrays of the same length.
+            byte[] byteArray1 = new byte[upperlimit];
+            byte[] byteArray2 = new byte[upperlimit];
+			
+		
+            // Fill byteArray1 with 0 - (BUCKET_SIZE - 1).
+            for (int i = 0; i < upperlimit; i++)
+            {
+                byteArray1[i] = (byte)i;
+            }            
+            
+            // The following fixed statement pins the location of the source and
+            // target objects in memory so that they will not be moved by garbage
+            // collection.
+            fixed (byte* pSource = byteArray1, pTarget = byteArray2)
+            {    
+                long begin = 0;
+                long time = 0;
+                int j = 0;
+
+                begin = DateTime.Now.Ticks;
+                for (uint i = 0; i < ITERATION; i++)
+				{
+                    for (j = 0; j < COPYLEN; j++)
+                    {
+                        Buffer.BlockCopy(byteArray1, 0, byteArray2, 0, copyLen[j]);  // last is the number of bytes to copy and is a random number
+                                                                                     // this random number could be between (lowerlimit and upperlimit)
+                                                                                     // eg, 2050 times of random 0 to 8 copy lengths will be done ITERATION times
+                                                                                     
+                    }
+				}
+				
+                time = DateTime.Now.Ticks - begin;
+                Console.WriteLine("memcpy array size bkt: " + copyLen[j-1].ToString() + " time: " + time.ToString());
+            }
+        }
+        
+        public static void Main()
+        {
+            TestBlockCopy(0, 8);
+            TestBlockCopy(9, 16);
+            TestBlockCopy(17, 32);
+            TestBlockCopy(33, 64);
+            TestBlockCopy(65, 128);
+            TestBlockCopy(129, 256);
+            TestBlockCopy(257, 512);
+            TestBlockCopy(513, 1024);
+            TestBlockCopy(1025, 2048);
+            TestBlockCopy(2049, 4096);
+        }
+    }
+}

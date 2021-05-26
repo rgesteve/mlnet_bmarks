@@ -1,0 +1,112 @@
+﻿Build started 6/30/2017 5:08:57 PM.
+     1>Project "C:\Users\vkvenkat\Documents\Visual Studio 2015\Projects\ProtoLEA3OpLoad\ProtoLEA\ProtoLEA.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"x64\Release\ProtoLEA.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc140.pdb" /Gd /TP /errorReport:prompt ProtoLEA.cpp
+         ProtoLEA.cpp
+     1>ProtoLEA.cpp(8): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+     1>ProtoLEA.cpp(9): error C2065: 'mov': undeclared identifier
+     1>ProtoLEA.cpp(9): error C2146: syntax error: missing ';' before identifier 'eax'
+     1>ProtoLEA.cpp(9): error C2065: 'eax': undeclared identifier
+     1>ProtoLEA.cpp(10): error C2146: syntax error: missing ';' before identifier 'movsd'
+     1>ProtoLEA.cpp(10): error C2065: 'movsd': undeclared identifier
+     1>ProtoLEA.cpp(10): error C2146: syntax error: missing ';' before identifier 'xmm0'
+     1>ProtoLEA.cpp(10): error C2065: 'xmm0': undeclared identifier
+     1>ProtoLEA.cpp(10): error C2065: 'XMMWORD': undeclared identifier
+     1>ProtoLEA.cpp(10): error C2146: syntax error: missing ';' before identifier 'PTR'
+     1>ProtoLEA.cpp(10): error C2065: 'PTR': undeclared identifier
+     1>ProtoLEA.cpp(10): error C2065: 'eax': undeclared identifier
+     1>ProtoLEA.cpp(10): error C3688: invalid literal suffix 'h'; literal operator or literal operator template 'operator ""h' not found
+     1>ProtoLEA.cpp(11): error C2146: syntax error: missing ';' before identifier 'movsd'
+     1>ProtoLEA.cpp(11): error C2065: 'movsd': undeclared identifier
+     1>ProtoLEA.cpp(11): error C2146: syntax error: missing ';' before identifier 'XMMWORD'
+     1>ProtoLEA.cpp(11): error C2065: 'XMMWORD': undeclared identifier
+     1>ProtoLEA.cpp(11): error C2146: syntax error: missing ';' before identifier 'PTR'
+     1>ProtoLEA.cpp(11): error C2065: 'PTR': undeclared identifier
+     1>ProtoLEA.cpp(11): error C2065: 'eax': undeclared identifier
+     1>ProtoLEA.cpp(11): error C3688: invalid literal suffix 'h'; literal operator or literal operator template 'operator ""h' not found
+     1>ProtoLEA.cpp(12): error C2065: 'xmm0': undeclared identifier
+     1>ProtoLEA.cpp(12): error C2146: syntax error: missing ';' before identifier 'movsd'
+     1>ProtoLEA.cpp(12): error C2065: 'movsd': undeclared identifier
+     1>ProtoLEA.cpp(12): error C2146: syntax error: missing ';' before identifier 'xmm0'
+     1>ProtoLEA.cpp(12): error C2065: 'XMMWORD': undeclared identifier
+     1>ProtoLEA.cpp(12): error C2146: syntax error: missing ';' before identifier 'PTR'
+     1>ProtoLEA.cpp(12): error C2065: 'PTR': undeclared identifier
+     1>ProtoLEA.cpp(12): error C2065: 'eax': undeclared identifier
+     1>ProtoLEA.cpp(12): error C3688: invalid literal suffix 'h'; literal operator or literal operator template 'operator ""h' not found
+     1>ProtoLEA.cpp(13): error C2146: syntax error: missing ';' before identifier 'movsd'
+     1>ProtoLEA.cpp(13): error C2065: 'movsd': undeclared identifier
+     1>ProtoLEA.cpp(13): error C2146: syntax error: missing ';' before identifier 'XMMWORD'
+     1>ProtoLEA.cpp(13): error C2065: 'XMMWORD': undeclared identifier
+     1>ProtoLEA.cpp(13): error C2146: syntax error: missing ';' before identifier 'PTR'
+     1>ProtoLEA.cpp(13): error C2065: 'PTR': undeclared identifier
+     1>ProtoLEA.cpp(13): error C2065: 'eax': undeclared identifier
+     1>ProtoLEA.cpp(13): error C3688: invalid literal suffix 'h'; literal operator or literal operator template 'operator ""h' not found
+     1>ProtoLEA.cpp(14): error C2065: 'xmm0': undeclared identifier
+     1>ProtoLEA.cpp(14): error C2146: syntax error: missing ';' before identifier 'movsd'
+     1>ProtoLEA.cpp(14): error C2065: 'movsd': undeclared identifier
+     1>ProtoLEA.cpp(14): error C2146: syntax error: missing ';' before identifier 'xmm0'
+     1>ProtoLEA.cpp(14): error C2065: 'XMMWORD': undeclared identifier
+     1>ProtoLEA.cpp(14): error C2146: syntax error: missing ';' before identifier 'PTR'
+     1>ProtoLEA.cpp(14): error C2065: 'PTR': undeclared identifier
+     1>ProtoLEA.cpp(14): error C2065: 'eax': undeclared identifier
+     1>ProtoLEA.cpp(14): error C3688: invalid literal suffix 'h'; literal operator or literal operator template 'operator ""h' not found
+     1>ProtoLEA.cpp(15): error C2146: syntax error: missing ';' before identifier 'movsd'
+     1>ProtoLEA.cpp(15): error C2065: 'movsd': undeclared identifier
+     1>ProtoLEA.cpp(15): error C2146: syntax error: missing ';' before identifier 'XMMWORD'
+     1>ProtoLEA.cpp(15): error C2065: 'XMMWORD': undeclared identifier
+     1>ProtoLEA.cpp(15): error C2146: syntax error: missing ';' before identifier 'PTR'
+     1>ProtoLEA.cpp(15): error C2065: 'PTR': undeclared identifier
+     1>ProtoLEA.cpp(15): error C2065: 'eax': undeclared identifier
+     1>ProtoLEA.cpp(15): error C3688: invalid literal suffix 'h'; literal operator or literal operator template 'operator ""h' not found
+     1>ProtoLEA.cpp(16): error C2065: 'xmm0': undeclared identifier
+     1>ProtoLEA.cpp(16): error C2146: syntax error: missing ';' before identifier 'movsd'
+     1>ProtoLEA.cpp(16): error C2065: 'movsd': undeclared identifier
+     1>ProtoLEA.cpp(16): error C2146: syntax error: missing ';' before identifier 'xmm0'
+     1>ProtoLEA.cpp(16): error C2065: 'XMMWORD': undeclared identifier
+     1>ProtoLEA.cpp(16): error C2146: syntax error: missing ';' before identifier 'PTR'
+     1>ProtoLEA.cpp(16): error C2065: 'PTR': undeclared identifier
+     1>ProtoLEA.cpp(16): error C2065: 'eax': undeclared identifier
+     1>ProtoLEA.cpp(16): error C3688: invalid literal suffix 'h'; literal operator or literal operator template 'operator ""h' not found
+     1>ProtoLEA.cpp(17): error C2146: syntax error: missing ';' before identifier 'movsd'
+     1>ProtoLEA.cpp(17): error C2065: 'movsd': undeclared identifier
+     1>ProtoLEA.cpp(17): error C2146: syntax error: missing ';' before identifier 'XMMWORD'
+     1>ProtoLEA.cpp(17): error C2065: 'XMMWORD': undeclared identifier
+     1>ProtoLEA.cpp(17): error C2146: syntax error: missing ';' before identifier 'PTR'
+     1>ProtoLEA.cpp(17): error C2065: 'PTR': undeclared identifier
+     1>ProtoLEA.cpp(17): error C2065: 'eax': undeclared identifier
+     1>ProtoLEA.cpp(17): error C3688: invalid literal suffix 'h'; literal operator or literal operator template 'operator ""h' not found
+     1>ProtoLEA.cpp(18): error C2065: 'xmm0': undeclared identifier
+     1>ProtoLEA.cpp(18): error C2146: syntax error: missing ';' before identifier 'movsd'
+     1>ProtoLEA.cpp(18): error C2065: 'movsd': undeclared identifier
+     1>ProtoLEA.cpp(18): error C2146: syntax error: missing ';' before identifier 'xmm0'
+     1>ProtoLEA.cpp(18): error C2065: 'XMMWORD': undeclared identifier
+     1>ProtoLEA.cpp(18): error C2146: syntax error: missing ';' before identifier 'PTR'
+     1>ProtoLEA.cpp(18): error C2065: 'PTR': undeclared identifier
+     1>ProtoLEA.cpp(18): error C2065: 'eax': undeclared identifier
+     1>ProtoLEA.cpp(18): error C3688: invalid literal suffix 'h'; literal operator or literal operator template 'operator ""h' not found
+     1>ProtoLEA.cpp(19): error C2146: syntax error: missing ';' before identifier 'movsd'
+     1>ProtoLEA.cpp(19): error C2065: 'movsd': undeclared identifier
+     1>ProtoLEA.cpp(19): error C2146: syntax error: missing ';' before identifier 'XMMWORD'
+     1>ProtoLEA.cpp(19): error C2065: 'XMMWORD': undeclared identifier
+     1>ProtoLEA.cpp(19): error C2146: syntax error: missing ';' before identifier 'PTR'
+     1>ProtoLEA.cpp(19): error C2065: 'PTR': undeclared identifier
+     1>ProtoLEA.cpp(19): error C2065: 'eax': undeclared identifier
+     1>ProtoLEA.cpp(19): error C3688: invalid literal suffix 'h'; literal operator or literal operator template 'operator ""h' not found
+     1>ProtoLEA.cpp(20): error C2065: 'xmm0': undeclared identifier
+     1>ProtoLEA.cpp(20): error C2146: syntax error: missing ';' before identifier 'movsd'
+     1>ProtoLEA.cpp(20): error C2065: 'movsd': undeclared identifier
+     1>ProtoLEA.cpp(20): error C2146: syntax error: missing ';' before identifier 'xmm0'
+     1>ProtoLEA.cpp(20): error C2065: 'XMMWORD': undeclared identifier
+     1>ProtoLEA.cpp(20): error C2146: syntax error: missing ';' before identifier 'PTR'
+     1>ProtoLEA.cpp(20): error C2065: 'PTR': undeclared identifier
+     1>ProtoLEA.cpp(20): error C2065: 'eax': undeclared identifier
+     1>ProtoLEA.cpp(20): error C3688: invalid literal suffix 'h'; literal operator or literal operator template 'operator ""h' not found
+     1>ProtoLEA.cpp(21): error C2146: syntax error: missing ';' before identifier 'movsd'
+     1>ProtoLEA.cpp(21): error C2065: 'movsd': undeclared identifier
+     1>ProtoLEA.cpp(21): error C2146: syntax error: missing ';' before identifier 'XMMWORD'
+     1>ProtoLEA.cpp(21): fatal error C1003: error count exceeds 100; stopping compilation
+     1>Done Building Project "C:\Users\vkvenkat\Documents\Visual Studio 2015\Projects\ProtoLEA3OpLoad\ProtoLEA\ProtoLEA.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.89

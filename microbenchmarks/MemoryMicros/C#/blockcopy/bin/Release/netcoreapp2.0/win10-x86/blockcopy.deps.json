@@ -1,0 +1,370 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.0/win10-x86",
+    "signature": "b07562c3a3d993468d29595fe7f3b05989d71a8a"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.0": {},
+    ".NETCoreApp,Version=v2.0/win10-x86": {
+      "blockcopy/1.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.App": "2.0.0-preview1-001961-00"
+        },
+        "runtime": {
+          "blockcopy.dll": {}
+        }
+      },
+      "Microsoft.NETCore.App/2.0.0-preview1-001961-00": {
+        "dependencies": {
+          "Microsoft.NETCore.DotNetHostPolicy": "2.0.0-preview1-001961-00",
+          "Microsoft.NETCore.Platforms": "2.0.0-preview1-25210-01",
+          "NETStandard.Library": "2.0.0-preview1-25211-01",
+          "runtime.win7-x86.Microsoft.NETCore.App": "2.0.0-preview1-001967-00"
+        }
+      },
+      "Microsoft.NETCore.DotNetAppHost/2.0.0-preview1-001961-00": {
+        "dependencies": {
+          "runtime.win7-x86.Microsoft.NETCore.DotNetAppHost": "2.0.0-preview1-001967-00"
+        }
+      },
+      "Microsoft.NETCore.DotNetHostPolicy/2.0.0-preview1-001961-00": {
+        "dependencies": {
+          "Microsoft.NETCore.DotNetHostResolver": "2.0.0-preview1-001961-00",
+          "runtime.win7-x86.Microsoft.NETCore.DotNetHostPolicy": "2.0.0-preview1-001967-00"
+        }
+      },
+      "Microsoft.NETCore.DotNetHostResolver/2.0.0-preview1-001961-00": {
+        "dependencies": {
+          "Microsoft.NETCore.DotNetAppHost": "2.0.0-preview1-001961-00",
+          "runtime.win7-x86.Microsoft.NETCore.DotNetHostResolver": "2.0.0-preview1-001967-00"
+        }
+      },
+      "Microsoft.NETCore.Platforms/2.0.0-preview1-25210-01": {},
+      "Microsoft.Packaging.Tools/1.0.0-preview1-25211-01": {},
+      "NETStandard.Library/2.0.0-preview1-25211-01": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0-preview1-25210-01",
+          "Microsoft.Packaging.Tools": "1.0.0-preview1-25211-01"
+        }
+      },
+      "runtime.win7-x86.Microsoft.NETCore.App/2.0.0-preview1-001967-00": {
+        "runtime": {
+          "runtimes/win7-x86/lib/netcoreapp2.0/Microsoft.CSharp.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/Microsoft.VisualBasic.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/Microsoft.Win32.Primitives.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/Microsoft.Win32.Registry.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/SOS.NETCore.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.AppContext.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Buffers.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Collections.Concurrent.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Collections.Immutable.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Collections.NonGeneric.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Collections.Specialized.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Collections.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.ComponentModel.Annotations.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.ComponentModel.Composition.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.ComponentModel.DataAnnotations.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.ComponentModel.EventBasedAsync.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.ComponentModel.Primitives.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.ComponentModel.TypeConverter.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.ComponentModel.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Console.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Core.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Data.Common.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Data.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Diagnostics.Contracts.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Diagnostics.Debug.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Diagnostics.DiagnosticSource.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Diagnostics.FileVersionInfo.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Diagnostics.Process.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Diagnostics.StackTrace.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Diagnostics.TextWriterTraceListener.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Diagnostics.Tools.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Diagnostics.TraceSource.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Diagnostics.Tracing.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Drawing.Primitives.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Drawing.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Dynamic.Runtime.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Globalization.Calendars.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Globalization.Extensions.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Globalization.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.IO.Compression.FileSystem.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.IO.Compression.ZipFile.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.IO.Compression.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.IO.FileSystem.AccessControl.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.IO.FileSystem.DriveInfo.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.IO.FileSystem.Primitives.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.IO.FileSystem.Watcher.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.IO.FileSystem.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.IO.IsolatedStorage.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.IO.MemoryMappedFiles.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.IO.Pipes.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.IO.UnmanagedMemoryStream.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.IO.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Linq.Expressions.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Linq.Parallel.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Linq.Queryable.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Linq.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Net.Http.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Net.HttpListener.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Net.Mail.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Net.NameResolution.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Net.NetworkInformation.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Net.Ping.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Net.Primitives.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Net.Requests.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Net.Security.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Net.ServicePoint.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Net.Sockets.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Net.WebClient.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Net.WebHeaderCollection.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Net.WebProxy.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Net.WebSockets.Client.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Net.WebSockets.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Net.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Numerics.Vectors.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Numerics.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.ObjectModel.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Private.CoreLib.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Private.DataContractSerialization.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Private.Uri.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Private.Xml.Linq.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Private.Xml.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Reflection.DispatchProxy.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Reflection.Emit.ILGeneration.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Reflection.Emit.Lightweight.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Reflection.Emit.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Reflection.Extensions.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Reflection.Metadata.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Reflection.Primitives.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Reflection.TypeExtensions.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Reflection.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Resources.Reader.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Resources.ResourceManager.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Resources.Writer.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Runtime.CompilerServices.VisualC.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Runtime.Extensions.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Runtime.Handles.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Runtime.InteropServices.RuntimeInformation.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Runtime.InteropServices.WindowsRuntime.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Runtime.InteropServices.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Runtime.Loader.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Runtime.Numerics.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Runtime.Serialization.Formatters.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Runtime.Serialization.Json.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Runtime.Serialization.Primitives.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Runtime.Serialization.Xml.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Runtime.Serialization.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Runtime.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Security.AccessControl.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Security.Claims.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Security.Cryptography.Algorithms.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Security.Cryptography.Cng.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Security.Cryptography.Csp.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Security.Cryptography.Encoding.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Security.Cryptography.OpenSsl.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Security.Cryptography.Primitives.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Security.Cryptography.X509Certificates.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Security.Principal.Windows.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Security.Principal.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Security.SecureString.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.ServiceModel.Web.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Text.Encoding.Extensions.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Text.Encoding.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Text.RegularExpressions.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Threading.Overlapped.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Threading.Tasks.Dataflow.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Threading.Tasks.Extensions.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Threading.Tasks.Parallel.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Threading.Tasks.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Threading.Thread.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Threading.ThreadPool.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Threading.Timer.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Threading.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Transactions.Local.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Transactions.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.ValueTuple.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Web.HttpUtility.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Web.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Windows.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Xml.Linq.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Xml.ReaderWriter.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Xml.Serialization.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Xml.XDocument.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Xml.XPath.XDocument.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Xml.XPath.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Xml.XmlDocument.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Xml.XmlSerializer.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.Xml.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/System.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/mscorlib.dll": {},
+          "runtimes/win7-x86/lib/netcoreapp2.0/netstandard.dll": {}
+        },
+        "native": {
+          "runtimes/win7-x86/native/Microsoft.DiaSymReader.Native.x86.dll": {},
+          "runtimes/win7-x86/native/System.Private.CoreLib.ni.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-console-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-datetime-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-debug-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-errorhandling-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-file-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-file-l1-2-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-file-l2-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-handle-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-heap-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-interlocked-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-libraryloader-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-localization-l1-2-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-memory-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-namedpipe-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-processenvironment-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-processthreads-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-processthreads-l1-1-1.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-profile-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-rtlsupport-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-string-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-synch-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-synch-l1-2-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-sysinfo-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-timezone-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-core-util-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-crt-conio-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-crt-convert-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-crt-environment-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-crt-filesystem-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-crt-heap-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-crt-locale-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-crt-math-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-crt-multibyte-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-crt-private-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-crt-process-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-crt-runtime-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-crt-stdio-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-crt-string-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-crt-time-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/api-ms-win-crt-utility-l1-1-0.dll": {},
+          "runtimes/win7-x86/native/clrcompression.dll": {},
+          "runtimes/win7-x86/native/clretwrc.dll": {},
+          "runtimes/win7-x86/native/clrjit.dll": {},
+          "runtimes/win7-x86/native/compatjit.dll": {},
+          "runtimes/win7-x86/native/coreclr.dll": {},
+          "runtimes/win7-x86/native/dbgshim.dll": {},
+          "runtimes/win7-x86/native/mscordaccore.dll": {},
+          "runtimes/win7-x86/native/mscordaccore_AnyCPU_AnyCPU_4.6.25211.004.dll": {},
+          "runtimes/win7-x86/native/mscordbi.dll": {},
+          "runtimes/win7-x86/native/mscorrc.debug.dll": {},
+          "runtimes/win7-x86/native/mscorrc.dll": {},
+          "runtimes/win7-x86/native/sos.dll": {},
+          "runtimes/win7-x86/native/sos_AnyCPU_AnyCPU_4.6.25211.004.dll": {},
+          "runtimes/win7-x86/native/ucrtbase.dll": {}
+        }
+      },
+      "runtime.win7-x86.Microsoft.NETCore.DotNetAppHost/2.0.0-preview1-001967-00": {
+        "native": {
+          "runtimes/win7-x86/native/apphost.exe": {}
+        }
+      },
+      "runtime.win7-x86.Microsoft.NETCore.DotNetHostPolicy/2.0.0-preview1-001967-00": {
+        "dependencies": {
+          "Microsoft.NETCore.DotNetHostResolver": "2.0.0-preview1-001961-00"
+        },
+        "native": {
+          "runtimes/win7-x86/native/hostpolicy.dll": {}
+        }
+      },
+      "runtime.win7-x86.Microsoft.NETCore.DotNetHostResolver/2.0.0-preview1-001967-00": {
+        "dependencies": {
+          "Microsoft.NETCore.DotNetAppHost": "2.0.0-preview1-001961-00"
+        },
+        "native": {
+          "runtimes/win7-x86/native/hostfxr.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "blockcopy/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NETCore.App/2.0.0-preview1-001961-00": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-O/BDc2Wu8cIwyMWZ7Wlvt4NSz8M0tNKqTOcUzc1HishV+fPyIIFvlhGTwMtTldVcV38KlJSIv4TNaKOyuxOjWg==",
+      "path": "microsoft.netcore.app/2.0.0-preview1-001961-00",
+      "hashPath": "microsoft.netcore.app.2.0.0-preview1-001961-00.nupkg.sha512"
+    },
+    "Microsoft.NETCore.DotNetAppHost/2.0.0-preview1-001961-00": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9A96pCx/lqRdY4yKx6YBtZH2JMicTWMXbZYdJpat2jTdVe1khy1Q1tmxoL9jOq0Uc0LzUeYuSQKAsCg4ETkhZQ==",
+      "path": "microsoft.netcore.dotnetapphost/2.0.0-preview1-001961-00",
+      "hashPath": "microsoft.netcore.dotnetapphost.2.0.0-preview1-001961-00.nupkg.sha512"
+    },
+    "Microsoft.NETCore.DotNetHostPolicy/2.0.0-preview1-001961-00": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EAcZIRdL9TirrIUA/oqeJ5NZZYSnZBD0E5CAGpXvfQ1BQCMv71b0z4sKHixMCA6WtdIxpYuPLg30nRwHGJtjhw==",
+      "path": "microsoft.netcore.dotnethostpolicy/2.0.0-preview1-001961-00",
+      "hashPath": "microsoft.netcore.dotnethostpolicy.2.0.0-preview1-001961-00.nupkg.sha512"
+    },
+    "Microsoft.NETCore.DotNetHostResolver/2.0.0-preview1-001961-00": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+W60aFbKFSERbuAtcZhjJ2zzbaVkuN5LF26G5lQj+XohaPbP36ulPfGrtJvSLLWIbWfwiJTstVyWvRD+u0CIUA==",
+      "path": "microsoft.netcore.dotnethostresolver/2.0.0-preview1-001961-00",
+      "hashPath": "microsoft.netcore.dotnethostresolver.2.0.0-preview1-001961-00.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/2.0.0-preview1-25210-01": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QEnFYe5A0bVmdJTRep1gHZ++jXXV3LJujS83MFjYV0QVCCff8oQLwqlmf3M1kzHh21AIZ77/eEHA5tnQys0EDA==",
+      "path": "microsoft.netcore.platforms/2.0.0-preview1-25210-01",
+      "hashPath": "microsoft.netcore.platforms.2.0.0-preview1-25210-01.nupkg.sha512"
+    },
+    "Microsoft.Packaging.Tools/1.0.0-preview1-25211-01": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-d+WxYXgyAS/fLB1/OjF/YY+G2A0KB/vwtKaDhDRHSAEo/r73zxPlWlaW99sVhqItffZi7crU6EyETCmb4/sBrQ==",
+      "path": "microsoft.packaging.tools/1.0.0-preview1-25211-01",
+      "hashPath": "microsoft.packaging.tools.1.0.0-preview1-25211-01.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.0-preview1-25211-01": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eQQMHBrfyu4w8AOswCuTqO74UdO0cpOKQS81E3uHosGX6Gp27dXD5FELyn+ru68xVN6YuiwBgFQi0q8NGK47zA==",
+      "path": "netstandard.library/2.0.0-preview1-25211-01",
+      "hashPath": "netstandard.library.2.0.0-preview1-25211-01.nupkg.sha512"
+    },
+    "runtime.win7-x86.Microsoft.NETCore.App/2.0.0-preview1-001967-00": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jfULuASlKDdzW6Wc//9FOG6PUjQ0JZM65+M2vefNXOymVlcQa1UWpGBpYCHxIdakKROWyx3UaODTJvO6BbtZAg==",
+      "path": "runtime.win7-x86.microsoft.netcore.app/2.0.0-preview1-001967-00",
+      "hashPath": "runtime.win7-x86.microsoft.netcore.app.2.0.0-preview1-001967-00.nupkg.sha512"
+    },
+    "runtime.win7-x86.Microsoft.NETCore.DotNetAppHost/2.0.0-preview1-001967-00": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RFRuTRw40A4UnwyxyWCa8UDj98afwyrH4qK7XBd/tOAA7INvmJl5KnFY9CtOLP5ajNFXRjIyIUMFPtvLpkE3VQ==",
+      "path": "runtime.win7-x86.microsoft.netcore.dotnetapphost/2.0.0-preview1-001967-00",
+      "hashPath": "runtime.win7-x86.microsoft.netcore.dotnetapphost.2.0.0-preview1-001967-00.nupkg.sha512"
+    },
+    "runtime.win7-x86.Microsoft.NETCore.DotNetHostPolicy/2.0.0-preview1-001967-00": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VndlVafI8GNhOMaJKOzMhySOiBMEBD3LflRzhvo9BNVUXVy9LKjT4ZZvObGh5q/SFuxDiW+q8XTQvFsYRxNavg==",
+      "path": "runtime.win7-x86.microsoft.netcore.dotnethostpolicy/2.0.0-preview1-001967-00",
+      "hashPath": "runtime.win7-x86.microsoft.netcore.dotnethostpolicy.2.0.0-preview1-001967-00.nupkg.sha512"
+    },
+    "runtime.win7-x86.Microsoft.NETCore.DotNetHostResolver/2.0.0-preview1-001967-00": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hrqioYsCnmlqhwOkb7b/ocoSSndW1UWVNwsFxDO/PdCzw2M0rgSLTkltGGuW0YZOvT1pAIJ2DsK6Yc2wzHbOBg==",
+      "path": "runtime.win7-x86.microsoft.netcore.dotnethostresolver/2.0.0-preview1-001967-00",
+      "hashPath": "runtime.win7-x86.microsoft.netcore.dotnethostresolver.2.0.0-preview1-001967-00.nupkg.sha512"
+    }
+  }
+}

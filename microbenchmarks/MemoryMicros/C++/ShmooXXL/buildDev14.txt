@@ -1,0 +1,9 @@
+set BINver=MEMCPY_x64
+cl -c -Zi -O2  -GL  -Oi- -DUSE_STDLIB_VERSION /EHsc /FAsc  /Fo.\obj\shmoo_%BINver%.obj  -Isrc  src\shmoo.cpp
+pushd bin
+@rem link /debug /out:shmoo_%BINver%.exe e:\dev12\binaries\binaries.amd64chk\lib\amd64\libcmt.lib ..\obj\shmoo_%BINver%.obj
+@rem C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\lib\onecore\amd64\libcmt.lib
+@rem  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\lib\amd64
+link /debug /LTCG /out:shmoo_ubn_%BINver%.exe "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\lib\amd64\libcmt.lib" ..\obj\shmoo_%BINver%.obj
+popd
+

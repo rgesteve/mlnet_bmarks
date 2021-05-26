@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\build\common.props" />
+
+  <PropertyGroup>
+    <Description>Schedules benchmark jobs on both the server and client.</Description>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Benchmarks.ClientJob\Benchmarks.ClientJob.csproj" />
+    <ProjectReference Include="..\Benchmarks.ServerJob\Benchmarks.ServerJob.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.CommandLineUtils.Sources" Version="$(AspNetCoreVersion)" PrivateAssets="All" />
+
+    <!--
+      * Use $(SqlClientVersion) instead of $(CoreFxVersion) to address "SqlClient fails with netcoreapp2.0 on Win7/Server2008"
+        * https://github.com/dotnet/corefx/issues/18406
+      * Revert if and when $(CoreFxVersion) is upgraded to match $(SqlClientVersion)
+    -->
+    <PackageReference Include="System.Data.SqlClient" Version="$(SqlClientVersion)" />
+
+    <PackageReference Include="System.Runtime.Serialization.Primitives" Version="$(CoreFxVersion)" />
+  </ItemGroup>
+
+  <Target Name="GetOutputPath" Returns="$(OutputPath)$(AssemblyName).dll" />
+
+</Project>

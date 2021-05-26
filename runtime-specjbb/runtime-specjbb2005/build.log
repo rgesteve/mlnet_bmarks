@@ -1,0 +1,45 @@
+Project runtime-specjbb2005 (.NETCoreApp,Version=v1.0) will be compiled because inputs were modified
+Compiling runtime-specjbb2005 for .NETCoreApp,Version=v1.0
+/home/sy/runtime-specjbb2005/project.json(3,28): warning DOTNET1015: The 'compilationOptions' option is deprecated. Use 'buildOptions' instead.
+/home/sy/runtime-specjbb2005/project.json(8,35): warning NU1007: Dependency specified was Microsoft.NETCore.App >= 1.0.0-rc2-23931 but ended up with Microsoft.NETCore.App 1.0.0-rc2-24018.
+/home/sy/runtime-specjbb2005/project.json(12,45): warning NU1012: Dependency conflict. Microsoft.NETCore.App 1.0.0-rc2-24018 expected NETStandard.Library >= 1.5.0-rc2-24018 but got 1.0.0-rc2-23910
+/home/sy/runtime-specjbb2005/JBBProperties.cs(209,30): warning CS0168: The variable 'e' is declared but never used
+/home/sy/runtime-specjbb2005/JBBProperties.cs(636,4): warning CS0162: Unreachable code detected
+/home/sy/runtime-specjbb2005/TransactionLogBuffer.cs(1002,8): warning CS0168: The variable 'x' is declared but never used
+/home/sy/runtime-specjbb2005/TransactionLogBuffer.cs(1029,8): warning CS0168: The variable 'x' is declared but never used
+/home/sy/runtime-specjbb2005/PepTest_Intel.cs(989,5): warning CS0162: Unreachable code detected
+/home/sy/runtime-specjbb2005/PepTest_Intel.cs(1389,5): warning CS0162: Unreachable code detected
+/home/sy/runtime-specjbb2005/JBButil.cs(132,4): warning CS0162: Unreachable code detected
+/home/sy/runtime-specjbb2005/JBButil.cs(144,13): warning CS0162: Unreachable code detected
+/home/sy/runtime-specjbb2005/TimerData.cs(91,34): warning CS0169: The field 'TimerData.timer_flag' is never used
+/home/sy/runtime-specjbb2005/Orderline.cs(49,23): warning CS0169: The field 'Orderline.warehousePtr' is never used
+/home/sy/runtime-specjbb2005/NewOrderTransaction.cs(54,32): warning CS0169: The field 'NewOrderTransaction.backLog' is never used
+/home/sy/runtime-specjbb2005/PepTest_Intel.cs(141,16): warning CS0649: Field 'C1.x1' is never assigned to, and will always have its default value 0
+/home/sy/runtime-specjbb2005/PepTest_Intel.cs(146,16): warning CS0649: Field 'C2.x2' is never assigned to, and will always have its default value 0
+/home/sy/runtime-specjbb2005/OrderStatusTransaction.cs(52,32): warning CS0169: The field 'OrderStatusTransaction.districtPtr' is never used
+/home/sy/runtime-specjbb2005/DeliveryTransaction.cs(41,32): warning CS0169: The field 'DeliveryTransaction.deliveryTime' is never used
+/home/sy/runtime-specjbb2005/PepTest_Intel.cs(85,19): warning CS0649: Field 'StringAndInt.s' is never assigned to, and will always have its default value null
+/home/sy/runtime-specjbb2005/PepTest_Intel.cs(151,16): warning CS0649: Field 'C3.x3' is never assigned to, and will always have its default value 0
+/home/sy/runtime-specjbb2005/PepTest_Intel.cs(86,19): warning CS0649: Field 'StringAndInt.i' is never assigned to, and will always have its default value 0
+/home/sy/runtime-specjbb2005/TreeMapDataStorage.cs(20,32): warning CS0414: The field 'TreeMapDataStorage.serialVersionUID' is assigned but its value is never used
+/home/sy/runtime-specjbb2005/Customer.cs(54,31): warning CS0414: The field 'Customer.credit2' is assigned but its value is never used
+/home/sy/runtime-specjbb2005/JBBmain.cs(87,22): warning CS0414: The field 'JBBmain.forceGC' is assigned but its value is never used
+/home/sy/runtime-specjbb2005/Controller.cs(24,25): warning CS0414: The field 'Controller.host' is assigned but its value is never used
+/home/sy/runtime-specjbb2005/TransactionLogBuffer.cs(106,32): warning CS0414: The field 'TransactionLogBuffer.fractionPad' is assigned but its value is never used
+/home/sy/runtime-specjbb2005/TimerData.cs(95,31): warning CS0414: The field 'TimerData.useWaits' is assigned but its value is never used
+/home/sy/runtime-specjbb2005/LoopBounds_Intel.cs(28,28): warning CS0414: The field 'LoopBounds.COPYRIGHT' is assigned but its value is never used
+/home/sy/runtime-specjbb2005/LoopBounds_Intel.cs(120,26): warning CS0414: The field 'LoopBounds2.COPYRIGHT' is assigned but its value is never used
+/home/sy/runtime-specjbb2005/TransactionLogBuffer.cs(57,32): warning CS0414: The field 'TransactionLogBuffer.COPYRIGHT' is assigned but its value is never used
+/home/sy/runtime-specjbb2005/digest_Intel.cs(30,20): warning CS0414: The field 'digest.debug' is assigned but its value is never used
+/home/sy/runtime-specjbb2005/XMLTransactionLog_Intel.cs(48,30): warning CS0414: The field 'XMLTransactionLog.COPYRIGHT' is assigned but its value is never used
+/home/sy/runtime-specjbb2005/Controller.cs(22,25): warning CS0414: The field 'Controller.port' is assigned but its value is never used
+/home/sy/runtime-specjbb2005/TransactionLogBuffer.cs(32,32): warning CS0414: The field 'ScreenException.serialVersionUID' is assigned but its value is never used
+/home/sy/runtime-specjbb2005/JBBmain.cs(99,37): warning CS0414: The field 'JBBmain.outResultsFile' is assigned but its value is never used
+
+Compilation succeeded.
+    35 Warning(s)
+    0 Error(s)
+
+Time elapsed 00:00:05.8677308
+ 
+

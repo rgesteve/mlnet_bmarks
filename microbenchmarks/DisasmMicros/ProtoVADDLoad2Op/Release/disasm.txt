@@ -1,0 +1,1984 @@
+Microsoft (R) COFF/PE Dumper Version 14.00.23026.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file ProtoLEA.exe
+
+File Type: EXECUTABLE IMAGE
+
+?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ:
+  00401000: 55                 push        ebp
+  00401001: 8B EC              mov         ebp,esp
+  00401003: 83 EC 08           sub         esp,8
+  00401006: 64 A1 2C 00 00 00  mov         eax,dword ptr fs:[0000002Ch]
+  0040100C: 53                 push        ebx
+  0040100D: 56                 push        esi
+  0040100E: 57                 push        edi
+  0040100F: 8B 10              mov         edx,dword ptr [eax]
+  00401011: A1 CC 53 40 00     mov         eax,dword ptr [?$TSS0@?1??now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@34@XZ@4HA]
+  00401016: 89 4D F8           mov         dword ptr [ebp-8],ecx
+  00401019: 3B 82 04 00 00 00  cmp         eax,dword ptr [edx+4]
+  0040101F: 7E 34              jle         00401055
+  00401021: 68 CC 53 40 00     push        offset ?$TSS0@?1??now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@34@XZ@4HA
+  00401026: E8 73 06 00 00     call        __Init_thread_header
+  0040102B: 83 C4 04           add         esp,4
+  0040102E: 83 3D CC 53 40 00  cmp         dword ptr [?$TSS0@?1??now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@34@XZ@4HA],0FFFFFFFFh
+            FF
+  00401035: 75 1E              jne         00401055
+  00401037: FF 15 58 30 40 00  call        dword ptr [__imp___Query_perf_frequency]
+  0040103D: 68 CC 53 40 00     push        offset ?$TSS0@?1??now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@34@XZ@4HA
+  00401042: A3 D0 53 40 00     mov         dword ptr [?_Freq@?1??now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@34@XZ@4_JB],eax
+  00401047: 89 15 D4 53 40 00  mov         dword ptr ds:[4053D4h],edx
+  0040104D: E8 0D 06 00 00     call        __Init_thread_footer
+  00401052: 83 C4 04           add         esp,4
+  00401055: FF 15 84 30 40 00  call        dword ptr [__imp___Query_perf_counter]
+  0040105B: 8B 3D D0 53 40 00  mov         edi,dword ptr [?_Freq@?1??now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@34@XZ@4_JB]
+  00401061: 53                 push        ebx
+  00401062: FF 35 D4 53 40 00  push        dword ptr ds:[4053D4h]
+  00401068: 57                 push        edi
+  00401069: 52                 push        edx
+  0040106A: 50                 push        eax
+  0040106B: E8 D0 13 00 00     call        __alldvrm
+  00401070: 8B F3              mov         esi,ebx
+  00401072: 5B                 pop         ebx
+  00401073: 6A 00              push        0
+  00401075: 68 00 CA 9A 3B     push        3B9ACA00h
+  0040107A: 56                 push        esi
+  0040107B: 51                 push        ecx
+  0040107C: 89 45 FC           mov         dword ptr [ebp-4],eax
+  0040107F: 8B DA              mov         ebx,edx
+  00401081: E8 9A 14 00 00     call        __allmul
+  00401086: FF 35 D4 53 40 00  push        dword ptr ds:[4053D4h]
+  0040108C: 57                 push        edi
+  0040108D: 52                 push        edx
+  0040108E: 50                 push        eax
+  0040108F: E8 FC 12 00 00     call        __alldiv
+  00401094: 6A 00              push        0
+  00401096: 68 00 CA 9A 3B     push        3B9ACA00h
+  0040109B: 53                 push        ebx
+  0040109C: FF 75 FC           push        dword ptr [ebp-4]
+  0040109F: 8B F0              mov         esi,eax
+  004010A1: 8B FA              mov         edi,edx
+  004010A3: E8 78 14 00 00     call        __allmul
+  004010A8: 03 F0              add         esi,eax
+  004010AA: 8B 45 F8           mov         eax,dword ptr [ebp-8]
+  004010AD: 13 FA              adc         edi,edx
+  004010AF: 89 78 04           mov         dword ptr [eax+4],edi
+  004010B2: 5F                 pop         edi
+  004010B3: 89 30              mov         dword ptr [eax],esi
+  004010B5: 5E                 pop         esi
+  004010B6: 5B                 pop         ebx
+  004010B7: 8B E5              mov         esp,ebp
+  004010B9: 5D                 pop         ebp
+  004010BA: C3                 ret
+  004010BB: CC CC CC CC CC                                   ллллл
+?fixed@std@@YAAAVios_base@1@AAV21@@Z:
+  004010C0: 55                 push        ebp
+  004010C1: 8B EC              mov         ebp,esp
+  004010C3: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  004010C6: 8B 48 14           mov         ecx,dword ptr [eax+14h]
+  004010C9: 81 E1 FF EF FF FF  and         ecx,0FFFFEFFFh
+  004010CF: 81 C9 00 20 00 00  or          ecx,2000h
+  004010D5: 89 48 14           mov         dword ptr [eax+14h],ecx
+  004010D8: 5D                 pop         ebp
+  004010D9: C3                 ret
+  004010DA: CC CC CC CC CC CC                                лллллл
+?LEA_Test2@@YAXQAN@Z:
+  004010E0: F2 0F 10 41 30     movsd       xmm0,mmword ptr [ecx+30h]
+  004010E5: F2 0F 59 41 28     mulsd       xmm0,mmword ptr [ecx+28h]
+  004010EA: F2 0F 11 41 38     movsd       mmword ptr [ecx+38h],xmm0
+  004010EF: C3                 ret
+_wmain:
+  004010F0: 55                 push        ebp
+  004010F1: 8B EC              mov         ebp,esp
+  004010F3: 83 E4 C0           and         esp,0FFFFFFC0h
+  004010F6: 83 EC 34           sub         esp,34h
+  004010F9: 53                 push        ebx
+  004010FA: 56                 push        esi
+  004010FB: 57                 push        edi
+  004010FC: 68 80 38 01 00     push        13880h
+  00401101: FF 15 B4 30 40 00  call        dword ptr [__imp__malloc]
+  00401107: F2 0F 10 05 20 32  movsd       xmm0,mmword ptr [__real@4014000000000000]
+            40 00
+  0040110F: 8B D8              mov         ebx,eax
+  00401111: B9 1E 4E 00 00     mov         ecx,4E1Eh
+  00401116: 8B F3              mov         esi,ebx
+  00401118: 83 C4 04           add         esp,4
+  0040111B: F2 0F 11 03        movsd       mmword ptr [ebx],xmm0
+  0040111F: 8D 7B 08           lea         edi,[ebx+8]
+  00401122: F2 0F 10 05 18 32  movsd       xmm0,mmword ptr [__real@4000000000000000]
+            40 00
+  0040112A: F3 A5              rep movs    dword ptr es:[edi],dword ptr [esi]
+  0040112C: 8D 4C 24 38        lea         ecx,[esp+38h]
+  00401130: F2 0F 11 43 28     movsd       mmword ptr [ebx+28h],xmm0
+  00401135: E8 C6 FE FF FF     call        ?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ
+  0040113A: 8D 4C 24 38        lea         ecx,[esp+38h]
+  0040113E: E8 BD FE FF FF     call        ?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ
+  00401143: F2 0F 10 43 38     movsd       xmm0,mmword ptr [ebx+38h]
+  00401148: 83 EC 08           sub         esp,8
+  0040114B: BA EC 31 40 00     mov         edx,offset ??_C@_08FDMPFKCF@Before?3?5?$AA@
+  00401150: 8B 30              mov         esi,dword ptr [eax]
+  00401152: 8B 78 04           mov         edi,dword ptr [eax+4]
+  00401155: F2 0F 11 04 24     movsd       mmword ptr [esp],xmm0
+  0040115A: 68 C0 10 40 00     push        offset ?fixed@std@@YAAAVios_base@1@AAV21@@Z
+  0040115F: 51                 push        ecx
+  00401160: 8B 0D 80 30 40 00  mov         ecx,dword ptr [__imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A]
+  00401166: E8 A5 01 00 00     call        ??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z
+  0040116B: 83 C4 04           add         esp,4
+  0040116E: 8B C8              mov         ecx,eax
+  00401170: FF 15 64 30 40 00  call        dword ptr [__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAVios_base@1@AAV21@@Z@Z]
+  00401176: 8B C8              mov         ecx,eax
+  00401178: FF 15 5C 30 40 00  call        dword ptr [__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@N@Z]
+  0040117E: BA E8 31 40 00     mov         edx,offset ??_C@_01EEMJAFIK@?6?$AA@
+  00401183: 8B C8              mov         ecx,eax
+  00401185: E8 86 01 00 00     call        ??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z
+  0040118A: B8 10 27 00 00     mov         eax,2710h
+  0040118F: 90                 nop
+  00401190: 8B CB              mov         ecx,ebx
+  00401192: E8 49 FF FF FF     call        ?LEA_Test2@@YAXQAN@Z
+  00401197: 83 E8 01           sub         eax,1
+  0040119A: 75 F4              jne         00401190
+  0040119C: F2 0F 10 43 38     movsd       xmm0,mmword ptr [ebx+38h]
+  004011A1: 83 EC 08           sub         esp,8
+  004011A4: BA F8 31 40 00     mov         edx,offset ??_C@_07CLKDAACD@After?3?5?$AA@
+  004011A9: F2 0F 11 04 24     movsd       mmword ptr [esp],xmm0
+  004011AE: 68 C0 10 40 00     push        offset ?fixed@std@@YAAAVios_base@1@AAV21@@Z
+  004011B3: 51                 push        ecx
+  004011B4: 8B 0D 80 30 40 00  mov         ecx,dword ptr [__imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A]
+  004011BA: E8 51 01 00 00     call        ??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z
+  004011BF: 83 C4 04           add         esp,4
+  004011C2: 8B C8              mov         ecx,eax
+  004011C4: FF 15 64 30 40 00  call        dword ptr [__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAVios_base@1@AAV21@@Z@Z]
+  004011CA: 8B C8              mov         ecx,eax
+  004011CC: FF 15 5C 30 40 00  call        dword ptr [__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@N@Z]
+  004011D2: BA E8 31 40 00     mov         edx,offset ??_C@_01EEMJAFIK@?6?$AA@
+  004011D7: 8B C8              mov         ecx,eax
+  004011D9: E8 32 01 00 00     call        ??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z
+  004011DE: 8D 4C 24 38        lea         ecx,[esp+38h]
+  004011E2: E8 19 FE FF FF     call        ?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ
+  004011E7: 6A 00              push        0
+  004011E9: 68 40 42 0F 00     push        0F4240h
+  004011EE: 8B 08              mov         ecx,dword ptr [eax]
+  004011F0: 8B 40 04           mov         eax,dword ptr [eax+4]
+  004011F3: 2B CE              sub         ecx,esi
+  004011F5: 1B C7              sbb         eax,edi
+  004011F7: 50                 push        eax
+  004011F8: 51                 push        ecx
+  004011F9: E8 92 11 00 00     call        __alldiv
+  004011FE: 52                 push        edx
+  004011FF: 50                 push        eax
+  00401200: 68 C0 10 40 00     push        offset ?fixed@std@@YAAAVios_base@1@AAV21@@Z
+  00401205: 51                 push        ecx
+  00401206: 8B 0D 80 30 40 00  mov         ecx,dword ptr [__imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A]
+  0040120C: BA 04 32 40 00     mov         edx,offset ??_C@_0P@MOFOLGHO@Elapsed?5time?3?5?$AA@
+  00401211: E8 FA 00 00 00     call        ??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z
+  00401216: 83 C4 04           add         esp,4
+  00401219: 8B C8              mov         ecx,eax
+  0040121B: FF 15 64 30 40 00  call        dword ptr [__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAVios_base@1@AAV21@@Z@Z]
+  00401221: 8B C8              mov         ecx,eax
+  00401223: FF 15 60 30 40 00  call        dword ptr [__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@_J@Z]
+  00401229: BA 00 32 40 00     mov         edx,offset ??_C@_03LLKPDBLO@ms?6?$AA@
+  0040122E: 8B C8              mov         ecx,eax
+  00401230: E8 DB 00 00 00     call        ??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z
+  00401235: 6A 08              push        8
+  00401237: 53                 push        ebx
+  00401238: E8 65 05 00 00     call        ??3@YAXPAXI@Z
+  0040123D: 83 C4 08           add         esp,8
+  00401240: 33 C0              xor         eax,eax
+  00401242: 5F                 pop         edi
+  00401243: 5E                 pop         esi
+  00401244: 5B                 pop         ebx
+  00401245: 8B E5              mov         esp,ebp
+  00401247: 5D                 pop         ebp
+  00401248: C3                 ret
+  00401249: CC CC CC CC CC CC CC                             ллллллл
+??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ:
+  00401250: 55                 push        ebp
+  00401251: 8B EC              mov         ebp,esp
+  00401253: 6A FF              push        0FFFFFFFFh
+  00401255: 68 67 25 40 00     push        402567h
+  0040125A: 64 A1 00 00 00 00  mov         eax,dword ptr fs:[00000000h]
+  00401260: 50                 push        eax
+  00401261: 56                 push        esi
+  00401262: A1 08 50 40 00     mov         eax,dword ptr [___security_cookie]
+  00401267: 33 C5              xor         eax,ebp
+  00401269: 50                 push        eax
+  0040126A: 8D 45 F4           lea         eax,[ebp-0Ch]
+  0040126D: 64 A3 00 00 00 00  mov         dword ptr fs:[00000000h],eax
+  00401273: 8B F1              mov         esi,ecx
+  00401275: FF 15 7C 30 40 00  call        dword ptr [__imp_?uncaught_exception@std@@YA_NXZ]
+  0040127B: 84 C0              test        al,al
+  0040127D: 75 08              jne         00401287
+  0040127F: 8B 0E              mov         ecx,dword ptr [esi]
+  00401281: FF 15 70 30 40 00  call        dword ptr [__imp_?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ]
+  00401287: C7 45 FC 00 00 00  mov         dword ptr [ebp-4],0
+            00
+  0040128E: 8B 0E              mov         ecx,dword ptr [esi]
+  00401290: 8B 01              mov         eax,dword ptr [ecx]
+  00401292: 8B 40 04           mov         eax,dword ptr [eax+4]
+  00401295: 8B 4C 08 38        mov         ecx,dword ptr [eax+ecx+38h]
+  00401299: 85 C9              test        ecx,ecx
+  0040129B: 74 05              je          004012A2
+  0040129D: 8B 01              mov         eax,dword ptr [ecx]
+  0040129F: FF 50 08           call        dword ptr [eax+8]
+  004012A2: 8B 4D F4           mov         ecx,dword ptr [ebp-0Ch]
+  004012A5: 64 89 0D 00 00 00  mov         dword ptr fs:[0],ecx
+            00
+  004012AC: 59                 pop         ecx
+  004012AD: 5E                 pop         esi
+  004012AE: 8B E5              mov         esp,ebp
+  004012B0: 5D                 pop         ebp
+  004012B1: C3                 ret
+  004012B2: CC CC CC CC CC CC CC CC CC CC CC CC CC CC        лллллллллллллл
+??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ:
+  004012C0: 55                 push        ebp
+  004012C1: 8B EC              mov         ebp,esp
+  004012C3: 6A FF              push        0FFFFFFFFh
+  004012C5: 68 90 25 40 00     push        402590h
+  004012CA: 64 A1 00 00 00 00  mov         eax,dword ptr fs:[00000000h]
+  004012D0: 50                 push        eax
+  004012D1: A1 08 50 40 00     mov         eax,dword ptr [___security_cookie]
+  004012D6: 33 C5              xor         eax,ebp
+  004012D8: 50                 push        eax
+  004012D9: 8D 45 F4           lea         eax,[ebp-0Ch]
+  004012DC: 64 A3 00 00 00 00  mov         dword ptr fs:[00000000h],eax
+  004012E2: 8B 09              mov         ecx,dword ptr [ecx]
+  004012E4: 8B 01              mov         eax,dword ptr [ecx]
+  004012E6: 8B 40 04           mov         eax,dword ptr [eax+4]
+  004012E9: 8B 4C 08 38        mov         ecx,dword ptr [eax+ecx+38h]
+  004012ED: 85 C9              test        ecx,ecx
+  004012EF: 74 05              je          004012F6
+  004012F1: 8B 01              mov         eax,dword ptr [ecx]
+  004012F3: FF 50 08           call        dword ptr [eax+8]
+  004012F6: 8B 4D F4           mov         ecx,dword ptr [ebp-0Ch]
+  004012F9: 64 89 0D 00 00 00  mov         dword ptr fs:[0],ecx
+            00
+  00401300: 59                 pop         ecx
+  00401301: 8B E5              mov         esp,ebp
+  00401303: 5D                 pop         ebp
+  00401304: C3                 ret
+  00401305: CC CC CC CC CC CC CC CC CC CC CC                 ллллллллллл
+??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z:
+  00401310: 55                 push        ebp
+  00401311: 8B EC              mov         ebp,esp
+  00401313: 6A FF              push        0FFFFFFFFh
+  00401315: 68 CE 25 40 00     push        4025CEh
+  0040131A: 64 A1 00 00 00 00  mov         eax,dword ptr fs:[00000000h]
+  00401320: 50                 push        eax
+  00401321: 83 EC 24           sub         esp,24h
+  00401324: 53                 push        ebx
+  00401325: 56                 push        esi
+  00401326: 57                 push        edi
+  00401327: A1 08 50 40 00     mov         eax,dword ptr [___security_cookie]
+  0040132C: 33 C5              xor         eax,ebp
+  0040132E: 50                 push        eax
+  0040132F: 8D 45 F4           lea         eax,[ebp-0Ch]
+  00401332: 64 A3 00 00 00 00  mov         dword ptr fs:[00000000h],eax
+  00401338: 89 65 F0           mov         dword ptr [ebp-10h],esp
+  0040133B: 8B C2              mov         eax,edx
+  0040133D: 89 45 DC           mov         dword ptr [ebp-24h],eax
+  00401340: 8B D1              mov         edx,ecx
+  00401342: 89 55 EC           mov         dword ptr [ebp-14h],edx
+  00401345: 33 FF              xor         edi,edi
+  00401347: 80 38 00           cmp         byte ptr [eax],0
+  0040134A: 89 7D E4           mov         dword ptr [ebp-1Ch],edi
+  0040134D: 75 04              jne         00401353
+  0040134F: 33 C9              xor         ecx,ecx
+  00401351: EB 0E              jmp         00401361
+  00401353: 8B C8              mov         ecx,eax
+  00401355: 8D 71 01           lea         esi,[ecx+1]
+  00401358: 8A 01              mov         al,byte ptr [ecx]
+  0040135A: 41                 inc         ecx
+  0040135B: 84 C0              test        al,al
+  0040135D: 75 F9              jne         00401358
+  0040135F: 2B CE              sub         ecx,esi
+  00401361: 8B 02              mov         eax,dword ptr [edx]
+  00401363: 89 4D E8           mov         dword ptr [ebp-18h],ecx
+  00401366: 8B 40 04           mov         eax,dword ptr [eax+4]
+  00401369: 8B 5C 10 24        mov         ebx,dword ptr [eax+edx+24h]
+  0040136D: 8B 74 10 20        mov         esi,dword ptr [eax+edx+20h]
+  00401371: 85 DB              test        ebx,ebx
+  00401373: 7C 16              jl          0040138B
+  00401375: 7F 0E              jg          00401385
+  00401377: 85 F6              test        esi,esi
+  00401379: 74 10              je          0040138B
+  0040137B: 85 DB              test        ebx,ebx
+  0040137D: 7C 0C              jl          0040138B
+  0040137F: 7F 04              jg          00401385
+  00401381: 3B F1              cmp         esi,ecx
+  00401383: 76 06              jbe         0040138B
+  00401385: 2B F1              sub         esi,ecx
+  00401387: 1B DF              sbb         ebx,edi
+  00401389: EB 0E              jmp         00401399
+  0040138B: 0F 57 C0           xorps       xmm0,xmm0
+  0040138E: 66 0F 13 45 D0     movlpd      qword ptr [ebp-30h],xmm0
+  00401393: 8B 5D D4           mov         ebx,dword ptr [ebp-2Ch]
+  00401396: 8B 75 D0           mov         esi,dword ptr [ebp-30h]
+  00401399: 8B 4C 10 38        mov         ecx,dword ptr [eax+edx+38h]
+  0040139D: 89 55 D0           mov         dword ptr [ebp-30h],edx
+  004013A0: 85 C9              test        ecx,ecx
+  004013A2: 74 08              je          004013AC
+  004013A4: 8B 01              mov         eax,dword ptr [ecx]
+  004013A6: FF 50 04           call        dword ptr [eax+4]
+  004013A9: 8B 55 EC           mov         edx,dword ptr [ebp-14h]
+  004013AC: C7 45 FC 00 00 00  mov         dword ptr [ebp-4],0
+            00
+  004013B3: 8B 02              mov         eax,dword ptr [edx]
+  004013B5: 8B 40 04           mov         eax,dword ptr [eax+4]
+  004013B8: 83 7C 10 0C 00     cmp         dword ptr [eax+edx+0Ch],0
+  004013BD: 75 15              jne         004013D4
+  004013BF: 8B 4C 10 3C        mov         ecx,dword ptr [eax+edx+3Ch]
+  004013C3: 85 C9              test        ecx,ecx
+  004013C5: 74 0D              je          004013D4
+  004013C7: 3B CA              cmp         ecx,edx
+  004013C9: 74 09              je          004013D4
+  004013CB: FF 15 6C 30 40 00  call        dword ptr [__imp_?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ]
+  004013D1: 8B 55 EC           mov         edx,dword ptr [ebp-14h]
+  004013D4: 8B 02              mov         eax,dword ptr [edx]
+  004013D6: 8B 48 04           mov         ecx,dword ptr [eax+4]
+  004013D9: 83 7C 11 0C 00     cmp         dword ptr [ecx+edx+0Ch],0
+  004013DE: 0F 94 C0           sete        al
+  004013E1: 88 45 D4           mov         byte ptr [ebp-2Ch],al
+  004013E4: C7 45 FC 01 00 00  mov         dword ptr [ebp-4],1
+            00
+  004013EB: 84 C0              test        al,al
+  004013ED: 75 0A              jne         004013F9
+  004013EF: BF 04 00 00 00     mov         edi,4
+  004013F4: E9 05 01 00 00     jmp         004014FE
+  004013F9: C6 45 FC 02        mov         byte ptr [ebp-4],2
+  004013FD: 8B 44 11 14        mov         eax,dword ptr [ecx+edx+14h]
+  00401401: 25 C0 01 00 00     and         eax,1C0h
+  00401406: 83 F8 40           cmp         eax,40h
+  00401409: 74 3F              je          0040144A
+  0040140B: 0F 1F 44 00 00     nop         dword ptr [eax+eax]
+  00401410: 85 DB              test        ebx,ebx
+  00401412: 7C 32              jl          00401446
+  00401414: 7F 04              jg          0040141A
+  00401416: 85 F6              test        esi,esi
+  00401418: 74 2C              je          00401446
+  0040141A: 8B 02              mov         eax,dword ptr [edx]
+  0040141C: 8B 48 04           mov         ecx,dword ptr [eax+4]
+  0040141F: 8A 44 11 40        mov         al,byte ptr [ecx+edx+40h]
+  00401423: 8B 4C 11 38        mov         ecx,dword ptr [ecx+edx+38h]
+  00401427: 88 45 E0           mov         byte ptr [ebp-20h],al
+  0040142A: FF 75 E0           push        dword ptr [ebp-20h]
+  0040142D: FF 15 74 30 40 00  call        dword ptr [__imp_?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHD@Z]
+  00401433: 8B 55 EC           mov         edx,dword ptr [ebp-14h]
+  00401436: 83 F8 FF           cmp         eax,0FFFFFFFFh
+  00401439: 0F 94 C0           sete        al
+  0040143C: 84 C0              test        al,al
+  0040143E: 74 65              je          004014A5
+  00401440: 83 CF 04           or          edi,4
+  00401443: 89 7D E4           mov         dword ptr [ebp-1Ch],edi
+  00401446: 85 FF              test        edi,edi
+  00401448: 75 76              jne         004014C0
+  0040144A: 8B 02              mov         eax,dword ptr [edx]
+  0040144C: 6A 00              push        0
+  0040144E: FF 75 E8           push        dword ptr [ebp-18h]
+  00401451: 8B 40 04           mov         eax,dword ptr [eax+4]
+  00401454: FF 75 DC           push        dword ptr [ebp-24h]
+  00401457: 8B 4C 10 38        mov         ecx,dword ptr [eax+edx+38h]
+  0040145B: FF 15 78 30 40 00  call        dword ptr [__imp_?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAE_JPBD_J@Z]
+  00401461: 3B 45 E8           cmp         eax,dword ptr [ebp-18h]
+  00401464: 75 52              jne         004014B8
+  00401466: 85 D2              test        edx,edx
+  00401468: 75 4E              jne         004014B8
+  0040146A: 66 0F 1F 44 00 00  nop         word ptr [eax+eax]
+  00401470: 85 DB              test        ebx,ebx
+  00401472: 7C 49              jl          004014BD
+  00401474: 7F 04              jg          0040147A
+  00401476: 85 F6              test        esi,esi
+  00401478: 74 43              je          004014BD
+  0040147A: 8B 4D EC           mov         ecx,dword ptr [ebp-14h]
+  0040147D: 8B 01              mov         eax,dword ptr [ecx]
+  0040147F: 8B 40 04           mov         eax,dword ptr [eax+4]
+  00401482: 03 C8              add         ecx,eax
+  00401484: 8A 41 40           mov         al,byte ptr [ecx+40h]
+  00401487: 8B 49 38           mov         ecx,dword ptr [ecx+38h]
+  0040148A: 88 45 DC           mov         byte ptr [ebp-24h],al
+  0040148D: FF 75 DC           push        dword ptr [ebp-24h]
+  00401490: FF 15 74 30 40 00  call        dword ptr [__imp_?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHD@Z]
+  00401496: 83 F8 FF           cmp         eax,0FFFFFFFFh
+  00401499: 0F 94 C0           sete        al
+  0040149C: 84 C0              test        al,al
+  0040149E: 74 10              je          004014B0
+  004014A0: 83 CF 04           or          edi,4
+  004014A3: EB 18              jmp         004014BD
+  004014A5: 83 C6 FF           add         esi,0FFFFFFFFh
+  004014A8: 83 D3 FF           adc         ebx,0FFFFFFFFh
+  004014AB: E9 60 FF FF FF     jmp         00401410
+  004014B0: 83 C6 FF           add         esi,0FFFFFFFFh
+  004014B3: 83 D3 FF           adc         ebx,0FFFFFFFFh
+  004014B6: EB B8              jmp         00401470
+  004014B8: BF 04 00 00 00     mov         edi,4
+  004014BD: 8B 55 EC           mov         edx,dword ptr [ebp-14h]
+  004014C0: 8B 02              mov         eax,dword ptr [edx]
+  004014C2: 8B 40 04           mov         eax,dword ptr [eax+4]
+  004014C5: C7 44 10 20 00 00  mov         dword ptr [eax+edx+20h],0
+            00 00
+  004014CD: C7 44 10 24 00 00  mov         dword ptr [eax+edx+24h],0
+            00 00
+  004014D5: EB 20              jmp         004014F7
+  004014D7: 8B 55 EC           mov         edx,dword ptr [ebp-14h]
+  004014DA: 6A 01              push        1
+  004014DC: 6A 04              push        4
+  004014DE: 8B 02              mov         eax,dword ptr [edx]
+  004014E0: 8B 48 04           mov         ecx,dword ptr [eax+4]
+  004014E3: 03 CA              add         ecx,edx
+  004014E5: FF 15 68 30 40 00  call        dword ptr [__imp_?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z]
+  004014EB: B8 F1 14 40 00     mov         eax,4014F1h
+  004014F0: C3                 ret
+  004014F1: 8B 7D E4           mov         edi,dword ptr [ebp-1Ch]
+  004014F4: 8B 55 EC           mov         edx,dword ptr [ebp-14h]
+  004014F7: C7 45 FC 01 00 00  mov         dword ptr [ebp-4],1
+            00
+  004014FE: 8B 02              mov         eax,dword ptr [edx]
+  00401500: 6A 00              push        0
+  00401502: 57                 push        edi
+  00401503: 8B 48 04           mov         ecx,dword ptr [eax+4]
+  00401506: 03 CA              add         ecx,edx
+  00401508: FF 15 68 30 40 00  call        dword ptr [__imp_?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z]
+  0040150E: C7 45 FC 04 00 00  mov         dword ptr [ebp-4],4
+            00
+  00401515: FF 15 7C 30 40 00  call        dword ptr [__imp_?uncaught_exception@std@@YA_NXZ]
+  0040151B: 8B 75 D0           mov         esi,dword ptr [ebp-30h]
+  0040151E: 84 C0              test        al,al
+  00401520: 75 08              jne         0040152A
+  00401522: 8B CE              mov         ecx,esi
+  00401524: FF 15 70 30 40 00  call        dword ptr [__imp_?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ]
+  0040152A: C6 45 FC 05        mov         byte ptr [ebp-4],5
+  0040152E: 8B 06              mov         eax,dword ptr [esi]
+  00401530: 8B 40 04           mov         eax,dword ptr [eax+4]
+  00401533: 8B 4C 30 38        mov         ecx,dword ptr [eax+esi+38h]
+  00401537: 85 C9              test        ecx,ecx
+  00401539: 74 05              je          00401540
+  0040153B: 8B 01              mov         eax,dword ptr [ecx]
+  0040153D: FF 50 08           call        dword ptr [eax+8]
+  00401540: 8B 45 EC           mov         eax,dword ptr [ebp-14h]
+  00401543: 8B 4D F4           mov         ecx,dword ptr [ebp-0Ch]
+  00401546: 64 89 0D 00 00 00  mov         dword ptr fs:[0],ecx
+            00
+  0040154D: 59                 pop         ecx
+  0040154E: 5F                 pop         edi
+  0040154F: 5E                 pop         esi
+  00401550: 5B                 pop         ebx
+  00401551: 8B E5              mov         esp,ebp
+  00401553: 5D                 pop         ebp
+  00401554: C3                 ret
+@__security_check_cookie@4:
+  00401555: 3B 0D 08 50 40 00  cmp         ecx,dword ptr [___security_cookie]
+  0040155B: F2 75 02           bnd jne     00401560
+  0040155E: F2 C3              bnd ret
+  00401560: F2 E9 AD 04 00 00  bnd jmp     ___report_gsfailure
+  00401566: 53                 push        ebx
+  00401567: 56                 push        esi
+  00401568: 57                 push        edi
+  00401569: 6A 00              push        0
+  0040156B: 68 A0 0F 00 00     push        0FA0h
+  00401570: 68 38 50 40 00     push        405038h
+  00401575: E8 52 0D 00 00     call        ___vcrt_InitializeCriticalSectionEx
+  0040157A: 83 C4 0C           add         esp,0Ch
+  0040157D: 68 70 31 40 00     push        offset ??_C@_1BK@MGMFAEKH@?$AAk?$AAe?$AAr?$AAn?$AAe?$AAl?$AA3?$AA2?$AA?4?$AAd?$AAl?$AAl?$AA?$AA@
+  00401582: FF 15 50 30 40 00  call        dword ptr [__imp__GetModuleHandleW@4]
+  00401588: 8B F0              mov         esi,eax
+  0040158A: 85 F6              test        esi,esi
+  0040158C: 0F 84 8C 00 00 00  je          0040161E
+  00401592: 68 8C 31 40 00     push        offset ??_C@_0BM@HLJJNPAH@InitializeConditionVariable?$AA@
+  00401597: 56                 push        esi
+  00401598: FF 15 04 30 40 00  call        dword ptr [__imp__GetProcAddress@8]
+  0040159E: 68 A8 31 40 00     push        offset ??_C@_0BJ@JEBJOJFJ@SleepConditionVariableCS?$AA@
+  004015A3: 56                 push        esi
+  004015A4: 8B D8              mov         ebx,eax
+  004015A6: FF 15 04 30 40 00  call        dword ptr [__imp__GetProcAddress@8]
+  004015AC: 68 C4 31 40 00     push        offset ??_C@_0BJ@PGPPEPCC@WakeAllConditionVariable?$AA@
+  004015B1: 56                 push        esi
+  004015B2: 8B F8              mov         edi,eax
+  004015B4: FF 15 04 30 40 00  call        dword ptr [__imp__GetProcAddress@8]
+  004015BA: 8B F0              mov         esi,eax
+  004015BC: 85 DB              test        ebx,ebx
+  004015BE: 74 37              je          004015F7
+  004015C0: 85 FF              test        edi,edi
+  004015C2: 74 33              je          004015F7
+  004015C4: 85 F6              test        esi,esi
+  004015C6: 74 2F              je          004015F7
+  004015C8: 83 25 54 50 40 00  and         dword ptr ds:[405054h],0
+            00
+  004015CF: 8B CB              mov         ecx,ebx
+  004015D1: 68 50 50 40 00     push        405050h
+  004015D6: E8 4A 09 00 00     call        @_guard_check_icall@4
+  004015DB: FF D3              call        ebx
+  004015DD: 57                 push        edi
+  004015DE: E8 43 00 00 00     call        ??$__crt_fast_encode_pointer@P6GHPAU_RTL_CONDITION_VARIABLE@@PAU_RTL_CRITICAL_SECTION@@K@Z@@YAP6GHPAU_RTL_CONDITION_VARIABLE@@PAU_RTL_CRITICAL_SECTION@@K@ZQ6GH01K@Z@Z
+  004015E3: 56                 push        esi
+  004015E4: A3 58 50 40 00     mov         dword ptr ds:[00405058h],eax
+  004015E9: E8 38 00 00 00     call        ??$__crt_fast_encode_pointer@P6GHPAU_RTL_CONDITION_VARIABLE@@PAU_RTL_CRITICAL_SECTION@@K@Z@@YAP6GHPAU_RTL_CONDITION_VARIABLE@@PAU_RTL_CRITICAL_SECTION@@K@ZQ6GH01K@Z@Z
+  004015EE: 59                 pop         ecx
+  004015EF: 59                 pop         ecx
+  004015F0: A3 5C 50 40 00     mov         dword ptr ds:[0040505Ch],eax
+  004015F5: EB 16              jmp         0040160D
+  004015F7: 33 C0              xor         eax,eax
+  004015F9: 50                 push        eax
+  004015FA: 50                 push        eax
+  004015FB: 6A 01              push        1
+  004015FD: 50                 push        eax
+  004015FE: FF 15 34 30 40 00  call        dword ptr [__imp__CreateEventW@16]
+  00401604: A3 54 50 40 00     mov         dword ptr ds:[00405054h],eax
+  00401609: 85 C0              test        eax,eax
+  0040160B: 74 11              je          0040161E
+  0040160D: 68 43 16 40 00     push        401643h
+  00401612: E8 4D 07 00 00     call        _atexit
+  00401617: 59                 pop         ecx
+  00401618: 5F                 pop         edi
+  00401619: 5E                 pop         esi
+  0040161A: 33 C0              xor         eax,eax
+  0040161C: 5B                 pop         ebx
+  0040161D: C3                 ret
+  0040161E: 6A 07              push        7
+  00401620: E8 54 07 00 00     call        ___scrt_fastfail
+  00401625: CC                 int         3
+??$__crt_fast_encode_pointer@P6GHPAU_RTL_CONDITION_VARIABLE@@PAU_RTL_CRITICAL_SECTION@@K@Z@@YAP6GHPAU_RTL_CONDITION_VARIABLE@@PAU_RTL_CRITICAL_SECTION@@K@ZQ6GH01K@Z@Z:
+  00401626: 55                 push        ebp
+  00401627: 8B EC              mov         ebp,esp
+  00401629: A1 08 50 40 00     mov         eax,dword ptr [___security_cookie]
+  0040162E: 83 E0 1F           and         eax,1Fh
+  00401631: 6A 20              push        20h
+  00401633: 59                 pop         ecx
+  00401634: 2B C8              sub         ecx,eax
+  00401636: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  00401639: D3 C8              ror         eax,cl
+  0040163B: 33 05 08 50 40 00  xor         eax,dword ptr [___security_cookie]
+  00401641: 5D                 pop         ebp
+  00401642: C3                 ret
+  00401643: 68 38 50 40 00     push        405038h
+  00401648: FF 15 44 30 40 00  call        dword ptr [__imp__DeleteCriticalSection@4]
+  0040164E: A1 54 50 40 00     mov         eax,dword ptr ds:[00405054h]
+  00401653: 85 C0              test        eax,eax
+  00401655: 74 07              je          0040165E
+  00401657: 50                 push        eax
+  00401658: FF 15 00 30 40 00  call        dword ptr [__imp__CloseHandle@4]
+  0040165E: C3                 ret
+__Init_thread_footer:
+  0040165F: 55                 push        ebp
+  00401660: 8B EC              mov         ebp,esp
+  00401662: E8 7D 00 00 00     call        __Init_thread_lock
+  00401667: 8B 0D 00 50 40 00  mov         ecx,dword ptr [__Init_global_epoch]
+  0040166D: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  00401670: 41                 inc         ecx
+  00401671: 89 0D 00 50 40 00  mov         dword ptr [__Init_global_epoch],ecx
+  00401677: 89 08              mov         dword ptr [eax],ecx
+  00401679: 64 A1 2C 00 00 00  mov         eax,dword ptr fs:[0000002Ch]
+  0040167F: 8B 0D A4 53 40 00  mov         ecx,dword ptr [__tls_index]
+  00401685: 8B 0C 88           mov         ecx,dword ptr [eax+ecx*4]
+  00401688: A1 00 50 40 00     mov         eax,dword ptr [__Init_global_epoch]
+  0040168D: 89 81 04 00 00 00  mov         dword ptr [ecx+4],eax
+  00401693: E8 99 00 00 00     call        __Init_thread_unlock
+  00401698: 5D                 pop         ebp
+  00401699: E9 52 00 00 00     jmp         __Init_thread_notify
+__Init_thread_header:
+  0040169E: 55                 push        ebp
+  0040169F: 8B EC              mov         ebp,esp
+  004016A1: 56                 push        esi
+  004016A2: E8 3D 00 00 00     call        __Init_thread_lock
+  004016A7: 8B 75 08           mov         esi,dword ptr [ebp+8]
+  004016AA: EB 08              jmp         004016B4
+  004016AC: 6A 64              push        64h
+  004016AE: E8 8A 00 00 00     call        __Init_thread_wait
+  004016B3: 59                 pop         ecx
+  004016B4: 83 3E 00           cmp         dword ptr [esi],0
+  004016B7: 74 21              je          004016DA
+  004016B9: 83 3E FF           cmp         dword ptr [esi],0FFFFFFFFh
+  004016BC: 74 EE              je          004016AC
+  004016BE: 64 A1 2C 00 00 00  mov         eax,dword ptr fs:[0000002Ch]
+  004016C4: 8B 0D A4 53 40 00  mov         ecx,dword ptr [__tls_index]
+  004016CA: 8B 0C 88           mov         ecx,dword ptr [eax+ecx*4]
+  004016CD: A1 00 50 40 00     mov         eax,dword ptr [__Init_global_epoch]
+  004016D2: 89 81 04 00 00 00  mov         dword ptr [ecx+4],eax
+  004016D8: EB 03              jmp         004016DD
+  004016DA: 83 0E FF           or          dword ptr [esi],0FFFFFFFFh
+  004016DD: 5E                 pop         esi
+  004016DE: 5D                 pop         ebp
+  004016DF: E9 4D 00 00 00     jmp         __Init_thread_unlock
+__Init_thread_lock:
+  004016E4: 68 38 50 40 00     push        405038h
+  004016E9: FF 15 4C 30 40 00  call        dword ptr [__imp__EnterCriticalSection@4]
+  004016EF: C3                 ret
+__Init_thread_notify:
+  004016F0: A1 54 50 40 00     mov         eax,dword ptr ds:[00405054h]
+  004016F5: 85 C0              test        eax,eax
+  004016F7: 75 24              jne         0040171D
+  004016F9: 56                 push        esi
+  004016FA: 8B 35 08 50 40 00  mov         esi,dword ptr [___security_cookie]
+  00401700: 8B CE              mov         ecx,esi
+  00401702: 33 35 5C 50 40 00  xor         esi,dword ptr ds:[40505Ch]
+  00401708: 83 E1 1F           and         ecx,1Fh
+  0040170B: D3 CE              ror         esi,cl
+  0040170D: 68 50 50 40 00     push        405050h
+  00401712: 8B CE              mov         ecx,esi
+  00401714: E8 0C 08 00 00     call        @_guard_check_icall@4
+  00401719: FF D6              call        esi
+  0040171B: 5E                 pop         esi
+  0040171C: C3                 ret
+  0040171D: 50                 push        eax
+  0040171E: FF 15 40 30 40 00  call        dword ptr [__imp__SetEvent@4]
+  00401724: FF 35 54 50 40 00  push        dword ptr ds:[405054h]
+  0040172A: FF 15 3C 30 40 00  call        dword ptr [__imp__ResetEvent@4]
+  00401730: C3                 ret
+__Init_thread_unlock:
+  00401731: 68 38 50 40 00     push        405038h
+  00401736: FF 15 48 30 40 00  call        dword ptr [__imp__LeaveCriticalSection@4]
+  0040173C: C3                 ret
+__Init_thread_wait:
+  0040173D: 55                 push        ebp
+  0040173E: 8B EC              mov         ebp,esp
+  00401740: 83 3D 54 50 40 00  cmp         dword ptr ds:[405054h],0
+            00
+  00401747: 56                 push        esi
+  00401748: 75 31              jne         0040177B
+  0040174A: 8B 35 08 50 40 00  mov         esi,dword ptr [___security_cookie]
+  00401750: 8B CE              mov         ecx,esi
+  00401752: FF 75 08           push        dword ptr [ebp+8]
+  00401755: 33 35 58 50 40 00  xor         esi,dword ptr ds:[405058h]
+  0040175B: 83 E1 1F           and         ecx,1Fh
+  0040175E: D3 CE              ror         esi,cl
+  00401760: 68 38 50 40 00     push        405038h
+  00401765: 68 50 50 40 00     push        405050h
+  0040176A: 8B CE              mov         ecx,esi
+  0040176C: E8 B4 07 00 00     call        @_guard_check_icall@4
+  00401771: FF D6              call        esi
+  00401773: F7 D8              neg         eax
+  00401775: 1B C0              sbb         eax,eax
+  00401777: F7 D8              neg         eax
+  00401779: EB 24              jmp         0040179F
+  0040177B: E8 B1 FF FF FF     call        __Init_thread_unlock
+  00401780: 6A 00              push        0
+  00401782: FF 75 08           push        dword ptr [ebp+8]
+  00401785: FF 35 54 50 40 00  push        dword ptr ds:[405054h]
+  0040178B: FF 15 38 30 40 00  call        dword ptr [__imp__WaitForSingleObjectEx@12]
+  00401791: 8B F0              mov         esi,eax
+  00401793: E8 4C FF FF FF     call        __Init_thread_lock
+  00401798: 33 C0              xor         eax,eax
+  0040179A: 85 F6              test        esi,esi
+  0040179C: 0F 94 C0           sete        al
+  0040179F: 5E                 pop         esi
+  004017A0: 5D                 pop         ebp
+  004017A1: C3                 ret
+??3@YAXPAXI@Z:
+  004017A2: 55                 push        ebp
+  004017A3: 8B EC              mov         ebp,esp
+  004017A5: FF 75 08           push        dword ptr [ebp+8]
+  004017A8: E8 7E 07 00 00     call        ??3@YAXPAX@Z
+  004017AD: 59                 pop         ecx
+  004017AE: 5D                 pop         ebp
+  004017AF: C3                 ret
+  004017B0: 56                 push        esi
+  004017B1: 6A 01              push        1
+  004017B3: E8 38 0B 00 00     call        __set_app_type
+  004017B8: E8 13 08 00 00     call        __get_startup_file_mode
+  004017BD: 50                 push        eax
+  004017BE: E8 63 0B 00 00     call        __set_fmode
+  004017C3: E8 8E 0B 00 00     call        ___p__commode
+  004017C8: 8B F0              mov         esi,eax
+  004017CA: E8 07 08 00 00     call        ___scrt_initialize_winrt
+  004017CF: 6A 01              push        1
+  004017D1: 89 06              mov         dword ptr [esi],eax
+  004017D3: E8 E8 03 00 00     call        ___scrt_initialize_onexit_tables
+  004017D8: 83 C4 0C           add         esp,0Ch
+  004017DB: 5E                 pop         esi
+  004017DC: 84 C0              test        al,al
+  004017DE: 74 63              je          00401843
+  004017E0: DB E2              fnclex
+  004017E2: E8 61 08 00 00     call        __RTC_Initialize
+  004017E7: 68 73 20 40 00     push        offset __RTC_Terminate
+  004017EC: E8 73 05 00 00     call        _atexit
+  004017F1: E8 D6 07 00 00     call        __get_startup_argv_mode
+  004017F6: 50                 push        eax
+  004017F7: E8 00 0B 00 00     call        __configure_wide_argv
+  004017FC: 59                 pop         ecx
+  004017FD: 59                 pop         ecx
+  004017FE: 85 C0              test        eax,eax
+  00401800: 75 41              jne         00401843
+  00401802: E8 D2 07 00 00     call        ?__scrt_initialize_type_info@@YAXXZ
+  00401807: E8 24 08 00 00     call        ___scrt_is_user_matherr_present
+  0040180C: 85 C0              test        eax,eax
+  0040180E: 74 0B              je          0040181B
+  00401810: 68 D6 1F 40 00     push        offset ___scrt_initialize_winrt
+  00401815: E8 DC 0A 00 00     call        ___setusermatherr
+  0040181A: 59                 pop         ecx
+  0040181B: E8 E6 07 00 00     call        @_guard_check_icall_nop@4
+  00401820: E8 E1 07 00 00     call        @_guard_check_icall_nop@4
+  00401825: E8 BB 07 00 00     call        __initialize_default_precision
+  0040182A: E8 A7 07 00 00     call        ___scrt_initialize_winrt
+  0040182F: 50                 push        eax
+  00401830: E8 15 0B 00 00     call        __configthreadlocale
+  00401835: 59                 pop         ecx
+  00401836: E8 C7 0A 00 00     call        __initialize_wide_environment
+  0040183B: E8 96 07 00 00     call        ___scrt_initialize_winrt
+  00401840: 33 C0              xor         eax,eax
+  00401842: C3                 ret
+  00401843: 6A 07              push        7
+  00401845: E8 2F 05 00 00     call        ___scrt_fastfail
+  0040184A: CC                 int         3
+  0040184B: E8 C3 07 00 00     call        ___scrt_initialize_default_local_stdio_options
+  00401850: 33 C0              xor         eax,eax
+  00401852: C3                 ret
+  00401853: E8 80 06 00 00     call        ___scrt_set_unhandled_exception_filter
+  00401858: E8 79 07 00 00     call        ___scrt_initialize_winrt
+  0040185D: 50                 push        eax
+  0040185E: E8 ED 0A 00 00     call        __set_new_mode
+  00401863: 59                 pop         ecx
+  00401864: C3                 ret
+  00401865: 6A 14              push        14h
+  00401867: 68 78 37 40 00     push        403778h
+  0040186C: E8 2F 08 00 00     call        __SEH_prolog4
+  00401871: 6A 01              push        1
+  00401873: E8 0F 03 00 00     call        ___scrt_initialize_crt
+  00401878: 59                 pop         ecx
+  00401879: 84 C0              test        al,al
+  0040187B: 75 07              jne         00401884
+  0040187D: 6A 07              push        7
+  0040187F: E8 F5 04 00 00     call        ___scrt_fastfail
+  00401884: 32 DB              xor         bl,bl
+  00401886: 88 5D E7           mov         byte ptr [ebp-19h],bl
+  00401889: 83 65 FC 00        and         dword ptr [ebp-4],0
+  0040188D: E8 C0 02 00 00     call        ___scrt_acquire_startup_lock
+  00401892: 88 45 DC           mov         byte ptr [ebp-24h],al
+  00401895: A1 7C 53 40 00     mov         eax,dword ptr [___scrt_current_native_startup_state]
+  0040189A: 33 C9              xor         ecx,ecx
+  0040189C: 41                 inc         ecx
+  0040189D: 3B C1              cmp         eax,ecx
+  0040189F: 74 DC              je          0040187D
+  004018A1: 85 C0              test        eax,eax
+  004018A3: 75 49              jne         004018EE
+  004018A5: 89 0D 7C 53 40 00  mov         dword ptr [___scrt_current_native_startup_state],ecx
+  004018AB: 68 48 31 40 00     push        offset ___xi_z
+  004018B0: 68 38 31 40 00     push        offset ___xi_a
+  004018B5: E8 5A 0A 00 00     call        __initterm_e
+  004018BA: 59                 pop         ecx
+  004018BB: 59                 pop         ecx
+  004018BC: 85 C0              test        eax,eax
+  004018BE: 74 11              je          004018D1
+  004018C0: C7 45 FC FE FF FF  mov         dword ptr [ebp-4],0FFFFFFFEh
+            FF
+  004018C7: B8 FF 00 00 00     mov         eax,0FFh
+  004018CC: E9 0A 01 00 00     jmp         004019DB
+  004018D1: 68 34 31 40 00     push        offset ___xc_z
+  004018D6: 68 2C 31 40 00     push        offset ___xc_a
+  004018DB: E8 2E 0A 00 00     call        __initterm
+  004018E0: 59                 pop         ecx
+  004018E1: 59                 pop         ecx
+  004018E2: C7 05 7C 53 40 00  mov         dword ptr [___scrt_current_native_startup_state],2
+            02 00 00 00
+  004018EC: EB 05              jmp         004018F3
+  004018EE: 8A D9              mov         bl,cl
+  004018F0: 88 5D E7           mov         byte ptr [ebp-19h],bl
+  004018F3: FF 75 DC           push        dword ptr [ebp-24h]
+  004018F6: E8 E9 03 00 00     call        ___scrt_release_startup_lock
+  004018FB: 59                 pop         ecx
+  004018FC: E8 3B 07 00 00     call        ___scrt_get_dyn_tls_init_callback
+  00401901: 8B F0              mov         esi,eax
+  00401903: 33 FF              xor         edi,edi
+  00401905: 39 3E              cmp         dword ptr [esi],edi
+  00401907: 74 1A              je          00401923
+  00401909: 56                 push        esi
+  0040190A: E8 48 03 00 00     call        ___scrt_is_nonwritable_in_current_image
+  0040190F: 59                 pop         ecx
+  00401910: 84 C0              test        al,al
+  00401912: 74 0F              je          00401923
+  00401914: 57                 push        edi
+  00401915: 6A 02              push        2
+  00401917: 57                 push        edi
+  00401918: 8B 36              mov         esi,dword ptr [esi]
+  0040191A: 8B CE              mov         ecx,esi
+  0040191C: E8 04 06 00 00     call        @_guard_check_icall@4
+  00401921: FF D6              call        esi
+  00401923: E8 1A 07 00 00     call        ___scrt_get_dyn_tls_dtor_callback
+  00401928: 8B F0              mov         esi,eax
+  0040192A: 39 3E              cmp         dword ptr [esi],edi
+  0040192C: 74 13              je          00401941
+  0040192E: 56                 push        esi
+  0040192F: E8 23 03 00 00     call        ___scrt_is_nonwritable_in_current_image
+  00401934: 59                 pop         ecx
+  00401935: 84 C0              test        al,al
+  00401937: 74 08              je          00401941
+  00401939: FF 36              push        dword ptr [esi]
+  0040193B: E8 04 0A 00 00     call        __register_thread_local_exe_atexit_callback
+  00401940: 59                 pop         ecx
+  00401941: 57                 push        edi
+  00401942: E8 8B 09 00 00     call        ___telemetry_main_invoke_trigger
+  00401947: E8 E6 09 00 00     call        ___p___wargv
+  0040194C: 8B F8              mov         edi,eax
+  0040194E: E8 D9 09 00 00     call        ___p___argc
+  00401953: 8B F0              mov         esi,eax
+  00401955: E8 AE 09 00 00     call        __get_initial_wide_environment
+  0040195A: 50                 push        eax
+  0040195B: FF 37              push        dword ptr [edi]
+  0040195D: FF 36              push        dword ptr [esi]
+  0040195F: E8 8C F7 FF FF     call        _wmain
+  00401964: 8B F0              mov         esi,eax
+  00401966: 6A 00              push        0
+  00401968: E8 6B 09 00 00     call        ___telemetry_main_return_trigger
+  0040196D: 83 C4 14           add         esp,14h
+  00401970: E8 1F 05 00 00     call        ___scrt_is_managed_app
+  00401975: 84 C0              test        al,al
+  00401977: 75 06              jne         0040197F
+  00401979: 56                 push        esi
+  0040197A: E8 9B 09 00 00     call        _exit
+  0040197F: 84 DB              test        bl,bl
+  00401981: 75 05              jne         00401988
+  00401983: E8 B0 09 00 00     call        __cexit
+  00401988: 6A 00              push        0
+  0040198A: 6A 01              push        1
+  0040198C: E8 70 03 00 00     call        ___scrt_uninitialize_crt
+  00401991: 59                 pop         ecx
+  00401992: 59                 pop         ecx
+  00401993: C7 45 FC FE FF FF  mov         dword ptr [ebp-4],0FFFFFFFEh
+            FF
+  0040199A: 8B C6              mov         eax,esi
+  0040199C: EB 3D              jmp         004019DB
+  0040199E: 8B 4D EC           mov         ecx,dword ptr [ebp-14h]
+  004019A1: 8B 01              mov         eax,dword ptr [ecx]
+  004019A3: 8B 00              mov         eax,dword ptr [eax]
+  004019A5: 89 45 E0           mov         dword ptr [ebp-20h],eax
+  004019A8: 51                 push        ecx
+  004019A9: 50                 push        eax
+  004019AA: E8 3B 09 00 00     call        __seh_filter_exe
+  004019AF: 59                 pop         ecx
+  004019B0: 59                 pop         ecx
+  004019B1: C3                 ret
+  004019B2: 8B 65 E8           mov         esp,dword ptr [ebp-18h]
+  004019B5: E8 DA 04 00 00     call        ___scrt_is_managed_app
+  004019BA: 84 C0              test        al,al
+  004019BC: 75 08              jne         004019C6
+  004019BE: FF 75 E0           push        dword ptr [ebp-20h]
+  004019C1: E8 5A 09 00 00     call        __exit
+  004019C6: 80 7D E7 00        cmp         byte ptr [ebp-19h],0
+  004019CA: 75 05              jne         004019D1
+  004019CC: E8 6D 09 00 00     call        __c_exit
+  004019D1: C7 45 FC FE FF FF  mov         dword ptr [ebp-4],0FFFFFFFEh
+            FF
+  004019D8: 8B 45 E0           mov         eax,dword ptr [ebp-20h]
+  004019DB: E8 06 07 00 00     call        __SEH_epilog4
+  004019E0: C3                 ret
+_wmainCRTStartup:
+  004019E1: E8 4A 05 00 00     call        ___security_init_cookie
+  004019E6: E9 7A FE FF FF     jmp         00401865
+___raise_securityfailure:
+  004019EB: 55                 push        ebp
+  004019EC: 8B EC              mov         ebp,esp
+  004019EE: 6A 00              push        0
+  004019F0: FF 15 0C 30 40 00  call        dword ptr [__imp__SetUnhandledExceptionFilter@4]
+  004019F6: FF 75 08           push        dword ptr [ebp+8]
+  004019F9: FF 15 08 30 40 00  call        dword ptr [__imp__UnhandledExceptionFilter@4]
+  004019FF: 68 09 04 00 C0     push        0C0000409h
+  00401A04: FF 15 10 30 40 00  call        dword ptr [__imp__GetCurrentProcess@0]
+  00401A0A: 50                 push        eax
+  00401A0B: FF 15 14 30 40 00  call        dword ptr [__imp__TerminateProcess@8]
+  00401A11: 5D                 pop         ebp
+  00401A12: C3                 ret
+___report_gsfailure:
+  00401A13: 55                 push        ebp
+  00401A14: 8B EC              mov         ebp,esp
+  00401A16: 81 EC 24 03 00 00  sub         esp,324h
+  00401A1C: 6A 17              push        17h
+  00401A1E: E8 5D 09 00 00     call        _IsProcessorFeaturePresent@4
+  00401A23: 85 C0              test        eax,eax
+  00401A25: 74 05              je          00401A2C
+  00401A27: 6A 02              push        2
+  00401A29: 59                 pop         ecx
+  00401A2A: CD 29              int         29h
+  00401A2C: A3 60 51 40 00     mov         dword ptr ds:[00405160h],eax
+  00401A31: 89 0D 5C 51 40 00  mov         dword ptr ds:[40515Ch],ecx
+  00401A37: 89 15 58 51 40 00  mov         dword ptr ds:[405158h],edx
+  00401A3D: 89 1D 54 51 40 00  mov         dword ptr ds:[405154h],ebx
+  00401A43: 89 35 50 51 40 00  mov         dword ptr ds:[405150h],esi
+  00401A49: 89 3D 4C 51 40 00  mov         dword ptr ds:[40514Ch],edi
+  00401A4F: 66 8C 15 78 51 40  mov         word ptr ds:[405178h],ss
+            00
+  00401A56: 66 8C 0D 6C 51 40  mov         word ptr ds:[40516Ch],cs
+            00
+  00401A5D: 66 8C 1D 48 51 40  mov         word ptr ds:[405148h],ds
+            00
+  00401A64: 66 8C 05 44 51 40  mov         word ptr ds:[405144h],es
+            00
+  00401A6B: 66 8C 25 40 51 40  mov         word ptr ds:[405140h],fs
+            00
+  00401A72: 66 8C 2D 3C 51 40  mov         word ptr ds:[40513Ch],gs
+            00
+  00401A79: 9C                 pushfd
+  00401A7A: 8F 05 70 51 40 00  pop         dword ptr ds:[405170h]
+  00401A80: 8B 45 00           mov         eax,dword ptr [ebp]
+  00401A83: A3 64 51 40 00     mov         dword ptr ds:[00405164h],eax
+  00401A88: 8B 45 04           mov         eax,dword ptr [ebp+4]
+  00401A8B: A3 68 51 40 00     mov         dword ptr ds:[00405168h],eax
+  00401A90: 8D 45 08           lea         eax,[ebp+8]
+  00401A93: A3 74 51 40 00     mov         dword ptr ds:[00405174h],eax
+  00401A98: 8B 85 DC FC FF FF  mov         eax,dword ptr [ebp-324h]
+  00401A9E: C7 05 B0 50 40 00  mov         dword ptr ds:[4050B0h],10001h
+            01 00 01 00
+  00401AA8: A1 68 51 40 00     mov         eax,dword ptr ds:[00405168h]
+  00401AAD: A3 6C 50 40 00     mov         dword ptr ds:[0040506Ch],eax
+  00401AB2: C7 05 60 50 40 00  mov         dword ptr ds:[405060h],0C0000409h
+            09 04 00 C0
+  00401ABC: C7 05 64 50 40 00  mov         dword ptr ds:[405064h],1
+            01 00 00 00
+  00401AC6: C7 05 70 50 40 00  mov         dword ptr ds:[405070h],1
+            01 00 00 00
+  00401AD0: 6A 04              push        4
+  00401AD2: 58                 pop         eax
+  00401AD3: 6B C0 00           imul        eax,eax,0
+  00401AD6: C7 80 74 50 40 00  mov         dword ptr [eax+405074h],2
+            02 00 00 00
+  00401AE0: 6A 04              push        4
+  00401AE2: 58                 pop         eax
+  00401AE3: 6B C0 00           imul        eax,eax,0
+  00401AE6: 8B 0D 08 50 40 00  mov         ecx,dword ptr [___security_cookie]
+  00401AEC: 89 4C 05 F8        mov         dword ptr [ebp+eax-8],ecx
+  00401AF0: 6A 04              push        4
+  00401AF2: 58                 pop         eax
+  00401AF3: C1 E0 00           shl         eax,0
+  00401AF6: 8B 0D 04 50 40 00  mov         ecx,dword ptr [___security_cookie_complement]
+  00401AFC: 89 4C 05 F8        mov         dword ptr [ebp+eax-8],ecx
+  00401B00: 68 E0 31 40 00     push        4031E0h
+  00401B05: E8 E1 FE FF FF     call        ___raise_securityfailure
+  00401B0A: 8B E5              mov         esp,ebp
+  00401B0C: 5D                 pop         ebp
+  00401B0D: C3                 ret
+  00401B0E: 55                 push        ebp
+  00401B0F: 8B EC              mov         ebp,esp
+  00401B11: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  00401B14: 56                 push        esi
+  00401B15: 8B 48 3C           mov         ecx,dword ptr [eax+3Ch]
+  00401B18: 03 C8              add         ecx,eax
+  00401B1A: 0F B7 41 14        movzx       eax,word ptr [ecx+14h]
+  00401B1E: 8D 51 18           lea         edx,[ecx+18h]
+  00401B21: 03 D0              add         edx,eax
+  00401B23: 0F B7 41 06        movzx       eax,word ptr [ecx+6]
+  00401B27: 6B F0 28           imul        esi,eax,28h
+  00401B2A: 03 F2              add         esi,edx
+  00401B2C: 3B D6              cmp         edx,esi
+  00401B2E: 74 19              je          00401B49
+  00401B30: 8B 4D 0C           mov         ecx,dword ptr [ebp+0Ch]
+  00401B33: 3B 4A 0C           cmp         ecx,dword ptr [edx+0Ch]
+  00401B36: 72 0A              jb          00401B42
+  00401B38: 8B 42 08           mov         eax,dword ptr [edx+8]
+  00401B3B: 03 42 0C           add         eax,dword ptr [edx+0Ch]
+  00401B3E: 3B C8              cmp         ecx,eax
+  00401B40: 72 0C              jb          00401B4E
+  00401B42: 83 C2 28           add         edx,28h
+  00401B45: 3B D6              cmp         edx,esi
+  00401B47: 75 EA              jne         00401B33
+  00401B49: 33 C0              xor         eax,eax
+  00401B4B: 5E                 pop         esi
+  00401B4C: 5D                 pop         ebp
+  00401B4D: C3                 ret
+  00401B4E: 8B C2              mov         eax,edx
+  00401B50: EB F9              jmp         00401B4B
+___scrt_acquire_startup_lock:
+  00401B52: E8 68 07 00 00     call        ___scrt_is_ucrt_dll_in_use
+  00401B57: 85 C0              test        eax,eax
+  00401B59: 75 03              jne         00401B5E
+  00401B5B: 32 C0              xor         al,al
+  00401B5D: C3                 ret
+  00401B5E: 64 A1 18 00 00 00  mov         eax,dword ptr fs:[00000018h]
+  00401B64: 56                 push        esi
+  00401B65: BE 80 53 40 00     mov         esi,offset ___scrt_native_startup_lock
+  00401B6A: 8B 50 04           mov         edx,dword ptr [eax+4]
+  00401B6D: EB 04              jmp         00401B73
+  00401B6F: 3B D0              cmp         edx,eax
+  00401B71: 74 10              je          00401B83
+  00401B73: 33 C0              xor         eax,eax
+  00401B75: 8B CA              mov         ecx,edx
+  00401B77: F0 0F B1 0E        lock cmpxchg dword ptr [esi],ecx
+  00401B7B: 85 C0              test        eax,eax
+  00401B7D: 75 F0              jne         00401B6F
+  00401B7F: 32 C0              xor         al,al
+  00401B81: 5E                 pop         esi
+  00401B82: C3                 ret
+  00401B83: B0 01              mov         al,1
+  00401B85: 5E                 pop         esi
+  00401B86: C3                 ret
+___scrt_initialize_crt:
+  00401B87: 55                 push        ebp
+  00401B88: 8B EC              mov         ebp,esp
+  00401B8A: 83 7D 08 00        cmp         dword ptr [ebp+8],0
+  00401B8E: 75 07              jne         00401B97
+  00401B90: C6 05 9C 53 40 00  mov         byte ptr ds:[40539Ch],1
+            01
+  00401B97: E8 82 05 00 00     call        ___isa_available_init
+  00401B9C: E8 E5 07 00 00     call        ___acrt_initialize
+  00401BA1: 84 C0              test        al,al
+  00401BA3: 75 04              jne         00401BA9
+  00401BA5: 32 C0              xor         al,al
+  00401BA7: 5D                 pop         ebp
+  00401BA8: C3                 ret
+  00401BA9: E8 D8 07 00 00     call        ___acrt_initialize
+  00401BAE: 84 C0              test        al,al
+  00401BB0: 75 0A              jne         00401BBC
+  00401BB2: 6A 00              push        0
+  00401BB4: E8 CD 07 00 00     call        ___acrt_initialize
+  00401BB9: 59                 pop         ecx
+  00401BBA: EB E9              jmp         00401BA5
+  00401BBC: B0 01              mov         al,1
+  00401BBE: 5D                 pop         ebp
+  00401BBF: C3                 ret
+___scrt_initialize_onexit_tables:
+  00401BC0: 55                 push        ebp
+  00401BC1: 8B EC              mov         ebp,esp
+  00401BC3: 83 EC 0C           sub         esp,0Ch
+  00401BC6: 56                 push        esi
+  00401BC7: 8B 75 08           mov         esi,dword ptr [ebp+8]
+  00401BCA: 85 F6              test        esi,esi
+  00401BCC: 74 05              je          00401BD3
+  00401BCE: 83 FE 01           cmp         esi,1
+  00401BD1: 75 7C              jne         00401C4F
+  00401BD3: E8 E7 06 00 00     call        ___scrt_is_ucrt_dll_in_use
+  00401BD8: 85 C0              test        eax,eax
+  00401BDA: 74 2A              je          00401C06
+  00401BDC: 85 F6              test        esi,esi
+  00401BDE: 75 26              jne         00401C06
+  00401BE0: 68 84 53 40 00     push        405384h
+  00401BE5: E8 72 07 00 00     call        __initialize_onexit_table
+  00401BEA: 59                 pop         ecx
+  00401BEB: 85 C0              test        eax,eax
+  00401BED: 74 04              je          00401BF3
+  00401BEF: 32 C0              xor         al,al
+  00401BF1: EB 57              jmp         00401C4A
+  00401BF3: 68 90 53 40 00     push        405390h
+  00401BF8: E8 5F 07 00 00     call        __initialize_onexit_table
+  00401BFD: F7 D8              neg         eax
+  00401BFF: 59                 pop         ecx
+  00401C00: 1A C0              sbb         al,al
+  00401C02: FE C0              inc         al
+  00401C04: EB 44              jmp         00401C4A
+  00401C06: A1 08 50 40 00     mov         eax,dword ptr [___security_cookie]
+  00401C0B: 8D 75 F4           lea         esi,[ebp-0Ch]
+  00401C0E: 57                 push        edi
+  00401C0F: 83 E0 1F           and         eax,1Fh
+  00401C12: BF 84 53 40 00     mov         edi,405384h
+  00401C17: 6A 20              push        20h
+  00401C19: 59                 pop         ecx
+  00401C1A: 2B C8              sub         ecx,eax
+  00401C1C: 83 C8 FF           or          eax,0FFFFFFFFh
+  00401C1F: D3 C8              ror         eax,cl
+  00401C21: 33 05 08 50 40 00  xor         eax,dword ptr [___security_cookie]
+  00401C27: 89 45 F4           mov         dword ptr [ebp-0Ch],eax
+  00401C2A: 89 45 F8           mov         dword ptr [ebp-8],eax
+  00401C2D: 89 45 FC           mov         dword ptr [ebp-4],eax
+  00401C30: A5                 movs        dword ptr es:[edi],dword ptr [esi]
+  00401C31: A5                 movs        dword ptr es:[edi],dword ptr [esi]
+  00401C32: A5                 movs        dword ptr es:[edi],dword ptr [esi]
+  00401C33: BF 90 53 40 00     mov         edi,405390h
+  00401C38: 89 45 F4           mov         dword ptr [ebp-0Ch],eax
+  00401C3B: 89 45 F8           mov         dword ptr [ebp-8],eax
+  00401C3E: 8D 75 F4           lea         esi,[ebp-0Ch]
+  00401C41: 89 45 FC           mov         dword ptr [ebp-4],eax
+  00401C44: B0 01              mov         al,1
+  00401C46: A5                 movs        dword ptr es:[edi],dword ptr [esi]
+  00401C47: A5                 movs        dword ptr es:[edi],dword ptr [esi]
+  00401C48: A5                 movs        dword ptr es:[edi],dword ptr [esi]
+  00401C49: 5F                 pop         edi
+  00401C4A: 5E                 pop         esi
+  00401C4B: 8B E5              mov         esp,ebp
+  00401C4D: 5D                 pop         ebp
+  00401C4E: C3                 ret
+  00401C4F: 6A 05              push        5
+  00401C51: E8 23 01 00 00     call        ___scrt_fastfail
+  00401C56: CC                 int         3
+___scrt_is_nonwritable_in_current_image:
+  00401C57: 6A 08              push        8
+  00401C59: 68 98 37 40 00     push        403798h
+  00401C5E: E8 3D 04 00 00     call        __SEH_prolog4
+  00401C63: 83 65 FC 00        and         dword ptr [ebp-4],0
+  00401C67: B8 4D 5A 00 00     mov         eax,5A4Dh
+  00401C6C: 66 39 05 00 00 40  cmp         word ptr ds:[400000h],ax
+            00
+  00401C73: 75 60              jne         00401CD5
+  00401C75: A1 3C 00 40 00     mov         eax,dword ptr ds:[0040003Ch]
+  00401C7A: 81 B8 00 00 40 00  cmp         dword ptr [eax+400000h],4550h
+            50 45 00 00
+  00401C84: 75 4F              jne         00401CD5
+  00401C86: B9 0B 01 00 00     mov         ecx,10Bh
+  00401C8B: 66 39 88 18 00 40  cmp         word ptr [eax+400018h],cx
+            00
+  00401C92: 75 41              jne         00401CD5
+  00401C94: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  00401C97: B9 00 00 40 00     mov         ecx,400000h
+  00401C9C: 2B C1              sub         eax,ecx
+  00401C9E: 50                 push        eax
+  00401C9F: 51                 push        ecx
+  00401CA0: E8 69 FE FF FF     call        00401B0E
+  00401CA5: 59                 pop         ecx
+  00401CA6: 59                 pop         ecx
+  00401CA7: 85 C0              test        eax,eax
+  00401CA9: 74 2A              je          00401CD5
+  00401CAB: F7 40 24 00 00 00  test        dword ptr [eax+24h],80000000h
+            80
+  00401CB2: 75 21              jne         00401CD5
+  00401CB4: C7 45 FC FE FF FF  mov         dword ptr [ebp-4],0FFFFFFFEh
+            FF
+  00401CBB: B0 01              mov         al,1
+  00401CBD: EB 1F              jmp         00401CDE
+  00401CBF: 8B 45 EC           mov         eax,dword ptr [ebp-14h]
+  00401CC2: 8B 00              mov         eax,dword ptr [eax]
+  00401CC4: 33 C9              xor         ecx,ecx
+  00401CC6: 81 38 05 00 00 C0  cmp         dword ptr [eax],0C0000005h
+  00401CCC: 0F 94 C1           sete        cl
+  00401CCF: 8B C1              mov         eax,ecx
+  00401CD1: C3                 ret
+  00401CD2: 8B 65 E8           mov         esp,dword ptr [ebp-18h]
+  00401CD5: C7 45 FC FE FF FF  mov         dword ptr [ebp-4],0FFFFFFFEh
+            FF
+  00401CDC: 32 C0              xor         al,al
+  00401CDE: E8 03 04 00 00     call        __SEH_epilog4
+  00401CE3: C3                 ret
+___scrt_release_startup_lock:
+  00401CE4: 55                 push        ebp
+  00401CE5: 8B EC              mov         ebp,esp
+  00401CE7: E8 D3 05 00 00     call        ___scrt_is_ucrt_dll_in_use
+  00401CEC: 85 C0              test        eax,eax
+  00401CEE: 74 0F              je          00401CFF
+  00401CF0: 80 7D 08 00        cmp         byte ptr [ebp+8],0
+  00401CF4: 75 09              jne         00401CFF
+  00401CF6: 33 C0              xor         eax,eax
+  00401CF8: B9 80 53 40 00     mov         ecx,offset ___scrt_native_startup_lock
+  00401CFD: 87 01              xchg        eax,dword ptr [ecx]
+  00401CFF: 5D                 pop         ebp
+  00401D00: C3                 ret
+___scrt_uninitialize_crt:
+  00401D01: 55                 push        ebp
+  00401D02: 8B EC              mov         ebp,esp
+  00401D04: 80 3D 9C 53 40 00  cmp         byte ptr ds:[40539Ch],0
+            00
+  00401D0B: 74 06              je          00401D13
+  00401D0D: 80 7D 0C 00        cmp         byte ptr [ebp+0Ch],0
+  00401D11: 75 12              jne         00401D25
+  00401D13: FF 75 08           push        dword ptr [ebp+8]
+  00401D16: E8 6B 06 00 00     call        ___acrt_initialize
+  00401D1B: FF 75 08           push        dword ptr [ebp+8]
+  00401D1E: E8 63 06 00 00     call        ___acrt_initialize
+  00401D23: 59                 pop         ecx
+  00401D24: 59                 pop         ecx
+  00401D25: B0 01              mov         al,1
+  00401D27: 5D                 pop         ebp
+  00401D28: C3                 ret
+__onexit:
+  00401D29: 55                 push        ebp
+  00401D2A: 8B EC              mov         ebp,esp
+  00401D2C: A1 08 50 40 00     mov         eax,dword ptr [___security_cookie]
+  00401D31: 8B C8              mov         ecx,eax
+  00401D33: 33 05 84 53 40 00  xor         eax,dword ptr ds:[405384h]
+  00401D39: 83 E1 1F           and         ecx,1Fh
+  00401D3C: FF 75 08           push        dword ptr [ebp+8]
+  00401D3F: D3 C8              ror         eax,cl
+  00401D41: 83 F8 FF           cmp         eax,0FFFFFFFFh
+  00401D44: 75 07              jne         00401D4D
+  00401D46: E8 1D 06 00 00     call        __crt_atexit
+  00401D4B: EB 0B              jmp         00401D58
+  00401D4D: 68 84 53 40 00     push        405384h
+  00401D52: E8 0B 06 00 00     call        __register_onexit_function
+  00401D57: 59                 pop         ecx
+  00401D58: F7 D8              neg         eax
+  00401D5A: 59                 pop         ecx
+  00401D5B: 1B C0              sbb         eax,eax
+  00401D5D: F7 D0              not         eax
+  00401D5F: 23 45 08           and         eax,dword ptr [ebp+8]
+  00401D62: 5D                 pop         ebp
+  00401D63: C3                 ret
+_atexit:
+  00401D64: 55                 push        ebp
+  00401D65: 8B EC              mov         ebp,esp
+  00401D67: FF 75 08           push        dword ptr [ebp+8]
+  00401D6A: E8 BA FF FF FF     call        __onexit
+  00401D6F: F7 D8              neg         eax
+  00401D71: 59                 pop         ecx
+  00401D72: 1B C0              sbb         eax,eax
+  00401D74: F7 D8              neg         eax
+  00401D76: 48                 dec         eax
+  00401D77: 5D                 pop         ebp
+  00401D78: C3                 ret
+___scrt_fastfail:
+  00401D79: 55                 push        ebp
+  00401D7A: 8B EC              mov         ebp,esp
+  00401D7C: 81 EC 24 03 00 00  sub         esp,324h
+  00401D82: 53                 push        ebx
+  00401D83: 56                 push        esi
+  00401D84: 6A 17              push        17h
+  00401D86: E8 F5 05 00 00     call        _IsProcessorFeaturePresent@4
+  00401D8B: 85 C0              test        eax,eax
+  00401D8D: 74 05              je          00401D94
+  00401D8F: 8B 4D 08           mov         ecx,dword ptr [ebp+8]
+  00401D92: CD 29              int         29h
+  00401D94: 33 F6              xor         esi,esi
+  00401D96: 8D 85 DC FC FF FF  lea         eax,[ebp-324h]
+  00401D9C: 68 CC 02 00 00     push        2CCh
+  00401DA1: 56                 push        esi
+  00401DA2: 50                 push        eax
+  00401DA3: 89 35 A0 53 40 00  mov         dword ptr [___scrt_debugger_hook_flag],esi
+  00401DA9: E8 30 05 00 00     call        _memset
+  00401DAE: 83 C4 0C           add         esp,0Ch
+  00401DB1: 89 85 8C FD FF FF  mov         dword ptr [ebp-274h],eax
+  00401DB7: 89 8D 88 FD FF FF  mov         dword ptr [ebp-278h],ecx
+  00401DBD: 89 95 84 FD FF FF  mov         dword ptr [ebp-27Ch],edx
+  00401DC3: 89 9D 80 FD FF FF  mov         dword ptr [ebp-280h],ebx
+  00401DC9: 89 B5 7C FD FF FF  mov         dword ptr [ebp-284h],esi
+  00401DCF: 89 BD 78 FD FF FF  mov         dword ptr [ebp-288h],edi
+  00401DD5: 66 8C 95 A4 FD FF  mov         word ptr [ebp-25Ch],ss
+            FF
+  00401DDC: 66 8C 8D 98 FD FF  mov         word ptr [ebp-268h],cs
+            FF
+  00401DE3: 66 8C 9D 74 FD FF  mov         word ptr [ebp-28Ch],ds
+            FF
+  00401DEA: 66 8C 85 70 FD FF  mov         word ptr [ebp-290h],es
+            FF
+  00401DF1: 66 8C A5 6C FD FF  mov         word ptr [ebp-294h],fs
+            FF
+  00401DF8: 66 8C AD 68 FD FF  mov         word ptr [ebp-298h],gs
+            FF
+  00401DFF: 9C                 pushfd
+  00401E00: 8F 85 9C FD FF FF  pop         dword ptr [ebp-264h]
+  00401E06: 8B 45 04           mov         eax,dword ptr [ebp+4]
+  00401E09: 89 85 94 FD FF FF  mov         dword ptr [ebp-26Ch],eax
+  00401E0F: 8D 45 04           lea         eax,[ebp+4]
+  00401E12: 89 85 A0 FD FF FF  mov         dword ptr [ebp-260h],eax
+  00401E18: C7 85 DC FC FF FF  mov         dword ptr [ebp-324h],10001h
+            01 00 01 00
+  00401E22: 8B 40 FC           mov         eax,dword ptr [eax-4]
+  00401E25: 6A 50              push        50h
+  00401E27: 89 85 90 FD FF FF  mov         dword ptr [ebp-270h],eax
+  00401E2D: 8D 45 A8           lea         eax,[ebp-58h]
+  00401E30: 56                 push        esi
+  00401E31: 50                 push        eax
+  00401E32: E8 A7 04 00 00     call        _memset
+  00401E37: 8B 45 04           mov         eax,dword ptr [ebp+4]
+  00401E3A: 83 C4 0C           add         esp,0Ch
+  00401E3D: C7 45 A8 15 00 00  mov         dword ptr [ebp-58h],40000015h
+            40
+  00401E44: C7 45 AC 01 00 00  mov         dword ptr [ebp-54h],1
+            00
+  00401E4B: 89 45 B4           mov         dword ptr [ebp-4Ch],eax
+  00401E4E: FF 15 1C 30 40 00  call        dword ptr [__imp__IsDebuggerPresent@0]
+  00401E54: 56                 push        esi
+  00401E55: 8D 58 FF           lea         ebx,[eax-1]
+  00401E58: F7 DB              neg         ebx
+  00401E5A: 8D 45 A8           lea         eax,[ebp-58h]
+  00401E5D: 89 45 F8           mov         dword ptr [ebp-8],eax
+  00401E60: 8D 85 DC FC FF FF  lea         eax,[ebp-324h]
+  00401E66: 1A DB              sbb         bl,bl
+  00401E68: 89 45 FC           mov         dword ptr [ebp-4],eax
+  00401E6B: FE C3              inc         bl
+  00401E6D: FF 15 0C 30 40 00  call        dword ptr [__imp__SetUnhandledExceptionFilter@4]
+  00401E73: 8D 45 F8           lea         eax,[ebp-8]
+  00401E76: 50                 push        eax
+  00401E77: FF 15 08 30 40 00  call        dword ptr [__imp__UnhandledExceptionFilter@4]
+  00401E7D: 85 C0              test        eax,eax
+  00401E7F: 75 0D              jne         00401E8E
+  00401E81: 0F B6 C3           movzx       eax,bl
+  00401E84: F7 D8              neg         eax
+  00401E86: 1B C0              sbb         eax,eax
+  00401E88: 21 05 A0 53 40 00  and         dword ptr [___scrt_debugger_hook_flag],eax
+  00401E8E: 5E                 pop         esi
+  00401E8F: 5B                 pop         ebx
+  00401E90: 8B E5              mov         esp,ebp
+  00401E92: 5D                 pop         ebp
+  00401E93: C3                 ret
+___scrt_is_managed_app:
+  00401E94: 6A 00              push        0
+  00401E96: FF 15 50 30 40 00  call        dword ptr [__imp__GetModuleHandleW@4]
+  00401E9C: 8B C8              mov         ecx,eax
+  00401E9E: 85 C9              test        ecx,ecx
+  00401EA0: 75 03              jne         00401EA5
+  00401EA2: 32 C0              xor         al,al
+  00401EA4: C3                 ret
+  00401EA5: B8 4D 5A 00 00     mov         eax,5A4Dh
+  00401EAA: 66 39 01           cmp         word ptr [ecx],ax
+  00401EAD: 75 F3              jne         00401EA2
+  00401EAF: 8B 41 3C           mov         eax,dword ptr [ecx+3Ch]
+  00401EB2: 03 C1              add         eax,ecx
+  00401EB4: 81 38 50 45 00 00  cmp         dword ptr [eax],4550h
+  00401EBA: 75 E6              jne         00401EA2
+  00401EBC: B9 0B 01 00 00     mov         ecx,10Bh
+  00401EC1: 66 39 48 18        cmp         word ptr [eax+18h],cx
+  00401EC5: 75 DB              jne         00401EA2
+  00401EC7: 83 78 74 0E        cmp         dword ptr [eax+74h],0Eh
+  00401ECB: 76 D5              jbe         00401EA2
+  00401ECD: 83 B8 E8 00 00 00  cmp         dword ptr [eax+0E8h],0
+            00
+  00401ED4: 0F 95 C0           setne       al
+  00401ED7: C3                 ret
+___scrt_set_unhandled_exception_filter:
+  00401ED8: 68 E4 1E 40 00     push        offset ___scrt_unhandled_exception_filter@4
+  00401EDD: FF 15 0C 30 40 00  call        dword ptr [__imp__SetUnhandledExceptionFilter@4]
+  00401EE3: C3                 ret
+___scrt_unhandled_exception_filter@4:
+  00401EE4: 55                 push        ebp
+  00401EE5: 8B EC              mov         ebp,esp
+  00401EE7: 8B 45 08           mov         eax,dword ptr [ebp+8]
+  00401EEA: 8B 00              mov         eax,dword ptr [eax]
+  00401EEC: 81 38 63 73 6D E0  cmp         dword ptr [eax],0E06D7363h
+  00401EF2: 75 25              jne         00401F19
+  00401EF4: 83 78 10 03        cmp         dword ptr [eax+10h],3
+  00401EF8: 75 1F              jne         00401F19
+  00401EFA: 8B 40 14           mov         eax,dword ptr [eax+14h]
+  00401EFD: 3D 20 05 93 19     cmp         eax,19930520h
+  00401F02: 74 1B              je          00401F1F
+  00401F04: 3D 21 05 93 19     cmp         eax,19930521h
+  00401F09: 74 14              je          00401F1F
+  00401F0B: 3D 22 05 93 19     cmp         eax,19930522h
+  00401F10: 74 0D              je          00401F1F
+  00401F12: 3D 00 40 99 01     cmp         eax,1994000h
+  00401F17: 74 06              je          00401F1F
+  00401F19: 33 C0              xor         eax,eax
+  00401F1B: 5D                 pop         ebp
+  00401F1C: C2 04 00           ret         4
+  00401F1F: E8 4A 04 00 00     call        _terminate
+  00401F24: CC                 int         3
+@_guard_check_icall@4:
+  00401F25: FF 25 28 31 40 00  jmp         dword ptr [___guard_check_icall_fptr]
+??3@YAXPAX@Z:
+  00401F2B: E9 44 04 00 00     jmp         _free
+___security_init_cookie:
+  00401F30: 55                 push        ebp
+  00401F31: 8B EC              mov         ebp,esp
+  00401F33: 83 EC 14           sub         esp,14h
+  00401F36: 83 65 F4 00        and         dword ptr [ebp-0Ch],0
+  00401F3A: 83 65 F8 00        and         dword ptr [ebp-8],0
+  00401F3E: A1 08 50 40 00     mov         eax,dword ptr [___security_cookie]
+  00401F43: 56                 push        esi
+  00401F44: 57                 push        edi
+  00401F45: BF 4E E6 40 BB     mov         edi,0BB40E64Eh
+  00401F4A: BE 00 00 FF FF     mov         esi,0FFFF0000h
+  00401F4F: 3B C7              cmp         eax,edi
+  00401F51: 74 0D              je          00401F60
+  00401F53: 85 C6              test        esi,eax
+  00401F55: 74 09              je          00401F60
+  00401F57: F7 D0              not         eax
+  00401F59: A3 04 50 40 00     mov         dword ptr [___security_cookie_complement],eax
+  00401F5E: EB 66              jmp         00401FC6
+  00401F60: 8D 45 F4           lea         eax,[ebp-0Ch]
+  00401F63: 50                 push        eax
+  00401F64: FF 15 2C 30 40 00  call        dword ptr [__imp__GetSystemTimeAsFileTime@4]
+  00401F6A: 8B 45 F8           mov         eax,dword ptr [ebp-8]
+  00401F6D: 33 45 F4           xor         eax,dword ptr [ebp-0Ch]
+  00401F70: 89 45 FC           mov         dword ptr [ebp-4],eax
+  00401F73: FF 15 28 30 40 00  call        dword ptr [__imp__GetCurrentThreadId@0]
+  00401F79: 31 45 FC           xor         dword ptr [ebp-4],eax
+  00401F7C: FF 15 24 30 40 00  call        dword ptr [__imp__GetCurrentProcessId@0]
+  00401F82: 31 45 FC           xor         dword ptr [ebp-4],eax
+  00401F85: 8D 45 EC           lea         eax,[ebp-14h]
+  00401F88: 50                 push        eax
+  00401F89: FF 15 20 30 40 00  call        dword ptr [__imp__QueryPerformanceCounter@4]
+  00401F8F: 8B 4D F0           mov         ecx,dword ptr [ebp-10h]
+  00401F92: 8D 45 FC           lea         eax,[ebp-4]
+  00401F95: 33 4D EC           xor         ecx,dword ptr [ebp-14h]
+  00401F98: 33 4D FC           xor         ecx,dword ptr [ebp-4]
+  00401F9B: 33 C8              xor         ecx,eax
+  00401F9D: 3B CF              cmp         ecx,edi
+  00401F9F: 75 07              jne         00401FA8
+  00401FA1: B9 4F E6 40 BB     mov         ecx,0BB40E64Fh
+  00401FA6: EB 10              jmp         00401FB8
+  00401FA8: 85 CE              test        esi,ecx
+  00401FAA: 75 0C              jne         00401FB8
+  00401FAC: 8B C1              mov         eax,ecx
+  00401FAE: 0D 11 47 00 00     or          eax,4711h
+  00401FB3: C1 E0 10           shl         eax,10h
+  00401FB6: 0B C8              or          ecx,eax
+  00401FB8: 89 0D 08 50 40 00  mov         dword ptr [___security_cookie],ecx
+  00401FBE: F7 D1              not         ecx
+  00401FC0: 89 0D 04 50 40 00  mov         dword ptr [___security_cookie_complement],ecx
+  00401FC6: 5F                 pop         edi
+  00401FC7: 5E                 pop         esi
+  00401FC8: 8B E5              mov         esp,ebp
+  00401FCA: 5D                 pop         ebp
+  00401FCB: C3                 ret
+__get_startup_argv_mode:
+  00401FCC: 33 C0              xor         eax,eax
+  00401FCE: 40                 inc         eax
+  00401FCF: C3                 ret
+__get_startup_file_mode:
+  00401FD0: B8 00 40 00 00     mov         eax,4000h
+  00401FD5: C3                 ret
+___scrt_initialize_winrt:
+  00401FD6: 33 C0              xor         eax,eax
+  00401FD8: C3                 ret
+?__scrt_initialize_type_info@@YAXXZ:
+  00401FD9: 68 A8 53 40 00     push        offset ?__type_info_root_node@@3U__type_info_node@@A
+  00401FDE: FF 15 30 30 40 00  call        dword ptr [__imp__InitializeSListHead@4]
+  00401FE4: C3                 ret
+__initialize_default_precision:
+  00401FE5: 68 00 00 03 00     push        30000h
+  00401FEA: 68 00 00 01 00     push        10000h
+  00401FEF: 6A 00              push        0
+  00401FF1: E8 84 03 00 00     call        __controlfp_s
+  00401FF6: 83 C4 0C           add         esp,0Ch
+  00401FF9: 85 C0              test        eax,eax
+  00401FFB: 75 01              jne         00401FFE
+  00401FFD: C3                 ret
+  00401FFE: 6A 07              push        7
+  00402000: E8 74 FD FF FF     call        ___scrt_fastfail
+  00402005: CC                 int         3
+@_guard_check_icall_nop@4:
+  00402006: C3                 ret
+___local_stdio_printf_options:
+  00402007: B8 B0 53 40 00     mov         eax,offset ?_OptionsStorage@?1??__local_stdio_printf_options@@9@4_KA
+  0040200C: C3                 ret
+___local_stdio_scanf_options:
+  0040200D: B8 B8 53 40 00     mov         eax,offset ?_OptionsStorage@?1??__local_stdio_scanf_options@@9@4_KA
+  00402012: C3                 ret
+___scrt_initialize_default_local_stdio_options:
+  00402013: E8 EF FF FF FF     call        ___local_stdio_printf_options
+  00402018: 8B 48 04           mov         ecx,dword ptr [eax+4]
+  0040201B: 83 08 04           or          dword ptr [eax],4
+  0040201E: 89 48 04           mov         dword ptr [eax+4],ecx
+  00402021: E8 E7 FF FF FF     call        ___local_stdio_scanf_options
+  00402026: 8B 48 04           mov         ecx,dword ptr [eax+4]
+  00402029: 83 08 02           or          dword ptr [eax],2
+  0040202C: 89 48 04           mov         dword ptr [eax+4],ecx
+  0040202F: C3                 ret
+___scrt_is_user_matherr_present:
+  00402030: 33 C0              xor         eax,eax
+  00402032: 39 05 10 50 40 00  cmp         dword ptr [___scrt_default_matherr],eax
+  00402038: 0F 94 C0           sete        al
+  0040203B: C3                 ret
+___scrt_get_dyn_tls_init_callback:
+  0040203C: B8 DC 53 40 00     mov         eax,offset ___dyn_tls_init_callback
+  00402041: C3                 ret
+___scrt_get_dyn_tls_dtor_callback:
+  00402042: B8 D8 53 40 00     mov         eax,offset ___dyn_tls_dtor_callback
+  00402047: C3                 ret
+__RTC_Initialize:
+  00402048: 53                 push        ebx
+  00402049: 56                 push        esi
+  0040204A: BE A4 36 40 00     mov         esi,offset ___rtc_izz
+  0040204F: BB A4 36 40 00     mov         ebx,offset ___rtc_izz
+  00402054: 3B F3              cmp         esi,ebx
+  00402056: 73 18              jae         00402070
+  00402058: 57                 push        edi
+  00402059: 8B 3E              mov         edi,dword ptr [esi]
+  0040205B: 85 FF              test        edi,edi
+  0040205D: 74 09              je          00402068
+  0040205F: 8B CF              mov         ecx,edi
+  00402061: E8 BF FE FF FF     call        @_guard_check_icall@4
+  00402066: FF D7              call        edi
+  00402068: 83 C6 04           add         esi,4
+  0040206B: 3B F3              cmp         esi,ebx
+  0040206D: 72 EA              jb          00402059
+  0040206F: 5F                 pop         edi
+  00402070: 5E                 pop         esi
+  00402071: 5B                 pop         ebx
+  00402072: C3                 ret
+__RTC_Terminate:
+  00402073: 53                 push        ebx
+  00402074: 56                 push        esi
+  00402075: BE AC 36 40 00     mov         esi,offset ___rtc_tzz
+  0040207A: BB AC 36 40 00     mov         ebx,offset ___rtc_tzz
+  0040207F: 3B F3              cmp         esi,ebx
+  00402081: 73 18              jae         0040209B
+  00402083: 57                 push        edi
+  00402084: 8B 3E              mov         edi,dword ptr [esi]
+  00402086: 85 FF              test        edi,edi
+  00402088: 74 09              je          00402093
+  0040208A: 8B CF              mov         ecx,edi
+  0040208C: E8 94 FE FF FF     call        @_guard_check_icall@4
+  00402091: FF D7              call        edi
+  00402093: 83 C6 04           add         esi,4
+  00402096: 3B F3              cmp         esi,ebx
+  00402098: 72 EA              jb          00402084
+  0040209A: 5F                 pop         edi
+  0040209B: 5E                 pop         esi
+  0040209C: 5B                 pop         ebx
+  0040209D: C3                 ret
+  0040209E: CC CC                                            лл
+__SEH_prolog4:
+  004020A0: 68 FB 20 40 00     push        offset __except_handler4
+  004020A5: 64 FF 35 00 00 00  push        dword ptr fs:[0]
+            00
+  004020AC: 8B 44 24 10        mov         eax,dword ptr [esp+10h]
+  004020B0: 89 6C 24 10        mov         dword ptr [esp+10h],ebp
+  004020B4: 8D 6C 24 10        lea         ebp,[esp+10h]
+  004020B8: 2B E0              sub         esp,eax
+  004020BA: 53                 push        ebx
+  004020BB: 56                 push        esi
+  004020BC: 57                 push        edi
+  004020BD: A1 08 50 40 00     mov         eax,dword ptr [___security_cookie]
+  004020C2: 31 45 FC           xor         dword ptr [ebp-4],eax
+  004020C5: 33 C5              xor         eax,ebp
+  004020C7: 50                 push        eax
+  004020C8: 89 65 E8           mov         dword ptr [ebp-18h],esp
+  004020CB: FF 75 F8           push        dword ptr [ebp-8]
+  004020CE: 8B 45 FC           mov         eax,dword ptr [ebp-4]
+  004020D1: C7 45 FC FE FF FF  mov         dword ptr [ebp-4],0FFFFFFFEh
+            FF
+  004020D8: 89 45 F8           mov         dword ptr [ebp-8],eax
+  004020DB: 8D 45 F0           lea         eax,[ebp-10h]
+  004020DE: 64 A3 00 00 00 00  mov         dword ptr fs:[00000000h],eax
+  004020E4: F2 C3              bnd ret
+__SEH_epilog4:
+  004020E6: 8B 4D F0           mov         ecx,dword ptr [ebp-10h]
+  004020E9: 64 89 0D 00 00 00  mov         dword ptr fs:[0],ecx
+            00
+  004020F0: 59                 pop         ecx
+  004020F1: 5F                 pop         edi
+  004020F2: 5F                 pop         edi
+  004020F3: 5E                 pop         esi
+  004020F4: 5B                 pop         ebx
+  004020F5: 8B E5              mov         esp,ebp
+  004020F7: 5D                 pop         ebp
+  004020F8: 51                 push        ecx
+  004020F9: F2 C3              bnd ret
+__except_handler4:
+  004020FB: 55                 push        ebp
+  004020FC: 8B EC              mov         ebp,esp
+  004020FE: FF 75 14           push        dword ptr [ebp+14h]
+  00402101: FF 75 10           push        dword ptr [ebp+10h]
+  00402104: FF 75 0C           push        dword ptr [ebp+0Ch]
+  00402107: FF 75 08           push        dword ptr [ebp+8]
+  0040210A: 68 55 15 40 00     push        offset @__security_check_cookie@4
+  0040210F: 68 08 50 40 00     push        offset ___security_cookie
+  00402114: E8 CB 01 00 00     call        __except_handler4_common
+  00402119: 83 C4 18           add         esp,18h
+  0040211C: 5D                 pop         ebp
+  0040211D: C3                 ret
+___isa_available_init:
+  0040211E: 55                 push        ebp
+  0040211F: 8B EC              mov         ebp,esp
+  00402121: 83 25 C0 53 40 00  and         dword ptr [___isa_available],0
+            00
+  00402128: 83 EC 2C           sub         esp,2Ch
+  0040212B: 53                 push        ebx
+  0040212C: 33 DB              xor         ebx,ebx
+  0040212E: 43                 inc         ebx
+  0040212F: 09 1D 20 50 40 00  or          dword ptr [___isa_enabled],ebx
+  00402135: 6A 0A              push        0Ah
+  00402137: E8 44 02 00 00     call        _IsProcessorFeaturePresent@4
+  0040213C: 85 C0              test        eax,eax
+  0040213E: 0F 84 74 01 00 00  je          004022B8
+  00402144: 83 65 EC 00        and         dword ptr [ebp-14h],0
+  00402148: 33 C0              xor         eax,eax
+  0040214A: 83 0D 20 50 40 00  or          dword ptr [___isa_enabled],2
+            02
+  00402151: 33 C9              xor         ecx,ecx
+  00402153: 56                 push        esi
+  00402154: 57                 push        edi
+  00402155: 89 1D C0 53 40 00  mov         dword ptr [___isa_available],ebx
+  0040215B: 8D 7D D4           lea         edi,[ebp-2Ch]
+  0040215E: 53                 push        ebx
+  0040215F: 0F A2              cpuid
+  00402161: 8B F3              mov         esi,ebx
+  00402163: 5B                 pop         ebx
+  00402164: 89 07              mov         dword ptr [edi],eax
+  00402166: 89 77 04           mov         dword ptr [edi+4],esi
+  00402169: 89 4F 08           mov         dword ptr [edi+8],ecx
+  0040216C: 89 57 0C           mov         dword ptr [edi+0Ch],edx
+  0040216F: 8B 45 D4           mov         eax,dword ptr [ebp-2Ch]
+  00402172: 8B 4D E0           mov         ecx,dword ptr [ebp-20h]
+  00402175: 89 45 F4           mov         dword ptr [ebp-0Ch],eax
+  00402178: 81 F1 69 6E 65 49  xor         ecx,49656E69h
+  0040217E: 8B 45 DC           mov         eax,dword ptr [ebp-24h]
+  00402181: 35 6E 74 65 6C     xor         eax,6C65746Eh
+  00402186: 0B C8              or          ecx,eax
+  00402188: 8B 45 D8           mov         eax,dword ptr [ebp-28h]
+  0040218B: 35 47 65 6E 75     xor         eax,756E6547h
+  00402190: 0B C8              or          ecx,eax
+  00402192: F7 D9              neg         ecx
+  00402194: 6A 01              push        1
+  00402196: 58                 pop         eax
+  00402197: 1A C9              sbb         cl,cl
+  00402199: 6A 00              push        0
+  0040219B: 80 C1 01           add         cl,1
+  0040219E: 59                 pop         ecx
+  0040219F: 53                 push        ebx
+  004021A0: 0F A2              cpuid
+  004021A2: 8B F3              mov         esi,ebx
+  004021A4: 5B                 pop         ebx
+  004021A5: 89 07              mov         dword ptr [edi],eax
+  004021A7: 89 77 04           mov         dword ptr [edi+4],esi
+  004021AA: 89 4F 08           mov         dword ptr [edi+8],ecx
+  004021AD: 89 57 0C           mov         dword ptr [edi+0Ch],edx
+  004021B0: 74 43              je          004021F5
+  004021B2: 8B 45 D4           mov         eax,dword ptr [ebp-2Ch]
+  004021B5: 25 F0 3F FF 0F     and         eax,0FFF3FF0h
+  004021BA: 3D C0 06 01 00     cmp         eax,106C0h
+  004021BF: 74 23              je          004021E4
+  004021C1: 3D 60 06 02 00     cmp         eax,20660h
+  004021C6: 74 1C              je          004021E4
+  004021C8: 3D 70 06 02 00     cmp         eax,20670h
+  004021CD: 74 15              je          004021E4
+  004021CF: 3D 50 06 03 00     cmp         eax,30650h
+  004021D4: 74 0E              je          004021E4
+  004021D6: 3D 60 06 03 00     cmp         eax,30660h
+  004021DB: 74 07              je          004021E4
+  004021DD: 3D 70 06 03 00     cmp         eax,30670h
+  004021E2: 75 11              jne         004021F5
+  004021E4: 8B 3D C4 53 40 00  mov         edi,dword ptr [___favor]
+  004021EA: 83 CF 01           or          edi,1
+  004021ED: 89 3D C4 53 40 00  mov         dword ptr [___favor],edi
+  004021F3: EB 06              jmp         004021FB
+  004021F5: 8B 3D C4 53 40 00  mov         edi,dword ptr [___favor]
+  004021FB: 83 7D F4 07        cmp         dword ptr [ebp-0Ch],7
+  004021FF: 8B 45 E0           mov         eax,dword ptr [ebp-20h]
+  00402202: 89 45 E4           mov         dword ptr [ebp-1Ch],eax
+  00402205: 8B 45 DC           mov         eax,dword ptr [ebp-24h]
+  00402208: 89 45 F8           mov         dword ptr [ebp-8],eax
+  0040220B: 89 45 E8           mov         dword ptr [ebp-18h],eax
+  0040220E: 7C 32              jl          00402242
+  00402210: 6A 07              push        7
+  00402212: 58                 pop         eax
+  00402213: 33 C9              xor         ecx,ecx
+  00402215: 53                 push        ebx
+  00402216: 0F A2              cpuid
+  00402218: 8B F3              mov         esi,ebx
+  0040221A: 5B                 pop         ebx
+  0040221B: 8D 5D D4           lea         ebx,[ebp-2Ch]
+  0040221E: 89 03              mov         dword ptr [ebx],eax
+  00402220: 89 73 04           mov         dword ptr [ebx+4],esi
+  00402223: 89 4B 08           mov         dword ptr [ebx+8],ecx
+  00402226: 89 53 0C           mov         dword ptr [ebx+0Ch],edx
+  00402229: 8B 45 D8           mov         eax,dword ptr [ebp-28h]
+  0040222C: A9 00 02 00 00     test        eax,200h
+  00402231: 89 45 EC           mov         dword ptr [ebp-14h],eax
+  00402234: 8B 45 F8           mov         eax,dword ptr [ebp-8]
+  00402237: 74 09              je          00402242
+  00402239: 83 CF 02           or          edi,2
+  0040223C: 89 3D C4 53 40 00  mov         dword ptr [___favor],edi
+  00402242: 5F                 pop         edi
+  00402243: 5E                 pop         esi
+  00402244: A9 00 00 10 00     test        eax,100000h
+  00402249: 74 6D              je          004022B8
+  0040224B: 83 0D 20 50 40 00  or          dword ptr [___isa_enabled],4
+            04
+  00402252: C7 05 C0 53 40 00  mov         dword ptr [___isa_available],2
+            02 00 00 00
+  0040225C: A9 00 00 00 08     test        eax,8000000h
+  00402261: 74 55              je          004022B8
+  00402263: A9 00 00 00 10     test        eax,10000000h
+  00402268: 74 4E              je          004022B8
+  0040226A: 33 C9              xor         ecx,ecx
+  0040226C: 0F 01 D0           xgetbv
+  0040226F: 89 45 F0           mov         dword ptr [ebp-10h],eax
+  00402272: 89 55 F4           mov         dword ptr [ebp-0Ch],edx
+  00402275: 8B 45 F0           mov         eax,dword ptr [ebp-10h]
+  00402278: 8B 4D F4           mov         ecx,dword ptr [ebp-0Ch]
+  0040227B: 83 E0 06           and         eax,6
+  0040227E: 33 C9              xor         ecx,ecx
+  00402280: 83 F8 06           cmp         eax,6
+  00402283: 75 33              jne         004022B8
+  00402285: 85 C9              test        ecx,ecx
+  00402287: 75 2F              jne         004022B8
+  00402289: A1 20 50 40 00     mov         eax,dword ptr [___isa_enabled]
+  0040228E: 83 C8 08           or          eax,8
+  00402291: C7 05 C0 53 40 00  mov         dword ptr [___isa_available],3
+            03 00 00 00
+  0040229B: F6 45 EC 20        test        byte ptr [ebp-14h],20h
+  0040229F: A3 20 50 40 00     mov         dword ptr [___isa_enabled],eax
+  004022A4: 74 12              je          004022B8
+  004022A6: 83 C8 20           or          eax,20h
+  004022A9: C7 05 C0 53 40 00  mov         dword ptr [___isa_available],5
+            05 00 00 00
+  004022B3: A3 20 50 40 00     mov         dword ptr [___isa_enabled],eax
+  004022B8: 33 C0              xor         eax,eax
+  004022BA: 5B                 pop         ebx
+  004022BB: 8B E5              mov         esp,ebp
+  004022BD: 5D                 pop         ebp
+  004022BE: C3                 ret
+___scrt_is_ucrt_dll_in_use:
+  004022BF: 33 C0              xor         eax,eax
+  004022C1: 39 05 24 50 40 00  cmp         dword ptr [___scrt_ucrt_dll_is_in_use],eax
+  004022C7: 0F 95 C0           setne       al
+  004022CA: C3                 ret
+  004022CB: CC                                               л
+___vcrt_InitializeCriticalSectionEx:
+  004022CC: FF 25 A0 30 40 00  jmp         dword ptr [__imp____vcrt_InitializeCriticalSectionEx]
+___telemetry_main_invoke_trigger:
+  004022D2: FF 25 9C 30 40 00  jmp         dword ptr [__imp____telemetry_main_invoke_trigger]
+___telemetry_main_return_trigger:
+  004022D8: FF 25 98 30 40 00  jmp         dword ptr [__imp____telemetry_main_return_trigger]
+_memset:
+  004022DE: FF 25 94 30 40 00  jmp         dword ptr [__imp__memset]
+__except_handler4_common:
+  004022E4: FF 25 90 30 40 00  jmp         dword ptr [__imp___except_handler4_common]
+__seh_filter_exe:
+  004022EA: FF 25 10 31 40 00  jmp         dword ptr [__imp___seh_filter_exe]
+__set_app_type:
+  004022F0: FF 25 F0 30 40 00  jmp         dword ptr [__imp___set_app_type]
+___setusermatherr:
+  004022F6: FF 25 C4 30 40 00  jmp         dword ptr [__imp____setusermatherr]
+__configure_wide_argv:
+  004022FC: FF 25 0C 31 40 00  jmp         dword ptr [__imp___configure_wide_argv]
+__initialize_wide_environment:
+  00402302: FF 25 08 31 40 00  jmp         dword ptr [__imp___initialize_wide_environment]
+__get_initial_wide_environment:
+  00402308: FF 25 04 31 40 00  jmp         dword ptr [__imp___get_initial_wide_environment]
+__initterm:
+  0040230E: FF 25 00 31 40 00  jmp         dword ptr [__imp___initterm]
+__initterm_e:
+  00402314: FF 25 FC 30 40 00  jmp         dword ptr [__imp___initterm_e]
+_exit:
+  0040231A: FF 25 F8 30 40 00  jmp         dword ptr [__imp__exit]
+__exit:
+  00402320: FF 25 F4 30 40 00  jmp         dword ptr [__imp___exit]
+__set_fmode:
+  00402326: FF 25 20 31 40 00  jmp         dword ptr [__imp___set_fmode]
+___p___argc:
+  0040232C: FF 25 EC 30 40 00  jmp         dword ptr [__imp____p___argc]
+___p___wargv:
+  00402332: FF 25 E8 30 40 00  jmp         dword ptr [__imp____p___wargv]
+__cexit:
+  00402338: FF 25 14 31 40 00  jmp         dword ptr [__imp___cexit]
+__c_exit:
+  0040233E: FF 25 E4 30 40 00  jmp         dword ptr [__imp___c_exit]
+__register_thread_local_exe_atexit_callback:
+  00402344: FF 25 E0 30 40 00  jmp         dword ptr [__imp___register_thread_local_exe_atexit_callback]
+__configthreadlocale:
+  0040234A: FF 25 BC 30 40 00  jmp         dword ptr [__imp___configthreadlocale]
+__set_new_mode:
+  00402350: FF 25 AC 30 40 00  jmp         dword ptr [__imp___set_new_mode]
+___p__commode:
+  00402356: FF 25 1C 31 40 00  jmp         dword ptr [__imp____p__commode]
+__initialize_onexit_table:
+  0040235C: FF 25 D8 30 40 00  jmp         dword ptr [__imp___initialize_onexit_table]
+__register_onexit_function:
+  00402362: FF 25 D4 30 40 00  jmp         dword ptr [__imp___register_onexit_function]
+__crt_atexit:
+  00402368: FF 25 DC 30 40 00  jmp         dword ptr [__imp___crt_atexit]
+_terminate:
+  0040236E: FF 25 D0 30 40 00  jmp         dword ptr [__imp__terminate]
+_free:
+  00402374: FF 25 B0 30 40 00  jmp         dword ptr [__imp__free]
+__controlfp_s:
+  0040237A: FF 25 CC 30 40 00  jmp         dword ptr [__imp___controlfp_s]
+_IsProcessorFeaturePresent@4:
+  00402380: FF 25 18 30 40 00  jmp         dword ptr [__imp__IsProcessorFeaturePresent@4]
+___acrt_initialize:
+  00402386: B0 01              mov         al,1
+  00402388: C3                 ret
+  00402389: CC CC CC CC CC CC CC                             ллллллл
+__alldiv:
+  00402390: 57                 push        edi
+  00402391: 56                 push        esi
+  00402392: 53                 push        ebx
+  00402393: 33 FF              xor         edi,edi
+  00402395: 8B 44 24 14        mov         eax,dword ptr [esp+14h]
+  00402399: 0B C0              or          eax,eax
+  0040239B: 7D 14              jge         004023B1
+  0040239D: 47                 inc         edi
+  0040239E: 8B 54 24 10        mov         edx,dword ptr [esp+10h]
+  004023A2: F7 D8              neg         eax
+  004023A4: F7 DA              neg         edx
+  004023A6: 83 D8 00           sbb         eax,0
+  004023A9: 89 44 24 14        mov         dword ptr [esp+14h],eax
+  004023AD: 89 54 24 10        mov         dword ptr [esp+10h],edx
+  004023B1: 8B 44 24 1C        mov         eax,dword ptr [esp+1Ch]
+  004023B5: 0B C0              or          eax,eax
+  004023B7: 7D 14              jge         004023CD
+  004023B9: 47                 inc         edi
+  004023BA: 8B 54 24 18        mov         edx,dword ptr [esp+18h]
+  004023BE: F7 D8              neg         eax
+  004023C0: F7 DA              neg         edx
+  004023C2: 83 D8 00           sbb         eax,0
+  004023C5: 89 44 24 1C        mov         dword ptr [esp+1Ch],eax
+  004023C9: 89 54 24 18        mov         dword ptr [esp+18h],edx
+  004023CD: 0B C0              or          eax,eax
+  004023CF: 75 18              jne         004023E9
+  004023D1: 8B 4C 24 18        mov         ecx,dword ptr [esp+18h]
+  004023D5: 8B 44 24 14        mov         eax,dword ptr [esp+14h]
+  004023D9: 33 D2              xor         edx,edx
+  004023DB: F7 F1              div         eax,ecx
+  004023DD: 8B D8              mov         ebx,eax
+  004023DF: 8B 44 24 10        mov         eax,dword ptr [esp+10h]
+  004023E3: F7 F1              div         eax,ecx
+  004023E5: 8B D3              mov         edx,ebx
+  004023E7: EB 41              jmp         0040242A
+  004023E9: 8B D8              mov         ebx,eax
+  004023EB: 8B 4C 24 18        mov         ecx,dword ptr [esp+18h]
+  004023EF: 8B 54 24 14        mov         edx,dword ptr [esp+14h]
+  004023F3: 8B 44 24 10        mov         eax,dword ptr [esp+10h]
+  004023F7: D1 EB              shr         ebx,1
+  004023F9: D1 D9              rcr         ecx,1
+  004023FB: D1 EA              shr         edx,1
+  004023FD: D1 D8              rcr         eax,1
+  004023FF: 0B DB              or          ebx,ebx
+  00402401: 75 F4              jne         004023F7
+  00402403: F7 F1              div         eax,ecx
+  00402405: 8B F0              mov         esi,eax
+  00402407: F7 64 24 1C        mul         eax,dword ptr [esp+1Ch]
+  0040240B: 8B C8              mov         ecx,eax
+  0040240D: 8B 44 24 18        mov         eax,dword ptr [esp+18h]
+  00402411: F7 E6              mul         eax,esi
+  00402413: 03 D1              add         edx,ecx
+  00402415: 72 0E              jb          00402425
+  00402417: 3B 54 24 14        cmp         edx,dword ptr [esp+14h]
+  0040241B: 77 08              ja          00402425
+  0040241D: 72 07              jb          00402426
+  0040241F: 3B 44 24 10        cmp         eax,dword ptr [esp+10h]
+  00402423: 76 01              jbe         00402426
+  00402425: 4E                 dec         esi
+  00402426: 33 D2              xor         edx,edx
+  00402428: 8B C6              mov         eax,esi
+  0040242A: 4F                 dec         edi
+  0040242B: 75 07              jne         00402434
+  0040242D: F7 DA              neg         edx
+  0040242F: F7 D8              neg         eax
+  00402431: 83 DA 00           sbb         edx,0
+  00402434: 5B                 pop         ebx
+  00402435: 5E                 pop         esi
+  00402436: 5F                 pop         edi
+  00402437: C2 10 00           ret         10h
+  0040243A: CC CC CC CC CC CC                                лллллл
+__alldvrm:
+  00402440: 57                 push        edi
+  00402441: 56                 push        esi
+  00402442: 55                 push        ebp
+  00402443: 33 FF              xor         edi,edi
+  00402445: 33 ED              xor         ebp,ebp
+  00402447: 8B 44 24 14        mov         eax,dword ptr [esp+14h]
+  0040244B: 0B C0              or          eax,eax
+  0040244D: 7D 15              jge         00402464
+  0040244F: 47                 inc         edi
+  00402450: 45                 inc         ebp
+  00402451: 8B 54 24 10        mov         edx,dword ptr [esp+10h]
+  00402455: F7 D8              neg         eax
+  00402457: F7 DA              neg         edx
+  00402459: 83 D8 00           sbb         eax,0
+  0040245C: 89 44 24 14        mov         dword ptr [esp+14h],eax
+  00402460: 89 54 24 10        mov         dword ptr [esp+10h],edx
+  00402464: 8B 44 24 1C        mov         eax,dword ptr [esp+1Ch]
+  00402468: 0B C0              or          eax,eax
+  0040246A: 7D 14              jge         00402480
+  0040246C: 47                 inc         edi
+  0040246D: 8B 54 24 18        mov         edx,dword ptr [esp+18h]
+  00402471: F7 D8              neg         eax
+  00402473: F7 DA              neg         edx
+  00402475: 83 D8 00           sbb         eax,0
+  00402478: 89 44 24 1C        mov         dword ptr [esp+1Ch],eax
+  0040247C: 89 54 24 18        mov         dword ptr [esp+18h],edx
+  00402480: 0B C0              or          eax,eax
+  00402482: 75 28              jne         004024AC
+  00402484: 8B 4C 24 18        mov         ecx,dword ptr [esp+18h]
+  00402488: 8B 44 24 14        mov         eax,dword ptr [esp+14h]
+  0040248C: 33 D2              xor         edx,edx
+  0040248E: F7 F1              div         eax,ecx
+  00402490: 8B D8              mov         ebx,eax
+  00402492: 8B 44 24 10        mov         eax,dword ptr [esp+10h]
+  00402496: F7 F1              div         eax,ecx
+  00402498: 8B F0              mov         esi,eax
+  0040249A: 8B C3              mov         eax,ebx
+  0040249C: F7 64 24 18        mul         eax,dword ptr [esp+18h]
+  004024A0: 8B C8              mov         ecx,eax
+  004024A2: 8B C6              mov         eax,esi
+  004024A4: F7 64 24 18        mul         eax,dword ptr [esp+18h]
+  004024A8: 03 D1              add         edx,ecx
+  004024AA: EB 47              jmp         004024F3
+  004024AC: 8B D8              mov         ebx,eax
+  004024AE: 8B 4C 24 18        mov         ecx,dword ptr [esp+18h]
+  004024B2: 8B 54 24 14        mov         edx,dword ptr [esp+14h]
+  004024B6: 8B 44 24 10        mov         eax,dword ptr [esp+10h]
+  004024BA: D1 EB              shr         ebx,1
+  004024BC: D1 D9              rcr         ecx,1
+  004024BE: D1 EA              shr         edx,1
+  004024C0: D1 D8              rcr         eax,1
+  004024C2: 0B DB              or          ebx,ebx
+  004024C4: 75 F4              jne         004024BA
+  004024C6: F7 F1              div         eax,ecx
+  004024C8: 8B F0              mov         esi,eax
+  004024CA: F7 64 24 1C        mul         eax,dword ptr [esp+1Ch]
+  004024CE: 8B C8              mov         ecx,eax
+  004024D0: 8B 44 24 18        mov         eax,dword ptr [esp+18h]
+  004024D4: F7 E6              mul         eax,esi
+  004024D6: 03 D1              add         edx,ecx
+  004024D8: 72 0E              jb          004024E8
+  004024DA: 3B 54 24 14        cmp         edx,dword ptr [esp+14h]
+  004024DE: 77 08              ja          004024E8
+  004024E0: 72 0F              jb          004024F1
+  004024E2: 3B 44 24 10        cmp         eax,dword ptr [esp+10h]
+  004024E6: 76 09              jbe         004024F1
+  004024E8: 4E                 dec         esi
+  004024E9: 2B 44 24 18        sub         eax,dword ptr [esp+18h]
+  004024ED: 1B 54 24 1C        sbb         edx,dword ptr [esp+1Ch]
+  004024F1: 33 DB              xor         ebx,ebx
+  004024F3: 2B 44 24 10        sub         eax,dword ptr [esp+10h]
+  004024F7: 1B 54 24 14        sbb         edx,dword ptr [esp+14h]
+  004024FB: 4D                 dec         ebp
+  004024FC: 79 07              jns         00402505
+  004024FE: F7 DA              neg         edx
+  00402500: F7 D8              neg         eax
+  00402502: 83 DA 00           sbb         edx,0
+  00402505: 8B CA              mov         ecx,edx
+  00402507: 8B D3              mov         edx,ebx
+  00402509: 8B D9              mov         ebx,ecx
+  0040250B: 8B C8              mov         ecx,eax
+  0040250D: 8B C6              mov         eax,esi
+  0040250F: 4F                 dec         edi
+  00402510: 75 07              jne         00402519
+  00402512: F7 DA              neg         edx
+  00402514: F7 D8              neg         eax
+  00402516: 83 DA 00           sbb         edx,0
+  00402519: 5D                 pop         ebp
+  0040251A: 5E                 pop         esi
+  0040251B: 5F                 pop         edi
+  0040251C: C2 10 00           ret         10h
+  0040251F: CC                                               л
+__allmul:
+  00402520: 8B 44 24 08        mov         eax,dword ptr [esp+8]
+  00402524: 8B 4C 24 10        mov         ecx,dword ptr [esp+10h]
+  00402528: 0B C8              or          ecx,eax
+  0040252A: 8B 4C 24 0C        mov         ecx,dword ptr [esp+0Ch]
+  0040252E: 75 09              jne         00402539
+  00402530: 8B 44 24 04        mov         eax,dword ptr [esp+4]
+  00402534: F7 E1              mul         eax,ecx
+  00402536: C2 10 00           ret         10h
+  00402539: 53                 push        ebx
+  0040253A: F7 E1              mul         eax,ecx
+  0040253C: 8B D8              mov         ebx,eax
+  0040253E: 8B 44 24 08        mov         eax,dword ptr [esp+8]
+  00402542: F7 64 24 14        mul         eax,dword ptr [esp+14h]
+  00402546: 03 D8              add         ebx,eax
+  00402548: 8B 44 24 08        mov         eax,dword ptr [esp+8]
+  0040254C: F7 E1              mul         eax,ecx
+  0040254E: 03 D3              add         edx,ebx
+  00402550: 5B                 pop         ebx
+  00402551: C2 10 00           ret         10h
+___CxxFrameHandler3:
+  00402554: FF 25 8C 30 40 00  jmp         dword ptr [__imp____CxxFrameHandler3]
+  0040255A: CC CC CC CC CC CC                                лллллл
+  00402560: FF 15 A4 30 40 00  call        dword ptr [__imp____std_terminate]
+  00402566: C3                 ret
+  00402567: 8B 54 24 08        mov         edx,dword ptr [esp+8]
+  0040256B: 8D 42 0C           lea         eax,[edx+0Ch]
+  0040256E: 8B 4A F8           mov         ecx,dword ptr [edx-8]
+  00402571: 33 C8              xor         ecx,eax
+  00402573: E8 DD EF FF FF     call        @__security_check_cookie@4
+  00402578: B8 B0 36 40 00     mov         eax,4036B0h
+  0040257D: E9 D2 FF FF FF     jmp         ___CxxFrameHandler3
+  00402582: CC CC CC CC CC CC CC CC CC CC CC CC CC CC        лллллллллллллл
+  00402590: 8B 54 24 08        mov         edx,dword ptr [esp+8]
+  00402594: 8D 42 0C           lea         eax,[edx+0Ch]
+  00402597: 8B 4A FC           mov         ecx,dword ptr [edx-4]
+  0040259A: 33 C8              xor         ecx,eax
+  0040259C: E8 B4 EF FF FF     call        @__security_check_cookie@4
+  004025A1: B8 DC 36 40 00     mov         eax,4036DCh
+  004025A6: E9 A9 FF FF FF     jmp         ___CxxFrameHandler3
+  004025AB: CC CC CC CC CC                                   ллллл
+  004025B0: 8D 4D D0           lea         ecx,[ebp-30h]
+  004025B3: E9 08 ED FF FF     jmp         ??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ
+  004025B8: 8D 4D D0           lea         ecx,[ebp-30h]
+  004025BB: E9 90 EC FF FF     jmp         ??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ
+  004025C0: FF 15 A4 30 40 00  call        dword ptr [__imp____std_terminate]
+  004025C6: C3                 ret
+  004025C7: FF 15 A4 30 40 00  call        dword ptr [__imp____std_terminate]
+  004025CD: C3                 ret
+  004025CE: 8B 54 24 08        mov         edx,dword ptr [esp+8]
+  004025D2: 8D 42 0C           lea         eax,[edx+0Ch]
+  004025D5: 8B 4A CC           mov         ecx,dword ptr [edx-34h]
+  004025D8: 33 C8              xor         ecx,eax
+  004025DA: E8 76 EF FF FF     call        @__security_check_cookie@4
+  004025DF: B8 00 37 40 00     mov         eax,403700h
+  004025E4: E9 6B FF FF FF     jmp         ___CxxFrameHandler3
+
+  Summary
+
+        1000 .data
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        2000 .text
+        1000 .tls

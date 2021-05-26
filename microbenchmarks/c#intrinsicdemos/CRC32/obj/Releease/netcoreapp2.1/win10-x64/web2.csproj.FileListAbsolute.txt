@@ -1,0 +1,13 @@
+D:\coreclr\web2\bin\Releease\netcoreapp2.1\win10-x64\hostpolicy.dll
+D:\coreclr\web2\bin\Releease\netcoreapp2.1\win10-x64\hostfxr.dll
+D:\coreclr\web2\bin\Releease\netcoreapp2.1\win10-x64\web2.exe
+D:\coreclr\web2\bin\Releease\netcoreapp2.1\win10-x64\web2.deps.json
+D:\coreclr\web2\bin\Releease\netcoreapp2.1\win10-x64\web2.runtimeconfig.json
+D:\coreclr\web2\bin\Releease\netcoreapp2.1\win10-x64\web2.runtimeconfig.dev.json
+D:\coreclr\web2\bin\Releease\netcoreapp2.1\win10-x64\web2.dll
+D:\coreclr\web2\bin\Releease\netcoreapp2.1\win10-x64\web2.pdb
+D:\coreclr\web2\obj\Releease\netcoreapp2.1\win10-x64\web2.csproj.CoreCompileInputs.cache
+D:\coreclr\web2\obj\Releease\netcoreapp2.1\win10-x64\web2.AssemblyInfoInputs.cache
+D:\coreclr\web2\obj\Releease\netcoreapp2.1\win10-x64\web2.AssemblyInfo.cs
+D:\coreclr\web2\obj\Releease\netcoreapp2.1\win10-x64\web2.dll
+D:\coreclr\web2\obj\Releease\netcoreapp2.1\win10-x64\web2.pdb

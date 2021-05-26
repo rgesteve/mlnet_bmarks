@@ -1,0 +1,6 @@
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\memorycopy\bin\Release\netcoreapp2.0\memorycopy.deps.json
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\memorycopy\bin\Release\netcoreapp2.0\memorycopy.runtimeconfig.json
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\memorycopy\bin\Release\netcoreapp2.0\memorycopy.runtimeconfig.dev.json
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\memorycopy\obj\Release\netcoreapp2.0\memorycopy.csproj.CoreCompileInputs.cache
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\memorycopy\obj\Release\netcoreapp2.0\memorycopy.AssemblyInfo.cs
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\memorycopy\obj\Release\netcoreapp2.0\RemoveDepsFileConflicts.semaphore

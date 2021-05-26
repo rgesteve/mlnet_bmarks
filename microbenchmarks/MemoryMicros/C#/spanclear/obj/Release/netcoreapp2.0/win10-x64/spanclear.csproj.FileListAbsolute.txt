@@ -1,0 +1,13 @@
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\spanclear\bin\Release\netcoreapp2.0\win10-x64\hostpolicy.dll
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\spanclear\bin\Release\netcoreapp2.0\win10-x64\hostfxr.dll
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\spanclear\bin\Release\netcoreapp2.0\win10-x64\spanclear.exe
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\spanclear\bin\Release\netcoreapp2.0\win10-x64\spanclear.deps.json
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\spanclear\bin\Release\netcoreapp2.0\win10-x64\spanclear.runtimeconfig.json
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\spanclear\bin\Release\netcoreapp2.0\win10-x64\spanclear.runtimeconfig.dev.json
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\spanclear\bin\Release\netcoreapp2.0\win10-x64\spanclear.dll
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\spanclear\bin\Release\netcoreapp2.0\win10-x64\spanclear.pdb
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\spanclear\obj\Release\netcoreapp2.0\win10-x64\spanclear.csproj.CoreCompileInputs.cache
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\spanclear\obj\Release\netcoreapp2.0\win10-x64\spanclear.AssemblyInfo.cs
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\spanclear\obj\Release\netcoreapp2.0\win10-x64\RemoveDepsFileConflicts.semaphore
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\spanclear\obj\Release\netcoreapp2.0\win10-x64\spanclear.dll
+C:\Users\kevinchoi\Desktop\Chanchala\micro-benchmarks-source\shmoo2-21CsProj\spanclear\obj\Release\netcoreapp2.0\win10-x64\spanclear.pdb

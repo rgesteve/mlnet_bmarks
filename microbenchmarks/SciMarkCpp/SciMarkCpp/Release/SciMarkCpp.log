@@ -1,0 +1,15 @@
+﻿  stdafx.cpp
+  array.cpp
+  FFT.cpp
+  kernel.cpp
+  LU.cpp
+  MonteCarlo.cpp
+  Random.cpp
+  SciMarkCpp.cpp
+  SOR.cpp
+  SparseCompRow.cpp
+  Stopwatch.cpp
+  Generating code
+  All 42 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  SciMarkCpp.vcxproj -> C:\Users\guo\source\repos\SciMarkCpp\Release\SciMarkCpp.exe

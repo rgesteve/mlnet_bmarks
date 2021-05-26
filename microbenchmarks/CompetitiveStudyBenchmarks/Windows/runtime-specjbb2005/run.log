@@ -1,0 +1,61 @@
+Project runtime-specjbb2005 (.NETCoreApp,Version=v1.0) was previously compiled. Skipping compilation.
+Current GC mode: Workstation GC
+Constructing the company now   Hang....on
+Loading Warehouse 1...
+Loading properties from SPECjbb.props
+Optional proerty <input.warehouse_population> is not providied.
+Optional proerty <input.orderlines_per_order> is not providied.
+Warning: Explicitly setting input.expected_peak_warehouse
+requires submission and review by SPEC in order to publish the result.
+Optional proerty <input.wait_time_percent> is not providied.
+Optional proerty <input.screen_write> is not providied.
+Optional proerty <input.steady_state> is not providied.
+Optional proerty <input.override_itemtable_size> is not providied.
+Optional proerty <input.uniform_random_items> is not providied.
+Optional proerty <input.sequence_of_number_of_warehouses> is not providied.
+Optional proerty <input.print_properties_and_args> is not providied.
+Input Properties:
+  per_jvm_warehouse_rampup = 3
+  per_jvm_warehouse_rampdown = 20
+  jvm_instances = 1
+  deterministic_random_seed = False
+  ramp_up_seconds = 30
+  measurement_seconds = 10
+  starting_number_warehouses = 1
+  increment_number_warehouses = 1
+  ending_number_warehouses = 1
+  expected_peak_warehouse = 4
+The results will be in: results/SPECjbbSingleJVM/SPECjbb.022.raw
+Opened results/SPECjbbSingleJVM/SPECjbb.022.results
+Opened results/SPECjbbSingleJVM/SPECjbb.022.raw
+Opened results/SPECjbbSingleJVM/SPECjbb.022.deliveries
+Licensed Materials - Property of SPEC
+SPECjbb2005
+Copyright (c) 2005 Standard Performance Evaluation Corporation (SPEC),All rights reserved,
+Benchmark SPECjbb2005 1.04 now Opening
+Checking whether run will be valid
+INVALID:  measurement_seconds = 10, must be 240
+INVALID:  Run will NOT be compliant
+Constructing the company now   Hang....on
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Loading Warehouse 1...
+*** JBBRun ****
+Start User Threads
+Timing Measurement began 5/2/16 10:54:35 PM for 0.5 minutes
+Timing Measurement ended 5/2/16 10:55:05 PM
+Calculating results
+Minimum transactions by a warehouse = 332923
+Maximum transactions by a warehouse = 332923
+Difference (thread spread) = 0 (.00%)
+===============================================================================
+TOTALS FOR: COMPANY with 1 warehouses                                   
+................. SPECjbb2005 1.04 Results (time in seconds) .................
+                   Count     Total    Min     Max     Avg    Heap Space
+    New Order:    146200      9.51   0.000   0.008   0.000   total        0.0MB
+      Payment:    100886      4.12   0.000   0.052   0.000    used        0.0MB
+  OrderStatus:     10089      0.60   0.000   0.012   0.000
+     Delivery:     10088      8.89   0.000   0.120   0.001
+  Stock Level:     10089      2.29   0.000   0.048   0.000
+  Cust Report:     55571      4.08   0.000   0.028   0.000
+           throughput =      11097.43 bops       
+Results appended to results/results.txt

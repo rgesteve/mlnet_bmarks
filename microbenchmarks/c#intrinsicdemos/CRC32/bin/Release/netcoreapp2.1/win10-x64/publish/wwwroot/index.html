@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        table { border: 0 }
+        .commslog-data { font-family: Consolas, Courier New, Courier, monospace; }
+        .commslog-server { background-color: red; color: white }
+        .commslog-client { background-color: green; color: white }
+    </style>
+</head>
+<body>
+	<h1 align="center">Intel HW Intrinsics in .NET Core: <em>String Hashcode using CRC32</em></h1>
+
+	<table style="width: 800px" align="center">
+		<tr>
+			<td rowspan="4"><button id="connectButton" type="submit">Run Benchmark!</button></td>
+			<td rowspan="2"><h3>Status:</h3></td>
+			<td rowspan="1" id="commsLog"></td>
+		</tr>
+    </table>
+    <div id="graphDiv"></div>
+    <div id="graphRatio"></div>
+	<!-- Plotly.js -->
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script>
+
+        var connectionForm = document.getElementById("connectionForm");
+        var connectButton = document.getElementById("connectButton");
+        var commsLog = document.getElementById("commsLog");
+        var socket;
+
+		commsLog.innerHTML = '<tr>' +
+			'<td colspan="3" class="commslog-data">Initialized </td>' +
+			'</tr>';
+        var scheme = document.location.protocol == "https:" ? "wss" : "ws";
+        var port = document.location.port ? (":" + document.location.port) : "";
+
+        function updateState() {
+            connectButton.disabled = true;
+
+            if (!socket) {
+                disable();
+            } else {
+                switch (socket.readyState) {
+                    case WebSocket.CLOSED:
+                        connectButton.disabled = false;
+                        break;
+                    case WebSocket.CLOSING:
+                        break;
+                    case WebSocket.CONNECTING:
+                        break;
+                    case WebSocket.OPEN:
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+		
+        connectButton.onclick = function() {
+			Plotly.purge(graphDiv);
+			Plotly.purge(graphRatio);
+            socket = new WebSocket(scheme + "://" + document.location.hostname + port + "/ws");
+            socket.onopen = function (event) {
+                updateState();
+				socket.send("0");
+            };
+            socket.onclose = function (event) {
+                updateState();
+            };
+            socket.onerror = updateState;			
+			var size = 8;
+
+			var traceS = {
+				x: [],
+				y: [],
+				type: 'scatter',
+				name: 'Software',
+				mode: 'lines+markers',
+			}
+
+			var trace32 = {
+				x: [],
+				y: [],
+				type: 'scatter',
+				name: 'CRC32 32-bit',
+				mode: 'lines+markers',
+			}
+
+			var trace64 = {
+				x: [],
+				y: [],
+				type: 'scatter',
+				name: 'CRC32 64-bit',
+				mode: 'lines+markers',
+			}
+
+			var xpoints = [];
+			var xtickvals = [];
+			var ypointsSW = [];
+			var ypoints32 = [];
+			var ypoints64 = [];
+
+			const MAX_N = 2048;
+		
+			for (var i = 8; i <= MAX_N; i = i * 2) {
+				xpoints.push(Math.log2(i * 2));
+				xtickvals.push(i.toString());
+			}
+
+            socket.onmessage = function (event) {
+			    var received_msg = event.data;
+				data = JSON.parse(event.data);
+				var num = data.b;
+				var timeSW = data.s;
+				var time32 = data.b32;
+				var time64 = data.b64;
+
+				console.log("Received: (" + num + ") sw: (" + timeSW + ") 32: (" + time32 + ")" + ") 64: (" + time64 + ")");
+
+				if (num === "0") {
+					size = 8;
+					console.log(xtickvals);
+					var layout = {
+						xaxis: {
+								title: 'String Length (byte)',
+								range: [3, Math.log2(MAX_N)+2],
+								tickvals: xpoints,
+								ticktext: xtickvals,
+								},
+						yaxis: {
+								title: 'Time (s)',
+								//range: [0, 3000],
+								},
+						title: 'String Hashcode (Run time)',
+					}			
+
+					Plotly.newPlot(graphDiv, [traceS, trace32, trace64], layout);
+					commsLog.innerHTML = '<tr>' +
+						'<td colspan="3" class="commslog-data">Calculating hash code of string size: ' + size.toString() + '</td>' +
+						'</tr>';
+					socket.send(size.toString());
+				} else {
+					//xpoints.push(size);
+					ypointsSW.push(timeSW * 1000);
+					ypoints32.push(time32 * 1000);
+					ypoints64.push(time64 * 1000);
+
+					var update = { x: [[Math.log2(size)+1], [Math.log2(size)+1], [Math.log2(size)+1]], y: [[timeSW], [time32], [time64]]};
+					Plotly.extendTraces(graphDiv, update, [0,1,2]);
+
+					size = size * 2;
+
+					if (size > MAX_N)
+					{
+
+						var yRatioHW32 = [];
+						var yRatioHW64 = [];
+						var yRatioSW = [];
+						var annotations32 = [];
+						var annotations64 = [];
+
+						for (var i = 0; i < xpoints.length; i++) {
+							yRatioSW.push(1.0);
+							var r32 = ypointsSW[i] / ypoints32[i]
+							var r64 = ypointsSW[i] / ypoints64[i]
+							yRatioHW32.push(r32);
+							yRatioHW64.push(r64);
+							annotations32.push(r32.toFixed(2));
+							annotations64.push(r64.toFixed(2));
+						}
+
+						var ratioLayout = {
+							xaxis: {
+								title: 'String Length (byte)',
+								range: [3, Math.log2(MAX_N)+2],
+								tickvals: xpoints,
+								ticktext: xtickvals,
+								},
+							yaxis: {
+								title: 'Speedup',
+								//range: [0, 3000],
+								},
+							title: 'String Hashcode (Speedup)',
+							barmode: 'group',
+						}
+
+						var ratio1 = {
+							x: xpoints,
+							y: yRatioSW,
+							name: 'Software',
+							type: 'line',
+							line: {
+								dash: 'dot',
+								width: 4
+							},
+							hoverinfo: 'none',
+						}
+
+						var ratio2 = {
+							x: xpoints,
+							y: yRatioHW32,
+							name: 'CRC32 32-bit',
+							type: 'bar',
+							hoverinfo: 'none',
+							textposition: 'auto',
+							text: yRatioHW32,
+						}
+
+						var ratio3 = {
+							x: xpoints,
+							y: yRatioHW64,
+							name: 'CRC32 64-bit',
+							type: 'bar',
+							hoverinfo: 'none',
+							textposition: 'auto',
+							text: yRatioHW64,
+						}
+
+						ratio2['text'] = annotations32;
+						ratio3['text'] = annotations64;
+
+						Plotly.newPlot(graphRatio, [ratio1, ratio2, ratio3], ratioLayout);
+
+						commsLog.innerHTML = '<tr>' +
+							'<td colspan="3" class="commslog-data">Runs finished </td>' +
+							'</tr>';
+						if (!socket || socket.readyState != WebSocket.OPEN) {
+							alert("socket not connected");
+						}
+						socket.close(1000, "Closing from client");
+						function sleep(ms) {
+						return new Promise(resolve => setTimeout(resolve, ms));
+						}
+
+						sleep(60000).then(() => {
+							var elem = document.getElementById('connectButton');
+							if (typeof elem.onclick == 'function') {
+								elem.onclick.apply(elem);
+							}
+						});
+						return;
+					}
+									
+					console.log(size.toString());
+					commsLog.innerHTML = '<tr>' +
+						'<td colspan="3" class="commslog-data">Calculating hash code of string size: ' + size.toString() + '</td>' +
+						'</tr>';
+					socket.send(size.toString());
+				}
+            };
+        };
+
+        function htmlEscape(str) {
+            return str
+                .replace(/&/g, '&amp;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;');
+        }
+    </script>
+
+		
+	
+</body>
+</html>

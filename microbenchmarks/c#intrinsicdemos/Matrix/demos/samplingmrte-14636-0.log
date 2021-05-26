@@ -1,0 +1,5 @@
+
+17960 : 0x0 : 3 : logger_init :  LOG FILE OPENED (by collectunits.logger), level: 4
+17960 : 0x0 : 4 : samplingmrte_1_0::CLRCallbacks::Shutdown :  [CALLED]
+17960 : 0x0 : 4 : samplingmrte_1_0::CLRCallbacks::freeProfilerResources :  [CALLED]
+17960 : 0x0 : 3 : logger_fini :  LOG FILE CLOSED (by collectunits.logger)
