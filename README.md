@@ -1,2 +1,2 @@
-# BenchmarksCoreCLR
-A place to put benchmarks for CoreCLR
+# A repository for benchmarks and POCs
+
