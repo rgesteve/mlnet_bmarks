@@ -1,0 +1,4 @@
+[submodule "POCs/oneDAL-integration-into-ML.NET/libraries.runtimes.dotnet.externalmirrors.machinelearning"]
+	path = POCs/oneDAL-integration-into-ML.NET/libraries.runtimes.dotnet.externalmirrors.machinelearning
+	url = git@github.com:intel-innersource/libraries.runtimes.dotnet.externalmirrors.machinelearning.git
+	branch = dev/onedal-integration
