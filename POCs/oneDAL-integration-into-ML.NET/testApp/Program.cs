@@ -82,7 +82,7 @@ class Program
         tg.Stop();
 
         Console.WriteLine("Impl.,Dataset,All time[ms],Reading time[ms],Fitting time[ms],Prediction time[ms],Evaluation time[ms],MAE,RMSE,R2");
-        Console.Write($"{args[1]},{args[0]},{tg.Elapsed.TotalMilliseconds},{t0.Elapsed.TotalMilliseconds},{t1.Elapsed.TotalMilliseconds},{t2.Elapsed.TotalMilliseconds},{t3.Elapsed.TotalMilliseconds}");
+        Console.Write($"{args[1]},{args[0]},{tg.Elapsed.TotalMilliseconds},{t0.Elapsed.TotalMilliseconds},{t1.Elapsed.TotalMilliseconds},{t2.Elapsed.TotalMilliseconds},{t3.Elapsed.TotalMilliseconds},");
         Console.Write($"{metrics.MeanAbsoluteError},{metrics.RootMeanSquaredError},{metrics.RSquared}\n");
     }
 }
