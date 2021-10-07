@@ -1,4 +1,5 @@
 #include "daal.h"
+#include "data_management/data/internal/finiteness_checker.h"
 
 #ifdef __cplusplus
 #define ONEDAL_EXTERN_C extern "C"
@@ -29,10 +30,9 @@ internal static class OneDal
 
     [DllImport(OneDalLibPath, EntryPoint = "ridgeRegressionOnlineFinalize")]
     public unsafe static extern void RidgeRegressionOnlineFinalize(void* featuresPtr, void* labelsPtr, long nRows, long nColumns, float l2Reg, void* partialResultPtr, long partialResultSize,
-        void* betaPtr, void* xtyPtr, void* xtxPtr, void* standardErrorsPtr);
+        void* betaPtr, void* xtyPtr, void* xtxPtr);
 }
 */
-
 template <typename FPType>
 int ridgeRegressionOnlineComputeTemplate(FPType * featuresPtr, FPType * labelsPtr, int nRows, int nColumns, float l2Reg, byte * partialResultPtr, int partialResultSize)
 {
@@ -41,7 +41,6 @@ int ridgeRegressionOnlineComputeTemplate(FPType * featuresPtr, FPType * labelsPt
     NumericTablePtr labelsTable(new HomogenNumericTable<FPType>(labelsPtr, 1, nRows));
     FPType l2 = l2Reg;
     NumericTablePtr l2RegTable(new HomogenNumericTable<FPType>(&l2, 1, 1));
-
 
     // Set up and execute training
     ridge_regression::training::Online<FPType> trainingAlgorithm;
@@ -70,8 +69,8 @@ int ridgeRegressionOnlineComputeTemplate(FPType * featuresPtr, FPType * labelsPt
 }
 
 template <typename FPType>
-void ridgeRegressionOnlineFinalizeTemplate(FPType * featuresPtr, FPType * labelsPtr, int nRows, int nColumns, float l2Reg, byte * partialResultPtr, int partialResultSize,
-    FPType * betaPtr, FPType * xtyPtr, FPType * xtxPtr, FPType * standardErrorsPtr)
+void ridgeRegressionOnlineFinalizeTemplate(FPType * featuresPtr, FPType * labelsPtr, long long int nAllRows, int nRows, int nColumns, float l2Reg, byte * partialResultPtr, int partialResultSize,
+    FPType * betaPtr, FPType * xtyPtr, FPType * xtxPtr)
 {
     NumericTablePtr featuresTable(new HomogenNumericTable<FPType>(featuresPtr, nColumns, nRows));
     NumericTablePtr labelsTable(new HomogenNumericTable<FPType>(labelsPtr, 1, nRows));
@@ -111,28 +110,14 @@ void ridgeRegressionOnlineFinalizeTemplate(FPType * featuresPtr, FPType * labels
         {
             xtxPtr[offset] = xtx[i * nBetas + j];
             offset++;
-            if (j < i)
-            {
-                // Extend upper triangle of matrix
-                xtx[j * nBetas + i] = xtx[i * nBetas + j];
-            }
-            else
-            {
-                // Add L2 regularization for future compute of inverted matrix X'X + L2 * E
-                xtx[i * nBetas + j] += l2Reg;
-            }
         }
     }
-
-    // printf("%s\n", "X'X + L2 * I:");
-    // for (size_t i = 0; i < nBetas; ++i)
-    // {
-    //     for (size_t j = 0; j < nBetas; ++j)
-    //     {
-    //         printf("%f ", xtx[i * nBetas + j]);
-    //     }
-    //     printf("\n");
-    // }
+    offset = 0;
+    for (size_t i = 0; i < nBetas; ++i)
+    {
+        xtxPtr[offset] += l2Reg * l2Reg * nAllRows;
+        offset += i + 2;
+    }
 
     NumericTablePtr xtyTable = model->getXTYTable();
     BlockDescriptor<FPType> xtyBlock;
@@ -152,157 +137,9 @@ void ridgeRegressionOnlineFinalizeTemplate(FPType * featuresPtr, FPType * labels
         betaPtr[i] = betaForCopy[i];
     }
 
-    // Compute inverse of X'X + L2 * E
-    svd::Batch<FPType> svdAlgorithm;
-    svdAlgorithm.input.set(svd::data, xtxTable);
-    svdAlgorithm.compute();
-
-    svd::ResultPtr svdRes = svdAlgorithm.getResult();
-    NumericTablePtr dTable = svdRes->get(svd::singularValues);
-    NumericTablePtr vTable = svdRes->get(svd::rightSingularMatrix);
-    NumericTablePtr uTable = svdRes->get(svd::leftSingularMatrix);
-    BlockDescriptor<FPType> dBlock, vBlock, uBlock;
-    dTable->getBlockOfRows(0, dTable->getNumberOfRows(), readWrite, dBlock);
-    vTable->getBlockOfRows(0, vTable->getNumberOfRows(), readWrite, vBlock);
-    uTable->getBlockOfRows(0, uTable->getNumberOfRows(), readWrite, uBlock);
-    FPType * d = dBlock.getBlockPtr();
-    FPType * v = vBlock.getBlockPtr();
-    FPType * u = uBlock.getBlockPtr();
-
-    // printf("%s\n", "U:");
-    // for (size_t i = 0; i < nBetas; ++i)
-    // {
-    //     for (size_t j = 0; j < nBetas; ++j)
-    //     {
-    //         printf("%.12f", u[i * nBetas + j]);
-    //         if (j < nBetas - 1)
-    //         {
-    //             printf(",");
-    //         }
-    //     }
-    //     printf("\n");
-    // }
-
-    // printf("%s\n", "S:");
-    // for (size_t i = 0; i < nBetas; ++i)
-    // {
-    //     printf("%.12f", d[i]);
-    //     if (i < nBetas - 1)
-    //     {
-    //         printf(",");
-    //     }
-    // }
-    // printf("\n");
-
-    // printf("%s\n", "Vh:");
-    // for (size_t i = 0; i < nBetas; ++i)
-    // {
-    //     for (size_t j = 0; j < nBetas; ++j)
-    //     {
-    //         printf("%.12f", v[i * nBetas + j]);
-    //         if (j < nBetas - 1)
-    //         {
-    //             printf(",");
-    //         }
-    //     }
-    //     printf("\n");
-    // }
-
-    for (size_t i = 0; i < nBetas; ++i)
-    {
-        for (size_t j = 0; j <= i; ++j)
-        {
-            FPType swap = v[i * nBetas + j];
-            v[i * nBetas + j] = v[j * nBetas + i];
-            v[j * nBetas + i] = swap;
-        }
-    }
-
-    FPType * intermediate = new FPType[nBetas * nBetas];
-    for (size_t i = 0; i < nBetas; ++i)
-    {
-        for (size_t j = 0; j < nBetas; ++j)
-        {
-            intermediate[i * nBetas + j] = v[i * nBetas + j] / d[j];
-        }
-    }
-    // printf("%s\n", "intermediate:");
-    // for (size_t i = 0; i < nBetas; ++i)
-    // {
-    //     for (size_t j = 0; j < nBetas; ++j)
-    //     {
-    //         printf("%f ", intermediate[i * nBetas + j]);
-    //     }
-    //     printf("\n");
-    // }
-
-    FPType * xtx_l2e_inv = new FPType[nBetas * nBetas];
-    // for (size_t i = 0; i < nBetas; ++i)
-    // {
-    //     for (size_t j = 0; j <= i; ++j)
-    //     {
-    //         FPType swap = u[i * nBetas + j];
-    //         u[i * nBetas + j] = u[j * nBetas + i];
-    //         u[j * nBetas + i] = swap;
-    //     }
-    // }
-    for (size_t i = 0; i < nBetas; ++i)
-    {
-        for (size_t j = 0; j < nBetas; ++j)
-        {
-            xtx_l2e_inv[i * nBetas + j] = 0;
-            for (size_t k = 0; k < nBetas; ++k)
-            {
-                xtx_l2e_inv[i * nBetas + j] += intermediate[i * nBetas + k] * u[j * nBetas + k];
-            }
-        }
-    }
-
-    // printf("%s\n", "(X'X + L2 * I) ^ -1:");
-    // for (size_t i = 0; i < nBetas; ++i)
-    // {
-    //     for (size_t j = 0; j < nBetas; ++j)
-    //     {
-    //         printf("%f ", xtx_l2e_inv[i * nBetas + j]);
-    //     }
-    //     printf("\n");
-    // }
-
-    for (size_t i = 0; i < nBetas; ++i)
-    {
-        for (size_t j = 0; j < nBetas; ++j)
-        {
-            intermediate[i * nBetas + j] = 0;
-            for (size_t k = 0; k < nBetas; ++k)
-            {
-                intermediate[i * nBetas + j] += xtx_l2e_inv[i * nBetas + k] * xtx[k * nBetas + j];
-            }
-        }
-    }
-
-    // note: intercept located in end of betas in oneDAL and start in ML.NET
-    standardErrorsPtr[0] = 0;
-    for (size_t k = 0; k < nBetas; ++k)
-    {
-        standardErrorsPtr[0] += intermediate[(nBetas - 1) * nBetas + k] * xtx_l2e_inv[k * nBetas + (nBetas - 1)];
-    }
-    for (size_t i = 0; i < nBetas - 1; ++i)
-    {
-        standardErrorsPtr[i + 1] = 0;
-        for (size_t k = 0; k < nBetas; ++k)
-        {
-            standardErrorsPtr[i + 1] += intermediate[i * nBetas + k] * xtx_l2e_inv[k * nBetas + i];
-        }
-    }
-
     xtxTable->releaseBlockOfRows(xtxBlock);
     xtyTable->releaseBlockOfRows(xtyBlock);
     betaTable->releaseBlockOfRows(betaBlock);
-    dTable->releaseBlockOfRows(dBlock);
-    vTable->releaseBlockOfRows(vBlock);
-    uTable->releaseBlockOfRows(uBlock);
-
-    delete xtx_l2e_inv, intermediate;
 }
 
 ONEDAL_C_EXPORT int ridgeRegressionOnlineCompute(void * featuresPtr, void * labelsPtr, int nRows, int nColumns, float l2Reg, void * partialResultPtr, int partialResultSize)
@@ -310,11 +147,11 @@ ONEDAL_C_EXPORT int ridgeRegressionOnlineCompute(void * featuresPtr, void * labe
     return ridgeRegressionOnlineComputeTemplate<double>((double *)featuresPtr, (double *)labelsPtr, nRows, nColumns, l2Reg, (byte *)partialResultPtr, partialResultSize);
 }
 
-ONEDAL_C_EXPORT void ridgeRegressionOnlineFinalize(void * featuresPtr, void * labelsPtr, int nRows, int nColumns, float l2Reg, void * partialResultPtr, int partialResultSize,
-    void * betaPtr, void * xtyPtr, void * xtxPtr, void * standardErrorsPtr)
+ONEDAL_C_EXPORT void ridgeRegressionOnlineFinalize(void * featuresPtr, void * labelsPtr, long long int nAllRows, int nRows, int nColumns, float l2Reg, void * partialResultPtr, int partialResultSize,
+    void * betaPtr, void * xtyPtr, void * xtxPtr)
 {
-    ridgeRegressionOnlineFinalizeTemplate<double>((double *)featuresPtr, (double *)labelsPtr, nRows, nColumns, l2Reg, (byte *)partialResultPtr, partialResultSize,
-        (double *)betaPtr, (double *)xtyPtr, (double *)xtxPtr, (double *)standardErrorsPtr);
+    ridgeRegressionOnlineFinalizeTemplate<double>((double *)featuresPtr, (double *)labelsPtr, nAllRows, nRows, nColumns, l2Reg, (byte *)partialResultPtr, partialResultSize,
+        (double *)betaPtr, (double *)xtyPtr, (double *)xtxPtr);
 }
 
 template <typename FPType>
