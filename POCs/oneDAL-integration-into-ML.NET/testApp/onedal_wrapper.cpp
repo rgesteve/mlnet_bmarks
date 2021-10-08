@@ -1,5 +1,4 @@
 #include "daal.h"
-#include "data_management/data/internal/finiteness_checker.h"
 
 #ifdef __cplusplus
 #define ONEDAL_EXTERN_C extern "C"
@@ -20,19 +19,7 @@ using namespace daal;
 using namespace daal::algorithms;
 using namespace daal::data_management;
 
-/* OneDal ML.NET interoperability wrapper
-internal static class OneDal
-{
-    private const string OneDalLibPath = "_oneDALWrapper.so";
 
-    [DllImport(OneDalLibPath, EntryPoint = "ridgeRegressionOnlineCompute")]
-    public unsafe static extern long RidgeRegressionOnlineCompute(void* featuresPtr, void* labelsPtr, long nRows, long nColumns, float l2Reg, void* partialResultPtr, long partialResultSize);
-
-    [DllImport(OneDalLibPath, EntryPoint = "ridgeRegressionOnlineFinalize")]
-    public unsafe static extern void RidgeRegressionOnlineFinalize(void* featuresPtr, void* labelsPtr, long nRows, long nColumns, float l2Reg, void* partialResultPtr, long partialResultSize,
-        void* betaPtr, void* xtyPtr, void* xtxPtr);
-}
-*/
 template <typename FPType>
 int ridgeRegressionOnlineComputeTemplate(FPType * featuresPtr, FPType * labelsPtr, int nRows, int nColumns, float l2Reg, byte * partialResultPtr, int partialResultSize)
 {
@@ -152,75 +139,4 @@ ONEDAL_C_EXPORT void ridgeRegressionOnlineFinalize(void * featuresPtr, void * la
 {
     ridgeRegressionOnlineFinalizeTemplate<double>((double *)featuresPtr, (double *)labelsPtr, nAllRows, nRows, nColumns, l2Reg, (byte *)partialResultPtr, partialResultSize,
         (double *)betaPtr, (double *)xtyPtr, (double *)xtxPtr);
-}
-
-template <typename FPType>
-void linearRegression(FPType * features, FPType * label, FPType * betas, int nRows, int nColumns)
-{
-    NumericTablePtr featuresTable(new HomogenNumericTable<FPType>(features, nColumns, nRows));
-    NumericTablePtr labelsTable(new HomogenNumericTable<FPType>(label, 1, nRows));
-
-    // Training
-    linear_regression::training::Batch<FPType> trainingAlgorithm;
-    trainingAlgorithm.input.set(linear_regression::training::data, featuresTable);
-    trainingAlgorithm.input.set(linear_regression::training::dependentVariables, labelsTable);
-    trainingAlgorithm.compute();
-    linear_regression::training::ResultPtr trainingResult = trainingAlgorithm.getResult();
-
-    // Betas copying
-    NumericTablePtr betasTable = trainingResult->get(linear_regression::training::model)->getBeta();
-    BlockDescriptor<FPType> betasBlock;
-    betasTable->getBlockOfRows(0, 1, readWrite, betasBlock);
-    FPType * betasForCopy = betasBlock.getBlockPtr();
-    for (size_t i = 0; i < nColumns + 1; ++i)
-    {
-        betas[i] = betasForCopy[i];
-    }
-}
-
-template <typename FPType>
-void ridgeRegression(FPType * features, FPType * label, FPType * betas, int nRows, int nColumns, float l2Reg)
-{
-    NumericTablePtr featuresTable(new HomogenNumericTable<FPType>(features, nColumns, nRows));
-    NumericTablePtr labelsTable(new HomogenNumericTable<FPType>(label, 1, nRows));
-    FPType l2 = l2Reg;
-    NumericTablePtr l2RegTable(new HomogenNumericTable<FPType>(&l2, 1, 1));
-
-    // Training
-    ridge_regression::training::Batch<FPType> trainingAlgorithm;
-    trainingAlgorithm.parameter.ridgeParameters = l2RegTable;
-    trainingAlgorithm.input.set(ridge_regression::training::data, featuresTable);
-    trainingAlgorithm.input.set(ridge_regression::training::dependentVariables, labelsTable);
-    trainingAlgorithm.compute();
-    ridge_regression::training::ResultPtr trainingResult = trainingAlgorithm.getResult();
-
-    // Betas copying
-    NumericTablePtr betasTable = trainingResult->get(ridge_regression::training::model)->getBeta();
-    BlockDescriptor<FPType> betasBlock;
-    betasTable->getBlockOfRows(0, 1, readWrite, betasBlock);
-    FPType * betasForCopy = betasBlock.getBlockPtr();
-    for (size_t i = 0; i < nColumns + 1; ++i)
-    {
-        betas[i] = betasForCopy[i];
-    }
-}
-
-ONEDAL_C_EXPORT void linearRegressionDouble(void * features, void * label, void * betas, int nRows, int nColumns)
-{
-    linearRegression<double>((double *)features, (double *)label, (double *)betas, nRows, nColumns);
-}
-
-ONEDAL_C_EXPORT void linearRegressionSingle(void * features, void * label, void * betas, int nRows, int nColumns)
-{
-    linearRegression<float>((float *)features, (float *)label, (float *)betas, nRows, nColumns);
-}
-
-ONEDAL_C_EXPORT void ridgeRegressionDouble(void * features, void * label, void * betas, int nRows, int nColumns, float l2Reg)
-{
-    ridgeRegression<double>((double *)features, (double *)label, (double *)betas, nRows, nColumns, l2Reg);
-}
-
-ONEDAL_C_EXPORT void ridgeRegressionSingle(void * features, void * label, void * betas, int nRows, int nColumns, float l2Reg)
-{
-    ridgeRegression<float>((float *)features, (float *)label, (float *)betas, nRows, nColumns, l2Reg);
 }
