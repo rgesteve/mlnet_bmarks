@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "oneDalTest": {
+      "commandName": "Project",
+      "commandLineArgs": "sample",
+      "environmentVariables": {
+        "OLS_IMPL": "ONEDAL"
+      },
+      "nativeDebugging": true
+    }
+  }
+}
