@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
 
@@ -11,7 +11,12 @@
     <NativeAssemblyReference Condition="'$(OS)' == 'Windows_NT'" Include="libiomp5md" />
   </ItemGroup>
   <ItemGroup>
+  <!--
     <PackageReference Include="Microsoft.ML.Mkl.Components" Version="1.6.0-dev.21522.1" />
     <PackageReference Include="Microsoft.ML.OneDAL" Version="0.18.0-dev.21522.1" />
+    -->
+    <PackageReference Include="Microsoft.ML.Mkl.Components" Version="1.7.0-dev.21562.1" />
+    <PackageReference Include="Microsoft.ML.OneDAL" Version="0.19.0-dev.21562.1" />
+
   </ItemGroup>
 </Project>
