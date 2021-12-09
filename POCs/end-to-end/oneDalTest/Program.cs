@@ -7,7 +7,7 @@ using Microsoft.ML.Data;
 
 class Program
 {
-    static string datasetLocation = @"F:\code-reviews\end-to-end\oneDalTest\oneDalTest\";
+    static string datasetLocation = @"";
     public static IDataView[] LoadData(MLContext mlContext, string dataset, string label = "target", char separator = ',')
     {
         System.IO.StreamReader file = new System.IO.StreamReader($"{datasetLocation}{dataset}_train.csv");
