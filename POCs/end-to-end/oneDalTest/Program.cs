@@ -5,6 +5,9 @@ using System.Collections.Generic;
 using Microsoft.ML;
 using Microsoft.ML.Data;
 
+using Microsoft.ML.Trainers;
+using Microsoft.ML.Transforms;
+
 class Program
 {
     static string datasetLocation = @"";
@@ -80,4 +83,54 @@ class Program
         Console.Write($"{args[0]},{tg.Elapsed.TotalMilliseconds},{t0.Elapsed.TotalMilliseconds},{t1.Elapsed.TotalMilliseconds},{t2.Elapsed.TotalMilliseconds},{t3.Elapsed.TotalMilliseconds},");
         Console.Write($"{metrics.MeanAbsoluteError},{metrics.RootMeanSquaredError},{metrics.RSquared}\n");
     }
+
+    static private LBFGSTest()
+    {
+	MLContext mlCtxt = new MLContext();
+
+	// Should split this in training and testing so that we can evaluate the result
+	var trainData = mlCtxt.Data.LoadFromTextFile<WineRecord>("winequality-red-scaled-classify.csv", separatorChar: ',', hasHeader: true);
+	var dataPipe = mlCtxt.Transforms.Concatenate("Features", nameof(WineRecord.Alcohol))
+	    	                   .Append(mlCtxt.BinaryClassification.Trainers.LbfgsLogisticRegression(labelColumnName : nameof(WineRecord.Quality)));
+	var d = dataPipe.Fit(trainData);
+    }
+
+    class WineRecord
+    {
+	[LoadColumn(0), ColumnName("fixed acidity")]
+	public Single FixedAcidity { get; set; }
+
+    	[LoadColumn(1), ColumnName("volatile acidity")]
+	public Single VolatileAcidity { get; set; }
+
+    	[LoadColumn(2), ColumnName("citric acid")]
+	public Single CitricAcid { get; set; }
+
+    	[LoadColumn(3), ColumnName("residual sugar")]
+	public Single ResidualSugar { get; set; }
+    
+	[LoadColumn(4), ColumnName("chlorides")]
+	public Single Chlorides { get; set; }
+    
+	[LoadColumn(5), ColumnName("free sulfur dioxide")]
+	public Single FreeSulfurDioxide { get; set; }
+
+    	[LoadColumn(6), ColumnName("total sulfur dioxide")]
+	public Single TotalSulfurDioxide { get; set; }
+
+    	[LoadColumn(7), ColumnName("density")]
+	public Single Density { get; set; }
+    
+	[LoadColumn(8), ColumnName("pH")]
+	public Single Ph { get; set; }
+    
+	[LoadColumn(9), ColumnName("sulphates")]
+	public Single Sulphates { get; set; }
+    
+	[LoadColumn(10), ColumnName("alcohol")]
+	public Single Alcohol { get; set; }
+      
+	[LoadColumn(11), ColumnName("quality")]
+	public bool Quality { get; set; }
+    };
 }
