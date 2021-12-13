@@ -92,7 +92,13 @@ class Program
 	var trainData = mlCtxt.Data.LoadFromTextFile<WineRecord>("winequality-red-scaled-classify.csv", separatorChar: ',', hasHeader: true);
 	var dataPipe = mlCtxt.Transforms.Concatenate("Features", nameof(WineRecord.Alcohol))
 	    	                   .Append(mlCtxt.BinaryClassification.Trainers.LbfgsLogisticRegression(labelColumnName : nameof(WineRecord.Quality)));
-	var d = dataPipe.Fit(trainData);
+   	var split = mlCtxt.Data.TrainTestSplit(trainData, testFraction: 0.1);
+	var model = dataPipe.Fit(split.TrainSet);
+	var evalData = model.Transform(split.TestSet);
+	var metrics = mlCtxt.BinaryClassification.Evaluate(evalData, labelColumnName : nameof(WineRecord.Quality));
+
+	Console.WriteLine($"The accuracy of the prediction is {metrics.Accuracy}.");
+	
     }
 
     class WineRecord
