@@ -51,7 +51,13 @@ class Program
 
     static void Main(string[] args)
     {
-        Console.WriteLine("Waiting"); 
+	if (args.Length == 0) {
+	   Console.WriteLine("Testing LBFGS...");
+	   LBFGSTest();
+	   Environment.Exit(0);
+	}
+
+	Console.WriteLine("Waiting"); 
 
         Console.ReadKey();
         var tg = System.Diagnostics.Stopwatch.StartNew();
@@ -84,7 +90,7 @@ class Program
         Console.Write($"{metrics.MeanAbsoluteError},{metrics.RootMeanSquaredError},{metrics.RSquared}\n");
     }
 
-    static private LBFGSTest()
+    static private void LBFGSTest()
     {
 	MLContext mlCtxt = new MLContext();
 
@@ -103,40 +109,40 @@ class Program
 
     class WineRecord
     {
-	[LoadColumn(0), ColumnName("fixed acidity")]
+	[LoadColumn(0)]
 	public Single FixedAcidity { get; set; }
 
-    	[LoadColumn(1), ColumnName("volatile acidity")]
+    	[LoadColumn(1)]
 	public Single VolatileAcidity { get; set; }
 
-    	[LoadColumn(2), ColumnName("citric acid")]
+    	[LoadColumn(2)]
 	public Single CitricAcid { get; set; }
 
-    	[LoadColumn(3), ColumnName("residual sugar")]
+    	[LoadColumn(3)]
 	public Single ResidualSugar { get; set; }
     
-	[LoadColumn(4), ColumnName("chlorides")]
+	[LoadColumn(4)]
 	public Single Chlorides { get; set; }
     
-	[LoadColumn(5), ColumnName("free sulfur dioxide")]
+	[LoadColumn(5)]
 	public Single FreeSulfurDioxide { get; set; }
 
-    	[LoadColumn(6), ColumnName("total sulfur dioxide")]
+    	[LoadColumn(6)]
 	public Single TotalSulfurDioxide { get; set; }
 
-    	[LoadColumn(7), ColumnName("density")]
+    	[LoadColumn(7)]
 	public Single Density { get; set; }
     
-	[LoadColumn(8), ColumnName("pH")]
+	[LoadColumn(8)]
 	public Single Ph { get; set; }
     
-	[LoadColumn(9), ColumnName("sulphates")]
+	[LoadColumn(9)]
 	public Single Sulphates { get; set; }
     
-	[LoadColumn(10), ColumnName("alcohol")]
+	[LoadColumn(10)]
 	public Single Alcohol { get; set; }
       
-	[LoadColumn(11), ColumnName("quality")]
+	[LoadColumn(11)]
 	public bool Quality { get; set; }
     };
 }
